@@ -12,7 +12,8 @@
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "prepublish": "npm run clean && npm run build",
     "test": "jest",
-    "storybook": "BABEL_ENV=commonjs start-storybook -p 9001 -c .storybook"
+    "storybook": "BABEL_ENV=commonjs start-storybook -p 9001 -c .storybook",
+    "lint": "eslint --ignore-path .gitignore ."
   },
   "keywords": [
     "React",

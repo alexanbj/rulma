@@ -1,10 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import { Block, Container, Title, Subtitle } from '../src/';
-/*for i in *.js
- do
- mv "$i" "${i%}.jsx;
- done*/
+
 storiesOf('Title', module)
   .addDecorator(story => (
     <Container textCentered>

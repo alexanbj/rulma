@@ -2,8 +2,15 @@
   "name": "rulma",
   "version": "0.0.1",
   "description": "React components for Bulma",
-  "main": "src/index.js",
+  "main": "lib/index",
+  "module": "es/index",
+  "jsnext:main": "es/index",
   "scripts": {
+    "clean": "rimraf lib es",
+    "build": "npm run build:commonjs && npm run build:es",
+    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "prepublish": "npm run clean && npm run build",
     "test": "jest",
     "storybook": "start-storybook -p 9001"
   },
@@ -21,13 +28,18 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "babel-cli": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "cross-env": "^3.1.4",
     "eslint": "^3.16.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "rimraf": "^2.6.1"
   },
   "peerDependencies": {
     "react": "^15.4.2",

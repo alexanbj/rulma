@@ -1,0 +1,36 @@
+{
+  "name": "rulma",
+  "version": "0.0.1",
+  "description": "React components for Bulma",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "storybook": "start-storybook -p 9001"
+  },
+  "keywords": [
+    "React",
+    "Bulma"
+  ],
+  "author": "Alexander Bjerkan <alexander.bjerkan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.3.1",
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "react-portal": "^3.0.0"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.35.3",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

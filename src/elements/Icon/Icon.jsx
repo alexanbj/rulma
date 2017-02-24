@@ -1,0 +1,39 @@
+import React, { PropTypes } from 'react';
+import classNames from 'classnames';
+
+import { sizePropType } from '../../modifiers';
+
+const Icon = ({ className, icon, spin, fw, size, ...rest }) => {
+  const classes = {
+    'fa-fw': fw,
+    'fa-spin': spin,
+  };
+
+  return (
+    <span
+      aria-hidden
+      className={classNames('icon', className, { [`is-${size}`]: size })}
+      {...rest}
+    >
+      <i className={classNames(`fa fa-${icon}`, classes)} />
+    </span>
+  );
+};
+
+Icon.propTypes = {
+  className: PropTypes.string,
+  icon: PropTypes.string,
+  spin: PropTypes.bool,
+  fw: PropTypes.bool,
+  size: sizePropType,
+};
+
+Icon.defaultProps = {
+  className: null,
+  fw: false,
+  icon: null,
+  size: null,
+  spin: false,
+};
+
+export default Icon;

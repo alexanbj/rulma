@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-const MenuSubList = ({ className, ...props }) =>
+const MenuSubList = ({ ...props }) =>
   <ul {...props} />;
 
 MenuSubList.propTypes = {

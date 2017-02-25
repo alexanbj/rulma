@@ -1,19 +1,20 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-const MenuItemLink = ({ active, className, ...props }) => {
-  return (
-    <a
-      className={classNames(className, { 'is-active': active })}
-      {...props}
-    />
-  );
-};
+const MenuItemLink = ({ active, className, ...props }) => (
+  <a
+    className={classNames(className, { 'is-active': active })}
+    {...props}
+  >
+    {props.children}
+  </a>
+);
 
 MenuItemLink.propTypes = {
   active: PropTypes.bool,
   className: PropTypes.string,
   href: PropTypes.string,
+  children: PropTypes.element.isRequired,
 };
 
 MenuItemLink.defaultProps = {

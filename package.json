@@ -13,7 +13,7 @@
     "prepublish": "npm run clean && npm run build",
     "test": "jest",
     "storybook": "BABEL_ENV=commonjs start-storybook -p 9001 -c .storybook",
-    "lint": "eslint --ignore-path .gitignore ."
+    "lint": "eslint . --ignore-path .gitignore --ext .js,.jsx"
   },
   "keywords": [
     "React",

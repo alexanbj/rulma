@@ -11,7 +11,10 @@ const sizes = new Map([
   ['1/4', 'one-quarter'],
 ]);
 
-const Column = ({ cols, narrow, offsetCols, size, offsetSize, desktopSize, tabletSize, mobileSize, ...props }) => {
+const Column = ({
+  cols, narrow, offsetCols, size,
+  offsetSize, desktopSize, tabletSize, mobileSize, ...props
+}) => {
   // TODO: Narrow for different viewports
   const [classes, restProps] = classNames(props, 'column', {
     [`is-${cols}`]: cols,

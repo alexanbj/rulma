@@ -1,25 +1,9 @@
-import React, { PropTypes } from 'react';
-import classNames from 'classnames';
+import React from 'react';
 
-const MenuItem = ({ active, className, ...props }) => (
-  <li>
-    <a
-      className={classNames(className, { 'is-active': active })}
-      {...props}
-    />
-  </li>
-);
-
-MenuItem.propTypes = {
-  active: PropTypes.bool,
-  className: PropTypes.string,
-  href: PropTypes.string,
-};
-
-MenuItem.defaultProps = {
-  active: false,
-  className: null,
-  href: null,
+const MenuItem = ({ ...props }) => {
+    return (
+      <li {...props} />
+    )
 };
 
 export default MenuItem;

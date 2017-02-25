@@ -19,7 +19,7 @@ storiesOf('Menu', module)
       <Menu.List>
         <Menu.ItemLink>Team Settings</Menu.ItemLink>
         <Menu.Item>
-          <Menu.ItemLink>Manage Your Team</Menu.ItemLink>
+          <Menu.ItemLink>Click me</Menu.ItemLink>
           <Menu.SubList>
             <Menu.ItemLink>Members</Menu.ItemLink>
             <Menu.ItemLink>Plugins</Menu.ItemLink>
@@ -37,4 +37,23 @@ storiesOf('Menu', module)
         <Menu.ItemLink>Balance</Menu.ItemLink>
       </Menu.List>
     </Menu>,
-  );
+  )
+  .add('smaller Menu', () =>
+    <Menu>
+      <Menu.Label>Administration</Menu.Label>
+      <Menu.List>
+        <Menu.Item>
+          <Menu.ItemLink>Team Settings</Menu.ItemLink>
+        </Menu.Item>
+        <Menu.Item open>
+          <Menu.ItemLink>Manage Your Team</Menu.ItemLink>
+          <Menu.SubList>
+            <Menu.ItemLink>Members</Menu.ItemLink>
+            <Menu.ItemLink>Plugins</Menu.ItemLink>
+            <Menu.ItemLink>Add a member</Menu.ItemLink>
+          </Menu.SubList>
+        </Menu.Item>
+      </Menu.List>
+    </Menu>,
+  )
+;

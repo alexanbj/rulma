@@ -4,7 +4,8 @@
     ["latest", { "es2015": { "modules": false } }]
   ],
   "plugins": [
-    ["transform-object-rest-spread", { "useBuiltIns": true }]
+    ["transform-object-rest-spread", { "useBuiltIns": true }],
+    "transform-class-properties"
   ],
   "env": {
     "commonjs": {
@@ -17,5 +18,5 @@
         ["transform-es2015-modules-commonjs"]
       ]
     }
-  },
+  }
 }

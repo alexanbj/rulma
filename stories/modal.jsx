@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import { Box, Button, Modal } from '../src/';
+import { Button, Modal } from '../src/';
 
 const onHide = action('onHide');
 

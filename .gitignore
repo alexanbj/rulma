@@ -1,5 +1,14 @@
+# logs
+*.log
+npm-debug.log*
+
+# dependency directory
 node_modules
+
+# build folder
 lib
 es
+
+# other
 .DS_STORE
 .idea

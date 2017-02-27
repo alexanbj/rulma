@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Button, Card, Content, Container, Icon } from '../src/';
+import { Card, Container, Icon } from '../src/';
 
 storiesOf('Card', module)
   .addDecorator(story => (

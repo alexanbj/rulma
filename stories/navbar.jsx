@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Container, Button, Image, Nav } from '../src/';
+import { Container, Button, Nav } from '../src/';
 
 storiesOf('Nav', module)
   .add('Nav', () =>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Addons, Button, Control, Container, Form, Group, Select } from '../src/';
+import { Addons, Button, Control, Container, Form, Group } from '../src/';
 
 
 storiesOf('Form', module)

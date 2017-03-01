@@ -1,4 +1,3 @@
-import 'bulma/css/bulma.css';
 
 import Addons from './control/Addons';
 import Box from './elements/Box';

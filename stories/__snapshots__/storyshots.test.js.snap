@@ -2828,6 +2828,60 @@ exports[`Storyshots Hero With Nav and Tabs 1`] = `
   className="hero is-info"
 >
   <div
+    className="hero-head"
+  >
+    <nav
+      className="nav"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="nav-left"
+        >
+          <a
+            className="nav-item is-brand"
+          >
+            <img
+              alt="Logo"
+              src="http://bulma.io/images/bulma-type-white.png"
+            />
+          </a>
+        </div>
+        <div
+          className="nav-right nav-menu"
+        >
+          <a
+            className="nav-item"
+          >
+            Home
+          </a>
+          <a
+            className="nav-item"
+          >
+            Examples
+          </a>
+          <a
+            className="nav-item"
+          >
+            Documentation
+          </a>
+          <span
+            className="nav-item"
+          >
+            <button
+              className="button is-inverted is-info"
+              disabled={false}
+              type="button"
+            >
+              Download
+            </button>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div
     className="hero-body"
   >
     <div

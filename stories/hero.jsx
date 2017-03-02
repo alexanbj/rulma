@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Container, Hero, Tabs, Title, Subtitle } from '../src/';
+import { Button, Container, Hero, Nav, Tabs, Title, Subtitle } from '../src/';
 
 storiesOf('Hero', module)
   .add('Hero', () =>
@@ -165,6 +165,29 @@ storiesOf('Hero', module)
   )
   .add('With Nav and Tabs', () =>
     <Hero color="info">
+      <Hero.Header>
+        <Nav>
+          <Container>
+            <Nav.Left>
+              <Nav.Item brand>
+                <a>
+                  <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                </a>
+              </Nav.Item>
+            </Nav.Left>
+            <Nav.Right>
+              <Nav.Item><a>Home</a></Nav.Item>
+              <Nav.Item><a>Examples</a></Nav.Item>
+              <Nav.Item><a>Documentation</a></Nav.Item>
+              <Nav.Item>
+                <span>
+                  <Button inverted color="info">Download</Button>
+                </span>
+              </Nav.Item>
+            </Nav.Right>
+          </Container>
+        </Nav>
+      </Hero.Header>
       <Hero.Body>
         <Container textCentered>
           <Title>Hero title</Title>

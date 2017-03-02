@@ -19,8 +19,16 @@
     "React",
     "Bulma"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanbj/rulma.git"
+  },
   "author": "Alexander Bjerkan <alexander.bjerkan@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexanbj/rulma/issues"
+  },
+  "homepage": "https://github.com/alexanbj/rulma#readme",
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.17.4",

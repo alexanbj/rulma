@@ -1,0 +1,5609 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Box Box 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="box"
+  >
+    A white 
+    <b>
+      box
+    </b>
+     to contain other elements.
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Active 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="control is-grouped"
+  >
+    <div
+      className="control"
+    >
+      <button
+        className="button is-active"
+        disabled={false}
+        type="button"
+      >
+        Active
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-active is-primary"
+        disabled={false}
+        type="button"
+      >
+        Active
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-active is-info"
+        disabled={false}
+        type="button"
+      >
+        Active
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-active is-success"
+        disabled={false}
+        type="button"
+      >
+        Active
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-active is-danger"
+        disabled={false}
+        type="button"
+      >
+        Active
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Button addons 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="control has-addons"
+  >
+    <button
+      className="button"
+      disabled={false}
+      type="button"
+    >
+      Left
+    </button>
+    <button
+      className="button"
+      disabled={false}
+      type="button"
+    >
+      Center
+    </button>
+    <button
+      className="button"
+      disabled={false}
+      type="button"
+    >
+      Right
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Button group 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="control is-grouped"
+  >
+    <div
+      className="control"
+    >
+      <button
+        className="button is-primary"
+        disabled={false}
+        type="button"
+      >
+        Save changes
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Cancel
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-danger"
+        disabled={false}
+        type="button"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Button group with addons 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="control is-grouped"
+  >
+    <div
+      className="control has-addons"
+    >
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Bold
+      </button>
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Italic
+      </button>
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Underline
+      </button>
+    </div>
+    <div
+      className="control has-addons has-addons-right"
+    >
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Left
+      </button>
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Center
+      </button>
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Right
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Colors 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div>
+    <div
+      className="control is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          Button
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-white"
+          disabled={false}
+          type="button"
+        >
+          White
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-light"
+          disabled={false}
+          type="button"
+        >
+          Light
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-dark"
+          disabled={false}
+          type="button"
+        >
+          Dark
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-black"
+          disabled={false}
+          type="button"
+        >
+          Black
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-link"
+          disabled={false}
+          type="button"
+        >
+          Link
+        </button>
+      </div>
+    </div>
+    <div
+      className="control is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button is-primary"
+          disabled={false}
+          type="button"
+        >
+          Primary
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-info"
+          disabled={false}
+          type="button"
+        >
+          Info
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-success"
+          disabled={false}
+          type="button"
+        >
+          Success
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-warning"
+          disabled={false}
+          type="button"
+        >
+          Warning
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-danger"
+          disabled={false}
+          type="button"
+        >
+          Danger
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Disabled 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="control is-grouped"
+  >
+    <div
+      className="control"
+    >
+      <button
+        className="button"
+        disabled={true}
+        type="button"
+      >
+        Disabled
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-primary"
+        disabled={true}
+        type="button"
+      >
+        Disabled
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-info"
+        disabled={true}
+        type="button"
+      >
+        Disabled
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-success"
+        disabled={true}
+        type="button"
+      >
+        Disabled
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-danger"
+        disabled={true}
+        type="button"
+      >
+        Disabled
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Fullwidth 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div>
+    <button
+      className="button is-fullwidth"
+      disabled={false}
+      type="button"
+    >
+      Fullwidth
+    </button>
+    <button
+      className="button is-fullwidth is-primary"
+      disabled={false}
+      type="button"
+    >
+      Fullwidth
+    </button>
+    <button
+      className="button is-fullwidth is-info"
+      disabled={false}
+      type="button"
+    >
+      Fullwidth
+    </button>
+    <button
+      className="button is-fullwidth is-success"
+      disabled={false}
+      type="button"
+    >
+      Fullwidth
+    </button>
+    <button
+      className="button is-fullwidth is-danger"
+      disabled={false}
+      type="button"
+    >
+      Fullwidth
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Icons only 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div>
+    <div
+      className="control is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button is-small"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="control is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="control is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button is-medium"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-medium"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-medium"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon is-medium"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="control is-grouped has-text-centered"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button is-large"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-large"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-large"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon is-medium"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-large"
+          disabled={false}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="icon is-large"
+          >
+            <i
+              className="fa fa-header"
+            />
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Inverted 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="notification is-primary"
+  >
+    <div
+      className="control is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button is-inverted is-primary"
+          disabled={false}
+          type="button"
+        >
+          Inverted
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-inverted is-info"
+          disabled={false}
+          type="button"
+        >
+          Inverted
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-inverted is-success"
+          disabled={false}
+          type="button"
+        >
+          Inverted
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-inverted is-danger"
+          disabled={false}
+          type="button"
+        >
+          Inverted
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Inverted and outlined 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="notification is-primary"
+  >
+    <div
+      className="control is-grouped has-text-centered"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button is-inverted is-outlined is-primary"
+          disabled={false}
+          type="button"
+        >
+          Inverted
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-inverted is-outlined is-info"
+          disabled={false}
+          type="button"
+        >
+          Inverted
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-inverted is-outlined is-success"
+          disabled={false}
+          type="button"
+        >
+          Inverted
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-inverted is-outlined is-danger"
+          disabled={false}
+          type="button"
+        >
+          Inverted
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Loading 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="control is-grouped"
+  >
+    <div
+      className="control"
+    >
+      <button
+        className="button is-loading"
+        disabled={false}
+        type="button"
+      >
+        Loading
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-loading is-primary"
+        disabled={false}
+        type="button"
+      >
+        Loading
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-loading is-info"
+        disabled={false}
+        type="button"
+      >
+        Loading
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-loading is-success"
+        disabled={false}
+        type="button"
+      >
+        Loading
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-loading is-danger"
+        disabled={false}
+        type="button"
+      >
+        Loading
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Outlined 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="control is-grouped"
+  >
+    <div
+      className="control"
+    >
+      <button
+        className="button is-outlined"
+        disabled={false}
+        type="button"
+      >
+        Outlined
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-outlined is-primary"
+        disabled={false}
+        type="button"
+      >
+        Outlined
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-outlined is-info"
+        disabled={false}
+        type="button"
+      >
+        Outlined
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-outlined is-success"
+        disabled={false}
+        type="button"
+      >
+        Outlined
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-outlined is-danger"
+        disabled={false}
+        type="button"
+      >
+        Outlined
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Sizes 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="control is-grouped"
+  >
+    <div
+      className="control"
+    >
+      <button
+        className="button is-small"
+        disabled={false}
+        type="button"
+      >
+        Small
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Normal
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-medium"
+        disabled={false}
+        type="button"
+      >
+        Medium
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-large"
+        disabled={false}
+        type="button"
+      >
+        Large
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Card Card 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+      <a>
+        @bulmaio
+      </a>
+      . 
+      <a>
+        #css
+      </a>
+       
+      <a>
+        #responsive
+      </a>
+      <br />
+      <small>
+        11:09 PM - 1 Jan 2016
+      </small>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Card Header and footer 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="card"
+  >
+    <header
+      className="card-header"
+    >
+      <p
+        className="card-header-title"
+      >
+        Component
+      </p>
+      <a
+        className="card-header-icon"
+      >
+        <span
+          aria-hidden={true}
+          className="icon"
+        >
+          <i
+            className="fa fa-angle-down"
+          />
+        </span>
+      </a>
+    </header>
+    <div
+      className="card-content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+      <a>
+        @bulmaio
+      </a>
+      . 
+      <a>
+        #css
+      </a>
+       
+      <a>
+        #responsive
+      </a>
+      <br />
+      <small>
+        11:09 PM - 1 Jan 2016
+      </small>
+    </div>
+    <footer
+      className="card-footer"
+    >
+      <a
+        className="card-footer-item"
+      >
+        Save
+      </a>
+      <a
+        className="card-footer-item"
+      >
+        Edit
+      </a>
+      <a
+        className="card-footer-item"
+      >
+        Delete
+      </a>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns 12 columns 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-8"
+      >
+        <div
+          className="notification is-info"
+        >
+          8
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-success"
+        >
+          1
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          1
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-success"
+        >
+          1
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-success"
+        >
+          1
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Columns 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="columns"
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-info"
+      >
+        First
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-success"
+      >
+        Second
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-warning"
+      >
+        Third
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-danger"
+      >
+        Fourth
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Gapless 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="columns is-gapless"
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-info"
+      >
+        First
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-success"
+      >
+        Second
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-warning"
+      >
+        Third
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-danger"
+      >
+        Fourth
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Multiline 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="columns is-multiline"
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-info"
+      >
+        First
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-success"
+      >
+        Second
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-warning"
+      >
+        Third
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-danger"
+      >
+        Fourth
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-info"
+      >
+        First
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-success"
+      >
+        Second
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-warning"
+      >
+        Third
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-danger"
+      >
+        Fourth
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-info"
+      >
+        First
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-success"
+      >
+        Second
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-warning"
+      >
+        Third
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-danger"
+      >
+        Fourth
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-info"
+      >
+        First
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-success"
+      >
+        Second
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-warning"
+      >
+        Third
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-danger"
+      >
+        Fourth
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-info"
+      >
+        First
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-success"
+      >
+        Second
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-warning"
+      >
+        Third
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-danger"
+      >
+        Fourth
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-info"
+      >
+        First
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-success"
+      >
+        Second
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-warning"
+      >
+        Third
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="notification is-danger"
+      >
+        Fourth
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Narrow column 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="columns"
+  >
+    <div
+      className="column is-narrow"
+    >
+      <div
+        className="box"
+        style={
+          Object {
+            "width": "200px",
+          }
+        }
+      >
+        <p>
+          This is a narrow column
+        </p>
+        <p>
+          This is only 200 pixels wide
+        </p>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="box"
+      >
+        <p>
+          Flexible column
+        </p>
+        <p>
+          This will fill up all the remaining space
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Offsets 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-half is-offset-one-quarter"
+      >
+        <div
+          className="notification is-info"
+        >
+          1/2 with a 1/4 offset
+        </div>
+      </div>
+    </div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-4 is-offset-8"
+      >
+        <div
+          className="notification is-info"
+        >
+          4 cols with 8 cols offset
+        </div>
+      </div>
+    </div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-11 is-offset-1"
+      >
+        <div
+          className="notification is-info"
+        >
+          11 cols with 1 col offset
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Responsiveness 1`] = `
+<div
+  className="container"
+>
+  <div>
+    Desktop (stacks on tablets and mobile)
+    <div
+      className="columns is-desktop"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-info"
+        >
+          First
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-success"
+        >
+          Second
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          Third
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Fourth
+        </div>
+      </div>
+    </div>
+    Default (stacks on mobile only)
+    <div
+      className="columns"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-info"
+        >
+          First
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-success"
+        >
+          Second
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          Third
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Fourth
+        </div>
+      </div>
+    </div>
+    Mobile (never stacks)
+    <div
+      className="columns is-mobile"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-info"
+        >
+          First
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-success"
+        >
+          Second
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          Third
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Fourth
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Columns Sizes 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-three-quarters"
+      >
+        <div
+          className="notification is-info"
+        >
+          3/4
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          Auto
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Auto
+        </div>
+      </div>
+    </div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-two-thirds"
+      >
+        <div
+          className="notification is-info"
+        >
+          2/3
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          Auto
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Auto
+        </div>
+      </div>
+    </div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-half"
+      >
+        <div
+          className="notification is-info"
+        >
+          1/2
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          Auto
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Auto
+        </div>
+      </div>
+    </div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-one-third"
+      >
+        <div
+          className="notification is-info"
+        >
+          2/3
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          Auto
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Auto
+        </div>
+      </div>
+    </div>
+    <div
+      className="columns"
+    >
+      <div
+        className="column is-one-quarter"
+      >
+        <div
+          className="notification is-info"
+        >
+          1/4
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-warning"
+        >
+          Auto
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Auto
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Content Content 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="content"
+  >
+    <h1>
+      Hello World
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
+    </p>
+    <h2>
+      Second level
+    </h2>
+    <p>
+      Curabitur accumsan turpis pharetra 
+      <strong>
+        augue tincidunt
+      </strong>
+       blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
+    </p>
+    <ul>
+      <li>
+        In fermentum leo eu lectus mollis, quis dictum mi aliquet.
+      </li>
+      <li>
+        Morbi eu nulla lobortis, lobortis est in, fringilla felis.
+      </li>
+      <li>
+        Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
+      </li>
+      <li>
+        Ut non enim metus.
+      </li>
+    </ul>
+    <h3>
+      Third level
+    </h3>
+    <p>
+      Quisque ante lacus, malesuada ac auctor vitae, congue 
+      <a
+        href="#"
+      >
+        non ante
+      </a>
+      . Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.
+    </p>
+    <ol>
+      <li>
+        Donec blandit a lorem id convallis.
+      </li>
+      <li>
+        Cras gravida arcu at diam gravida gravida.
+      </li>
+      <li>
+        Integer in volutpat libero.
+      </li>
+      <li>
+        Donec a diam tellus.
+      </li>
+      <li>
+        Aenean nec tortor orci.
+      </li>
+      <li>
+        Quisque aliquam cursus urna, non bibendum massa viverra eget.
+      </li>
+      <li>
+        Vivamus maximus ultricies pulvinar.
+      </li>
+    </ol>
+    <blockquote>
+      Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.
+    </blockquote>
+    <p>
+      Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et 
+      <em>
+        justo sodales
+      </em>
+      elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.
+    </p>
+    <p>
+      Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.
+    </p>
+    <p>
+      Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.
+    </p>
+    <h4>
+      Fourth level
+    </h4>
+    <p>
+      Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.
+    </p>
+    <p>
+      Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            One
+          </th>
+          <th>
+            Two
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Three
+          </td>
+          <td>
+            Four
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Five
+          </td>
+          <td>
+            Six
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Seven
+          </td>
+          <td>
+            Eight
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Nine
+          </td>
+          <td>
+            Ten
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Eleven
+          </td>
+          <td>
+            Twelve
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.
+    </p>
+    <h5>
+      Fifth level
+    </h5>
+    <p>
+      Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.
+    </p>
+    <h6>
+      Sixth level
+    </h6>
+    <p>
+      Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Delete Delete 1`] = `
+<div
+  className="container"
+>
+  <button
+    aria-label="Lukk"
+    className="delete"
+  />
+</div>
+`;
+
+exports[`Storyshots Delete Messages 1`] = `
+<div
+  className="container"
+>
+  <article
+    className="message"
+  >
+    <div
+      className="message-header"
+    >
+      Info
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+    </div>
+    <div
+      className="message-body"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+    </div>
+  </article>
+</div>
+`;
+
+exports[`Storyshots Delete Notifications 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="notification"
+  >
+    <button
+      aria-label="Lukk"
+      className="delete"
+    />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </div>
+</div>
+`;
+
+exports[`Storyshots Delete Tags 1`] = `
+<div
+  className="container"
+>
+  <span
+    className="tag"
+  >
+    Hello world
+    <button
+      aria-label="Lukk"
+      className="delete"
+    />
+  </span>
+</div>
+`;
+
+exports[`Storyshots Footer Footer 1`] = `
+<footer
+  className="footer"
+>
+  <div
+    className="container"
+  >
+    TODO: Something cool here
+  </div>
+</footer>
+`;
+
+exports[`Storyshots Form Addons 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="control has-addons"
+    >
+      <input
+        className="input"
+        disabled={false}
+        placeholder="Find repository"
+        type="text"
+      />
+      <button
+        className="button is-info"
+        disabled={false}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+    <div
+      className="control has-addons has-addons-centered"
+    >
+      <input
+        className="input"
+        disabled={false}
+        placeholder="Find repository"
+        type="text"
+      />
+      <button
+        className="button is-info"
+        disabled={false}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+    <div
+      className="control has-addons has-addons-right"
+    >
+      <input
+        className="input"
+        disabled={false}
+        placeholder="Find repository"
+        type="text"
+      />
+      <button
+        className="button is-info"
+        disabled={false}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form Colors 1`] = `
+<div
+  className="container"
+>
+  <form>
+    <input
+      className="input is-primary"
+      disabled={false}
+      placeholder="Primary input"
+      type="text"
+    />
+    <input
+      className="input is-info"
+      disabled={false}
+      placeholder="Info input"
+      type="text"
+    />
+    <input
+      className="input is-success"
+      disabled={false}
+      placeholder="Success input"
+      type="text"
+    />
+    <input
+      className="input is-warning"
+      disabled={false}
+      placeholder="Warning input"
+      type="text"
+    />
+    <input
+      className="input is-danger"
+      disabled={false}
+      placeholder="Danger input"
+      type="text"
+    />
+  </form>
+</div>
+`;
+
+exports[`Storyshots Form Disabled 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <input
+      className="input"
+      disabled={true}
+      placeholder="Disabled input"
+      type="text"
+    />
+    <textarea
+      className="textarea"
+      disabled={true}
+      placeholder="Disabled textarea"
+    />
+    <button
+      className="button is-primary"
+      disabled={true}
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      className="button is-link"
+      disabled={true}
+      type="button"
+    >
+      Cancel
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form Form 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <label
+      className="label"
+    >
+      Name
+    </label>
+    <input
+      className="input"
+      disabled={false}
+      placeholder="Text input"
+      type="text"
+    />
+    <label
+      className="label"
+    >
+      Username
+    </label>
+    <input
+      className="input"
+      disabled={false}
+      placeholder="Text input"
+      type="text"
+      value="lin"
+    />
+    <span
+      className="help is-success"
+    >
+      The username is available
+    </span>
+    <label
+      className="label"
+    >
+      Message
+    </label>
+    <textarea
+      className="textarea"
+      placeholder="Textarea"
+    />
+    <button
+      className="button is-primary"
+      disabled={false}
+      type="submit"
+    >
+      Submit
+    </button>
+    <button
+      className="button is-link"
+      disabled={false}
+      type="button"
+    >
+      Cancel
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form Form group 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="control is-grouped"
+  >
+    <div
+      className="control"
+    >
+      Control test
+    </div>
+    <div
+      className="control is-expanded"
+    >
+      <input
+        className="input"
+        disabled={false}
+        placeholder="Find repository"
+        type="text"
+      />
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-info"
+        disabled={false}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form Horizontal 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="control is-horizontal"
+  >
+    <div
+      className="control is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Name"
+          type="text"
+        />
+      </div>
+      <div
+        className="control"
+      >
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Email"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form Sizes 1`] = `
+<div
+  className="container"
+>
+  <form>
+    <input
+      className="input is-small"
+      disabled={false}
+      placeholder="Small input"
+      type="text"
+    />
+    <input
+      className="input"
+      disabled={false}
+      placeholder="Default input"
+      type="text"
+    />
+    <input
+      className="input is-medium"
+      disabled={false}
+      placeholder="Medium input"
+      type="text"
+    />
+    <input
+      className="input is-large"
+      disabled={false}
+      placeholder="Large input"
+      type="text"
+    />
+  </form>
+</div>
+`;
+
+exports[`Storyshots Heading Heading 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <p
+    className="heading"
+  >
+    An element for uppercased tiny headers
+  </p>
+</div>
+`;
+
+exports[`Storyshots Hero Colors 1`] = `
+<div>
+  <section
+    className="hero is-primary"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Primary title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Primary subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-info"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Info title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Info subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-success"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Success title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Success subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-warning"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Warning title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Warning subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-danger"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Danger title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Danger subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-light"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Light title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Light subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-dark"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Dark title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Dark subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Hero Fullheight 1`] = `
+<section
+  className="hero is-fullheight"
+>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="container"
+    >
+      <p
+        className="title is-3"
+      >
+        Hero title
+      </p>
+      <p
+        className="subtitle is-5"
+      >
+        Hero subtitle
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Hero Gradient 1`] = `
+<div>
+  <section
+    className="hero is-bold is-primary"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Primary title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Primary subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-bold is-info"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Info title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Info subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-bold is-success"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Success title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Success subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-bold is-warning"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Warning title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Warning subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-bold is-danger"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Danger title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Danger subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-bold is-light"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Light title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Light subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-bold is-dark"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Dark title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Dark subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Hero Hero 1`] = `
+<section
+  className="hero"
+>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="container"
+    >
+      <p
+        className="title is-3"
+      >
+        Hero title
+      </p>
+      <p
+        className="subtitle is-5"
+      >
+        Hero subtitle
+      </p>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Hero Sizes 1`] = `
+<div>
+  <section
+    className="hero is-primary is-medium"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Medium title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Medium subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="hero is-info is-large"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <p
+          className="title is-3"
+        >
+          Large title
+        </p>
+        <p
+          className="subtitle is-5"
+        >
+          Large subtitle
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Hero With Nav and Tabs 1`] = `
+<section
+  className="hero is-info"
+>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="container has-text-centered"
+    >
+      <p
+        className="title is-3"
+      >
+        Hero title
+      </p>
+      <p
+        className="subtitle is-5"
+      >
+        Hero subtitle
+      </p>
+    </div>
+  </div>
+  <div
+    className="hero-foot"
+  >
+    <div
+      className="tabs is-centered is-boxed"
+    >
+      <ul>
+        <li
+          className="is-active"
+        >
+          <a>
+            Overview
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Modifiers
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Components
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Grid
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Elements
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Layout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Icon Sizes 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <ul>
+    <li>
+      small 
+      <span
+        aria-hidden={true}
+        className="icon is-small"
+      >
+        <i
+          className="fa fa-github"
+        />
+      </span>
+    </li>
+    <li>
+      default 
+      <span
+        aria-hidden={true}
+        className="icon"
+      >
+        <i
+          className="fa fa-github"
+        />
+      </span>
+    </li>
+    <li>
+      medium 
+      <span
+        aria-hidden={true}
+        className="icon is-medium"
+      >
+        <i
+          className="fa fa-github"
+        />
+      </span>
+    </li>
+    <li>
+      large 
+      <span
+        aria-hidden={true}
+        className="icon is-large"
+      >
+        <i
+          className="fa fa-github"
+        />
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Level Centered 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="block"
+    >
+      <div
+        className="level"
+      >
+        <div
+          className="level-item"
+        >
+          <a>
+            Home
+          </a>
+        </div>
+        <div
+          className="level-item"
+        >
+          <a>
+            Menu
+          </a>
+        </div>
+        <div
+          className="level-item"
+        >
+          <img
+            alt=""
+            src="http://bulma.io/images/bulma-type.png"
+            style={
+              Object {
+                "height": "30px",
+              }
+            }
+          />
+        </div>
+        <div
+          className="level-item"
+        >
+          <a>
+            Reservations
+          </a>
+        </div>
+        <div
+          className="level-item"
+        >
+          <a>
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="block"
+    >
+      <div
+        className="level"
+      >
+        <div
+          className="level-item has-text-centered"
+        >
+          <div>
+            <p
+              className="heading"
+            >
+              Tweets
+            </p>
+            <p
+              className="title is-3"
+            >
+              1337
+            </p>
+          </div>
+        </div>
+        <div
+          className="level-item has-text-centered"
+        >
+          <div>
+            <p
+              className="heading"
+            >
+              Following
+            </p>
+            <p
+              className="title is-3"
+            >
+              13
+            </p>
+          </div>
+        </div>
+        <div
+          className="level-item has-text-centered"
+        >
+          <div>
+            <p
+              className="heading"
+            >
+              Followers
+            </p>
+            <p
+              className="title is-3"
+            >
+              42 000
+            </p>
+          </div>
+        </div>
+        <div
+          className="level-item has-text-centered"
+        >
+          <div>
+            <p
+              className="heading"
+            >
+              Likes
+            </p>
+            <p
+              className="title is-3"
+            >
+              666
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Level Level 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="level"
+  >
+    <div
+      className="level-left"
+    >
+      <div
+        className="level-item"
+      >
+        <p
+          className="subtitle is-5"
+        >
+          <strong>
+            123
+          </strong>
+           posts
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-right"
+    >
+      <div
+        className="level-item"
+      >
+        <strong>
+          All
+        </strong>
+      </div>
+      <div
+        className="level-item"
+      >
+        <a>
+          Published
+        </a>
+      </div>
+      <div
+        className="level-item"
+      >
+        <a>
+          Drafts
+        </a>
+      </div>
+      <div
+        className="level-item"
+      >
+        <a>
+          Deleted
+        </a>
+      </div>
+      <div
+        className="level-item"
+      >
+        <button
+          className="button is-success"
+          disabled={false}
+          type="button"
+        >
+          New
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Level Mobile 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="level is-mobile"
+  >
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Tweets
+        </p>
+        <p
+          className="title is-3"
+        >
+          1337
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Following
+        </p>
+        <p
+          className="title is-3"
+        >
+          13
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Followers
+        </p>
+        <p
+          className="title is-3"
+        >
+          42 000
+        </p>
+      </div>
+    </div>
+    <div
+      className="level-item has-text-centered"
+    >
+      <div>
+        <p
+          className="heading"
+        >
+          Likes
+        </p>
+        <p
+          className="title is-3"
+        >
+          666
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Media Form 1`] = `
+<div
+  className="container"
+>
+  <article
+    className="media"
+  >
+    <div
+      className="media-left"
+    >
+      <figure
+        className="image is-64x64"
+      >
+        <img
+          alt={null}
+          onError={[Function]}
+          src="http://bulma.io/images/placeholders/128x128.png"
+        />
+      </figure>
+    </div>
+    <div
+      className="media-content"
+    >
+      <textarea
+        className="textarea"
+        placeholder="Add comment"
+      />
+      <div
+        className="level"
+      >
+        <div
+          className="level-left"
+        >
+          <div
+            className="level-item"
+          >
+            <button
+              className="button is-info"
+              disabled={false}
+              type="button"
+            >
+              Post comment
+            </button>
+          </div>
+        </div>
+        <div
+          className="level-right"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              className="checkbox"
+              disabled={false}
+              type="checkbox"
+            />
+            Press enter to submit
+          </label>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`Storyshots Media Media 1`] = `
+<div
+  className="container"
+>
+  <article
+    className="media"
+  >
+    <div
+      className="media-left"
+    >
+      <figure
+        className="image is-64x64"
+      >
+        <img
+          alt={null}
+          onError={[Function]}
+          src="http://bulma.io/images/placeholders/128x128.png"
+        />
+      </figure>
+    </div>
+    <div
+      className="media-content"
+    >
+      <p>
+        <strong>
+          John Smith
+        </strong>
+        <small>
+          @johnsmith
+        </small>
+        <small>
+          31m
+        </small>
+        <br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      </p>
+      <div
+        className="level"
+      >
+        <div
+          className="level-left"
+        >
+          <div
+            className="level-item"
+          >
+            <a>
+              reply
+            </a>
+          </div>
+          <div
+            className="level-item"
+          >
+            <a>
+              retweet
+            </a>
+          </div>
+          <div
+            className="level-item"
+          >
+            <a>
+              favourite
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="media-right"
+    >
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+    </div>
+  </article>
+</div>
+`;
+
+exports[`Storyshots Media Nesting 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <article
+      className="media"
+    >
+      <div
+        className="media-left"
+      >
+        <figure
+          className="image is-64x64"
+        >
+          <img
+            alt={null}
+            onError={[Function]}
+            src="http://bulma.io/images/placeholders/128x128.png"
+          />
+        </figure>
+      </div>
+      <div
+        className="media-content"
+      >
+        <strong>
+          Barbara Middleton
+        </strong>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+        </p>
+        <small>
+          <a>
+            Like
+          </a>
+           · 
+          <a>
+            Reply
+          </a>
+           · 3 hrs
+        </small>
+        <article
+          className="media"
+        >
+          <div
+            className="media-left"
+          >
+            <figure
+              className="image is-48x48"
+            >
+              <img
+                alt={null}
+                onError={[Function]}
+                src="http://bulma.io/images/placeholders/96x96.png"
+              />
+            </figure>
+          </div>
+          <div
+            className="media-content"
+          >
+            <strong>
+              Sean Brown
+            </strong>
+            <p>
+              Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
+            </p>
+            <small>
+              <a>
+                Like
+              </a>
+               · 
+              <a>
+                Reply
+              </a>
+               · 2 hrs
+            </small>
+            <article
+              className="media"
+            >
+              <div
+                className="media-content"
+              >
+                Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
+              </div>
+            </article>
+            <article
+              className="media"
+            >
+              <div
+                className="media-content"
+              >
+                Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
+              </div>
+            </article>
+          </div>
+        </article>
+        <article
+          className="media"
+        >
+          <div
+            className="media-left"
+          >
+            <figure
+              className="image is-48x48"
+            >
+              <img
+                alt={null}
+                onError={[Function]}
+                src="http://bulma.io/images/placeholders/96x96.png"
+              />
+            </figure>
+          </div>
+          <div
+            className="media-content"
+          >
+            <strong>
+              Kayli Eunice 
+            </strong>
+            <p>
+              Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
+            </p>
+            <small>
+              <a>
+                Like
+              </a>
+               · 
+              <a>
+                Reply
+              </a>
+               · 2 hrs
+            </small>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article
+      className="media"
+    >
+      <div
+        className="media-left"
+      >
+        <figure
+          className="image is-64x64"
+        >
+          <img
+            alt={null}
+            onError={[Function]}
+            src="http://bulma.io/images/placeholders/128x128.png"
+          />
+        </figure>
+      </div>
+      <div
+        className="media-content"
+      >
+        <textarea
+          className="textarea"
+          placeholder="Add comment"
+        />
+        <button
+          className="button is-primary"
+          disabled={false}
+          type="button"
+        >
+          Post comment
+        </button>
+      </div>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Menu Menu 1`] = `
+<div
+  className="container"
+>
+  <aside
+    className="menu"
+  >
+    <p
+      className="menu-label"
+    >
+      General
+    </p>
+    <ul
+      className="menu-list"
+    >
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Customers
+        </a>
+      </li>
+    </ul>
+    <p
+      className="menu-label"
+    >
+      Administration
+    </p>
+    <ul
+      className="menu-list"
+    >
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Team Settings
+        </a>
+      </li>
+      <li>
+        <a
+          className="is-active"
+          href={null}
+        >
+          Manage Your team
+        </a>
+      </li>
+      <ul>
+        <li>
+          <a
+            className=""
+            href={null}
+          >
+            Lol
+          </a>
+        </li>
+      </ul>
+    </ul>
+    <ul
+      className="menu-list"
+    >
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Invitations
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Cloud Storage Environment Settings
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Authentication
+        </a>
+      </li>
+    </ul>
+    <p
+      className="menu-label"
+    >
+      Transactions
+    </p>
+    <ul
+      className="menu-list"
+    >
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Payments
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Transfers
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href={null}
+        >
+          Balance
+        </a>
+      </li>
+    </ul>
+  </aside>
+</div>
+`;
+
+exports[`Storyshots Message Body only 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <article
+      className="message"
+    >
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-dark"
+    >
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-primary"
+    >
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-info"
+    >
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-success"
+    >
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-warning"
+    >
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-danger"
+    >
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Message Header 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <article
+      className="message"
+    >
+      <div
+        className="message-header"
+      >
+        Hello World
+        <button
+          aria-label="Lukk"
+          className="delete"
+        />
+      </div>
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-dark"
+    >
+      <div
+        className="message-header"
+      >
+        Hello World
+        <button
+          aria-label="Lukk"
+          className="delete"
+        />
+      </div>
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-primary"
+    >
+      <div
+        className="message-header"
+      >
+        Hello World
+        <button
+          aria-label="Lukk"
+          className="delete"
+        />
+      </div>
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-info"
+    >
+      <div
+        className="message-header"
+      >
+        Hello World
+        <button
+          aria-label="Lukk"
+          className="delete"
+        />
+      </div>
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-success"
+    >
+      <div
+        className="message-header"
+      >
+        Hello World
+        <button
+          aria-label="Lukk"
+          className="delete"
+        />
+      </div>
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-warning"
+    >
+      <div
+        className="message-header"
+      >
+        Hello World
+        <button
+          aria-label="Lukk"
+          className="delete"
+        />
+      </div>
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+    <article
+      className="message is-danger"
+    >
+      <div
+        className="message-header"
+      >
+        Hello World
+        <button
+          aria-label="Lukk"
+          className="delete"
+        />
+      </div>
+      <div
+        className="message-body"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <strong>
+          Pellentesque risus mi
+        </strong>
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        <a>
+          felis venenatis
+        </a>
+         efficitur. Aenean ac 
+        <em>
+          eleifend lacus
+        </em>
+        , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+      </div>
+    </article>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Modal Classic 1`] = `null`;
+
+exports[`Storyshots Modal Fancy 1`] = `null`;
+
+exports[`Storyshots Nav Nav 1`] = `
+<nav
+  className="nav has-shadow"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="nav-left"
+    >
+      <a
+        className="nav-item"
+      >
+        <img
+          alt="Bulma logo"
+          src="http://bulma.io/images/bulma-logo.png"
+        />
+      </a>
+    </div>
+    <div
+      className="nav-center"
+    >
+      <a
+        className="nav-item is-active is-tab"
+      >
+        Link 1
+      </a>
+      <a
+        className="nav-item"
+      >
+        Link 2
+      </a>
+      <a
+        className="nav-item"
+      >
+        Test
+      </a>
+    </div>
+    <span
+      className="nav-toggle"
+    >
+      <span />
+      <span />
+      <span />
+    </span>
+    <div
+      className="nav-right nav-menu"
+    >
+      <a
+        className="nav-item"
+      >
+        Documentation
+      </a>
+      <span
+        className="nav-item"
+      >
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          Documentation
+        </button>
+      </span>
+      <a
+        className="nav-item"
+      >
+        Blog
+      </a>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Storyshots Notification  1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="notification"
+    >
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </div>
+    <div
+      className="notification is-primary"
+    >
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </div>
+    <div
+      className="notification is-info"
+    >
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </div>
+    <div
+      className="notification is-success"
+    >
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </div>
+    <div
+      className="notification is-warning"
+    >
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </div>
+    <div
+      className="notification is-danger"
+    >
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pagination Centered 1`] = `
+<div
+  className="container"
+>
+  <nav
+    className="pagination is-centered"
+  >
+    <a
+      className="pagination-previous"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next is-disabled"
+    >
+      Next
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          84
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Pagination Disabled 1`] = `
+<div
+  className="container"
+>
+  <nav
+    className="pagination"
+  >
+    <a
+      className="pagination-previous"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next is-disabled"
+    >
+      Next
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          className="pagination-link is-current"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          2
+        </a>
+      </li>
+      <li>
+        <a
+          className="pagination-link is-disabled"
+        >
+          3
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Pagination Pagination 1`] = `
+<div
+  className="container"
+>
+  <nav
+    className="pagination"
+  >
+    <a
+      className="pagination-previous"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next is-disabled"
+    >
+      Next
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          84
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Pagination Right 1`] = `
+<div
+  className="container"
+>
+  <nav
+    className="pagination is-right"
+  >
+    <a
+      className="pagination-previous"
+    >
+      Previous
+    </a>
+    <a
+      className="pagination-next is-disabled"
+    >
+      Next
+    </a>
+    <ul
+      className="pagination-list"
+    >
+      <li>
+        <a
+          className="pagination-link"
+        >
+          1
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          45
+        </a>
+      </li>
+      <li>
+        <a
+          className="pagination-link is-current"
+        >
+          46
+        </a>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          47
+        </a>
+      </li>
+      <li>
+        <span
+          className="pagination-ellipsis"
+        >
+          …
+        </span>
+      </li>
+      <li>
+        <a
+          className="pagination-link"
+        >
+          84
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Progress Colors 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <progress
+      className="progress"
+      max="100"
+      value="15"
+    >
+      15%
+    </progress>
+    <progress
+      className="progress is-primary"
+      max="100"
+      value="30"
+    >
+      30%
+    </progress>
+    <progress
+      className="progress is-info"
+      max="100"
+      value="45"
+    >
+      45%
+    </progress>
+    <progress
+      className="progress is-success"
+      max="100"
+      value="60"
+    >
+      60%
+    </progress>
+    <progress
+      className="progress is-warning"
+      max="100"
+      value="75"
+    >
+      75%
+    </progress>
+    <progress
+      className="progress is-danger"
+      max="100"
+      value="90"
+    >
+      90%
+    </progress>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Progress Sizes 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <progress
+      className="progress is-small"
+      max="100"
+      value="15"
+    >
+      15%
+    </progress>
+    <progress
+      className="progress"
+      max="100"
+      value="30"
+    >
+      30%
+    </progress>
+    <progress
+      className="progress is-medium"
+      max="100"
+      value="45"
+    >
+      45%
+    </progress>
+    <progress
+      className="progress is-large"
+      max="100"
+      value="60"
+    >
+      60%
+    </progress>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table Bordered 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table is-bordered"
+  >
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Lars Ivar
+        </td>
+        <td>
+          Næss
+        </td>
+        <td>
+          @lin
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Christer
+        </td>
+        <td>
+          Kjellesvig
+        </td>
+        <td>
+          @ckj
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td
+          colSpan="2"
+        >
+          Mister boss man
+        </td>
+        <td>
+          @ea
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Table Combined 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table is-bordered is-narrow is-striped"
+  >
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Lars Ivar
+        </td>
+        <td>
+          Næss
+        </td>
+        <td>
+          @lin
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Christer
+        </td>
+        <td>
+          Kjellesvig
+        </td>
+        <td>
+          @ckj
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td
+          colSpan="2"
+        >
+          Mister boss man
+        </td>
+        <td>
+          @ea
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Table Default 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Lars Ivar
+        </td>
+        <td>
+          Næss
+        </td>
+        <td>
+          @lin
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Christer
+        </td>
+        <td>
+          Kjellesvig
+        </td>
+        <td>
+          @ckj
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td
+          colSpan="2"
+        >
+          Mister boss man
+        </td>
+        <td>
+          @ea
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Table Narrow 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table is-narrow"
+  >
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Lars Ivar
+        </td>
+        <td>
+          Næss
+        </td>
+        <td>
+          @lin
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Christer
+        </td>
+        <td>
+          Kjellesvig
+        </td>
+        <td>
+          @ckj
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td
+          colSpan="2"
+        >
+          Mister boss man
+        </td>
+        <td>
+          @ea
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Table Striped 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table is-striped"
+  >
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Lars Ivar
+        </td>
+        <td>
+          Næss
+        </td>
+        <td>
+          @lin
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Christer
+        </td>
+        <td>
+          Kjellesvig
+        </td>
+        <td>
+          @ckj
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td
+          colSpan="2"
+        >
+          Mister boss man
+        </td>
+        <td>
+          @ea
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Tabs Alignment 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="tabs is-centered"
+    >
+      <ul>
+        <li
+          className="is-active"
+        >
+          <a>
+            Pictures
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Music
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Videos
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Documents
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="tabs is-right"
+    >
+      <ul>
+        <li
+          className="is-active"
+        >
+          <a>
+            Pictures
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Music
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Videos
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Documents
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tabs Borders 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="tabs is-boxed"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tabs Fullwidth 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="tabs is-fullwidth"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tabs Sizes 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="tabs is-small"
+    >
+      <ul>
+        <li
+          className="is-active"
+        >
+          <a>
+            Pictures
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Music
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Videos
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Documents
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="tabs"
+    >
+      <ul>
+        <li
+          className="is-active"
+        >
+          <a>
+            Pictures
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Music
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Videos
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Documents
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="tabs is-medium"
+    >
+      <ul>
+        <li
+          className="is-active"
+        >
+          <a>
+            Pictures
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Music
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Videos
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Documents
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="tabs is-large"
+    >
+      <ul>
+        <li
+          className="is-active"
+        >
+          <a>
+            Pictures
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Music
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Videos
+          </a>
+        </li>
+        <li
+          className=""
+        >
+          <a>
+            Documents
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tabs Tabs 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="tabs"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tabs Toggle 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="tabs is-toggle"
+  >
+    <ul>
+      <li
+        className="is-active"
+      >
+        <a>
+          Pictures
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Music
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Videos
+        </a>
+      </li>
+      <li
+        className=""
+      >
+        <a>
+          Documents
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Colors 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <span
+      className="tag is-black"
+    >
+      Black
+    </span>
+    <span
+      className="tag is-dark"
+    >
+      Dark
+    </span>
+    <span
+      className="tag is-light"
+    >
+      Light
+    </span>
+    <span
+      className="tag is-white"
+    >
+      White
+    </span>
+    <span
+      className="tag is-primary"
+    >
+      Primary
+    </span>
+    <span
+      className="tag is-info"
+    >
+      Info
+    </span>
+    <span
+      className="tag is-success"
+    >
+      Success
+    </span>
+    <span
+      className="tag is-warning"
+    >
+      Warning
+    </span>
+    <span
+      className="tag is-danger"
+    >
+      Danger
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Delete button 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <span
+      className="tag"
+    >
+      Hello
+      <button
+        aria-label="Lukk"
+        className="delete is-small"
+      />
+    </span>
+    <span
+      className="tag is-info is-medium"
+    >
+      World
+      <button
+        aria-label="Lukk"
+        className="delete is-small"
+      />
+    </span>
+    <span
+      className="tag is-warning is-large"
+    >
+      !!!!
+      <button
+        aria-label="Lukk"
+        className="delete"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Sizes 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <span
+      className="tag is-medium"
+    >
+      Medium
+    </span>
+    <span
+      className="tag is-large"
+    >
+      Large
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Tag 1`] = `
+<div
+  className="container"
+>
+  <span
+    className="tag"
+  >
+    Tag label
+  </span>
+</div>
+`;
+
+exports[`Storyshots Tiles  1`] = `
+<div
+  className="container"
+>
+  <div
+    className="tile is-ancestor"
+  >
+    <div
+      className="tile is-parent is-vertical"
+    >
+      <div
+        className="tile is-child"
+      >
+        <div
+          className="notification is-primary"
+        >
+          Vertical...
+        </div>
+        <div
+          className="notification is-warning"
+        >
+          ...tiles
+        </div>
+      </div>
+    </div>
+    <div
+      className="tile is-parent"
+    >
+      <div
+        className="tile is-child"
+      >
+        <div
+          className="notification is-danger"
+        >
+          Wide tile
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Title Combined 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div>
+    <div
+      className="block"
+    >
+      <p
+        className="title is-1"
+      >
+        Title 1
+      </p>
+      <p
+        className="subtitle is-3"
+      >
+        Subtitle 3
+      </p>
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="title is-2"
+      >
+        Title 2
+      </p>
+      <p
+        className="subtitle is-4"
+      >
+        Subtitle 4
+      </p>
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="title is-3"
+      >
+        Title 3 (default)
+      </p>
+      <p
+        className="subtitle is-5"
+      >
+        Subtitle 5 (default)
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Title Sizes 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div>
+    <p
+      className="title is-1"
+    >
+      Title 1
+    </p>
+    <p
+      className="title is-2"
+    >
+      Title 2
+    </p>
+    <p
+      className="title is-3"
+    >
+      Title 3 (default size)
+    </p>
+    <p
+      className="title is-4"
+    >
+      Title 5
+    </p>
+    <p
+      className="title is-5"
+    >
+      Title 5
+    </p>
+    <p
+      className="title is-6"
+    >
+      Title 6
+    </p>
+    <p
+      className="subtitle is-5"
+    >
+      Subtitle 1
+    </p>
+    <p
+      className="subtitle is-5"
+    >
+      Subtitle 2
+    </p>
+    <p
+      className="subtitle is-5"
+    >
+      Subtitle 3
+    </p>
+    <p
+      className="subtitle is-5"
+    >
+      Subtitle 5 (default size)
+    </p>
+    <p
+      className="subtitle is-5"
+    >
+      Subtitle 6
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Title Title 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div>
+    <p
+      className="title is-3"
+    >
+      Title
+    </p>
+    <p
+      className="subtitle is-5"
+    >
+      Subtitle
+    </p>
+  </div>
+</div>
+`;

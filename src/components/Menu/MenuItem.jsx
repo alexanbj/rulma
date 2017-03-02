@@ -1,11 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 
-
-/*
- * This component can be stateless
- * and receive props and then decide whether it should be
- * open or closed
- * */
+// this component generates lint error:
+// Visible, non-interactive elements should not have mouse or keyboard event listeners
 const MenuItem = ({ children, open, onClick, ...props }) => {
   const hasSingleChild = children.constructor.name === 'Object';
   return (
@@ -22,6 +18,15 @@ const MenuItem = ({ children, open, onClick, ...props }) => {
 MenuItem.propTypes = {
   open: PropTypes.bool,
   onClick: PropTypes.func,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+  ]).isRequired,
+};
+
+MenuItem.defaultProps = {
+  open: false,
+  onClick: () => {},
 };
 
 

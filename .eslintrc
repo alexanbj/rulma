@@ -1,4 +1,3 @@
 {
-  "parser": "babel-eslint",
-  "extends": "airbnb"
+  "extends": "eslint-config-airbnb"
 }

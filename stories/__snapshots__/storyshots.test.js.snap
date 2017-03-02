@@ -4063,7 +4063,7 @@ exports[`Storyshots Nav Nav 1`] = `
       className="nav-left"
     >
       <a
-        className="nav-item"
+        className="nav-item is-brand"
       >
         <img
           alt="Bulma logo"

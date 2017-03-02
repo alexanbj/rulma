@@ -7,7 +7,7 @@ storiesOf('Nav', module)
     <Nav shadow>
       <Container>
         <Nav.Left>
-          <Nav.Item>
+          <Nav.Item brand>
             <a>
               <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" />
             </a>

@@ -12,3 +12,4 @@ es
 # other
 .DS_STORE
 .idea
+*.log

@@ -1,25 +1,33 @@
 import React, { PropTypes } from 'react';
-import classNames from 'classnames';
 
-const MenuItem = ({ active, className, ...props }) => (
-  <li>
-    <a
-      className={classNames(className, { 'is-active': active })}
+// this component generates lint error:
+// Visible, non-interactive elements should not have mouse or keyboard event listeners
+const MenuItem = ({ children, open, onClick, ...props }) => {
+  const hasSingleChild = children.constructor.name === 'Object';
+  return (
+    <li
+      onClick={onClick}
       {...props}
-    />
-  </li>
-);
+    >
+      {hasSingleChild ? children : children[0]}
+      {hasSingleChild ? null : open && children[1]}
+    </li>
+  );
+};
 
 MenuItem.propTypes = {
-  active: PropTypes.bool,
-  className: PropTypes.string,
-  href: PropTypes.string,
+  open: PropTypes.bool,
+  onClick: PropTypes.func,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+  ]).isRequired,
 };
 
 MenuItem.defaultProps = {
-  active: false,
-  className: null,
-  href: null,
+  open: false,
+  onClick: () => {},
 };
+
 
 export default MenuItem;

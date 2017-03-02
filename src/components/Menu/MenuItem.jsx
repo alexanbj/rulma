@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 
 /*
@@ -6,26 +6,23 @@ import React, { Component } from 'react';
  * and receive props and then decide whether it should be
  * open or closed
  * */
-class MenuItem extends Component {
-  state = {
-    open: false,
-  };
+const MenuItem = ({ children, open, onClick, ...props }) => {
+  const hasSingleChild = children.constructor.name === 'Object';
+  return (
+    <li
+      onClick={onClick}
+      {...props}
+    >
+      {hasSingleChild ? children : children[0]}
+      {hasSingleChild ? null : open && children[1]}
+    </li>
+  );
+};
 
-  render() {
-    const { children, ...props } = this.props;
-    const { open } = this.state;
-    const hasSingleChild = children.constructor.name === 'Object';
-    return (
-      <li
-        onClick={() => this.setState(prevState => ({ open: !prevState.open }))}
-        {...props}
-      >
-        {hasSingleChild ? children : children[0]}
-        {hasSingleChild ? null : open && children[1]}
-      </li>
-    );
-  }
-}
+MenuItem.propTypes = {
+  open: PropTypes.bool,
+  onClick: PropTypes.func,
+};
 
 
 export default MenuItem;

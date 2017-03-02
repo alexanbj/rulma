@@ -5,6 +5,11 @@
   "main": "lib/index",
   "module": "es/index",
   "jsnext:main": "es/index",
+  "files": [
+    "lib",
+    "es",
+    "src"
+  ],
   "scripts": {
     "clean": "rimraf lib es",
     "build": "npm run build:commonjs && npm run build:es",

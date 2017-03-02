@@ -24,5 +24,5 @@ import 'bulma/css/bulma.css';
 
 If not using webpack, you can simply include it in directly in the html `<head>` section from some CDN of your choosing:
 ```html
-<link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.css" />
+<link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.css" />
 ```

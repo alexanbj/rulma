@@ -12,11 +12,17 @@ npm install --save rulma
 Include either Bulma's CSS (or your modified version if you've changed the Bulma variables).
 
 If you are using webpack with CSS loader:
+
+Install Bulma:
+```bash
+npm install --save bulma
+```
+and import Bulma's CSS somewhere in your application:
 ```js
 import 'bulma/css/bulma.css';
-
 ```
-Otherwise, include it in the html `<head>` section:
+
+If not using webpack, you can simply include it in directly in the html `<head>` section from some CDN of your choosing:
 ```html
 <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.css" />
 ```

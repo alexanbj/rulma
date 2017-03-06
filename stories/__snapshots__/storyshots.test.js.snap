@@ -2849,7 +2849,7 @@ exports[`Storyshots Hero With Nav and Tabs 1`] = `
           </a>
         </div>
         <div
-          className="nav-right nav-menu"
+          className="nav-right"
         >
           <a
             className="nav-item"
@@ -4106,7 +4106,7 @@ exports[`Storyshots Modal Classic 1`] = `null`;
 
 exports[`Storyshots Modal Fancy 1`] = `null`;
 
-exports[`Storyshots Nav Nav 1`] = `
+exports[`Storyshots Nav Modifiers 1`] = `
 <nav
   className="nav has-shadow"
 >
@@ -4124,28 +4124,30 @@ exports[`Storyshots Nav Nav 1`] = `
           src="http://bulma.io/images/bulma-logo.png"
         />
       </a>
-    </div>
-    <div
-      className="nav-center"
-    >
       <a
-        className="nav-item is-active is-tab"
+        className="nav-item is-active is-tab is-hidden-mobile"
       >
-        Link 1
+        Home
       </a>
       <a
-        className="nav-item"
+        className="nav-item is-tab is-hidden-mobile"
       >
-        Link 2
+        Features
       </a>
       <a
-        className="nav-item"
+        className="nav-item is-tab is-hidden-mobile"
       >
-        Test
+        Pricing
+      </a>
+      <a
+        className="nav-item is-tab is-hidden-mobile"
+      >
+        About
       </a>
     </div>
     <span
       className="nav-toggle"
+      onClick={[Function]}
     >
       <span />
       <span />
@@ -4155,27 +4157,132 @@ exports[`Storyshots Nav Nav 1`] = `
       className="nav-right nav-menu"
     >
       <a
-        className="nav-item"
+        className="nav-item is-active is-tab is-hidden-tablet"
       >
-        Documentation
+        Home
       </a>
-      <span
-        className="nav-item"
-      >
-        <button
-          className="button"
-          disabled={false}
-          type="button"
-        >
-          Documentation
-        </button>
-      </span>
       <a
-        className="nav-item"
+        className="nav-item is-tab is-hidden-tablet"
       >
-        Blog
+        Features
+      </a>
+      <a
+        className="nav-item is-tab is-hidden-tablet"
+      >
+        Pricing
+      </a>
+      <a
+        className="nav-item is-tab is-hidden-tablet"
+      >
+        About
+      </a>
+      <a
+        className="nav-item is-tab"
+      >
+        Profile
+      </a>
+      <a
+        className="nav-item is-tab"
+      >
+        Log out
       </a>
     </div>
+  </div>
+</nav>
+`;
+
+exports[`Storyshots Nav Nav 1`] = `
+<nav
+  className="nav"
+>
+  <div
+    className="nav-left"
+  >
+    <a
+      className="nav-item is-brand"
+    >
+      <img
+        alt="Bulma logo"
+        src="http://bulma.io/images/bulma-logo.png"
+      />
+    </a>
+  </div>
+  <div
+    className="nav-center"
+  >
+    <a
+      className="nav-item"
+    >
+      <span
+        aria-hidden={true}
+        className="icon"
+      >
+        <i
+          className="fa fa-github"
+        />
+      </span>
+    </a>
+    <a
+      className="nav-item"
+    >
+      <span
+        aria-hidden={true}
+        className="icon"
+      >
+        <i
+          className="fa fa-twitter"
+        />
+      </span>
+    </a>
+  </div>
+  <span
+    className="nav-toggle"
+    onClick={[Function]}
+  >
+    <span />
+    <span />
+    <span />
+  </span>
+  <div
+    className="nav-right nav-menu"
+  >
+    <a
+      className="nav-item"
+    >
+      Home
+    </a>
+    <a
+      className="nav-item"
+    >
+      Documentation
+    </a>
+    <a
+      className="nav-item"
+    >
+      Blog
+    </a>
+    <span
+      className="nav-item"
+    >
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        Tweet
+      </button>
+    </span>
+    <span
+      className="nav-item"
+    >
+      <button
+        className="button is-primary"
+        disabled={false}
+        type="button"
+      >
+        Download
+      </button>
+    </span>
   </div>
 </nav>
 `;

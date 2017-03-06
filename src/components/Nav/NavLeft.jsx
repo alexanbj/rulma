@@ -1,15 +1,16 @@
-import React, { PropTypes } from 'react';
-import classNames from 'classnames';
+import React from 'react';
 
-const NavLeft = ({ className, ...props }) =>
-  <div className={classNames('nav-left', className)} {...props} />;
+import classNames, { modifierPropTypes } from '../../modifiers';
 
-NavLeft.propTypes = {
-  className: PropTypes.string,
+const NavLeft = (props) => {
+  const [classes, restProps] = classNames(props, 'nav-left');
+  return (
+    <div className={classes} {...restProps} />
+  );
 };
 
-NavLeft.defaultProps = {
-  className: null,
+NavLeft.propTypes = {
+  ...modifierPropTypes,
 };
 
 export default NavLeft;

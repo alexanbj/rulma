@@ -9,7 +9,7 @@ const NavItem = ({ active, brand, children, tab, ...props }) => {
     'is-active': active,
     'is-brand': brand,
     'is-tab': tab,
-  }, child.props.className);
+  });
 
   return React.cloneElement(child, { className: classes, ...restProps });
 };
@@ -17,7 +17,6 @@ const NavItem = ({ active, brand, children, tab, ...props }) => {
 NavItem.propTypes = {
   active: PropTypes.bool,
   brand: PropTypes.bool,
-  children: PropTypes.element.isRequired,
   ...modifierPropTypes,
   tab: PropTypes.bool,
 };

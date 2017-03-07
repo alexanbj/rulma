@@ -3007,6 +3007,227 @@ exports[`Storyshots Icon Sizes 1`] = `
 </div>
 `;
 
+exports[`Storyshots ImageContainer Fixed square images 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table is-bordered"
+  >
+    <tbody>
+      <tr>
+        <td>
+          16x16
+        </td>
+        <td>
+          <figure
+            className="image is-16x16"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/16x16.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          24x24
+        </td>
+        <td>
+          <figure
+            className="image is-24x24"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/24x24.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          32x32
+        </td>
+        <td>
+          <figure
+            className="image is-32x32"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/32x32.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          48x48
+        </td>
+        <td>
+          <figure
+            className="image is-48x48"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/48x48.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          64x64
+        </td>
+        <td>
+          <figure
+            className="image is-64x64"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/64x64.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          96x96
+        </td>
+        <td>
+          <figure
+            className="image is-96x96"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/96x96.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          128x128
+        </td>
+        <td>
+          <figure
+            className="image is-128x128"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/128x128.png"
+            />
+          </figure>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots ImageContainer Responsive images with ratios 1`] = `
+<div
+  className="container"
+>
+  <table
+    className="table is-bordered"
+  >
+    <tbody>
+      <tr>
+        <td>
+          square
+        </td>
+        <td>
+          <figure
+            className="image is-square"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/480x480.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          1by1
+        </td>
+        <td>
+          <figure
+            className="image is-1by1"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/480x480.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          4by3
+        </td>
+        <td>
+          <figure
+            className="image is-4by3"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/640x480.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3by2
+        </td>
+        <td>
+          <figure
+            className="image is-3by2"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/480x320.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          16by9
+        </td>
+        <td>
+          <figure
+            className="image is-16by9"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/640x360.png"
+            />
+          </figure>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2by1
+        </td>
+        <td>
+          <figure
+            className="image is-2by1"
+          >
+            <img
+              alt="placeholder"
+              src="http://bulma.io/images/placeholders/640x320.png"
+            />
+          </figure>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Level Centered 1`] = `
 <div
   className="container"
@@ -3296,8 +3517,7 @@ exports[`Storyshots Media Form 1`] = `
         className="image is-64x64"
       >
         <img
-          alt={null}
-          onError={[Function]}
+          alt="placeholder"
           src="http://bulma.io/images/placeholders/128x128.png"
         />
       </figure>
@@ -3361,8 +3581,7 @@ exports[`Storyshots Media Media 1`] = `
         className="image is-64x64"
       >
         <img
-          alt={null}
-          onError={[Function]}
+          alt="placeholder"
           src="http://bulma.io/images/placeholders/128x128.png"
         />
       </figure>
@@ -3440,8 +3659,7 @@ exports[`Storyshots Media Nesting 1`] = `
           className="image is-64x64"
         >
           <img
-            alt={null}
-            onError={[Function]}
+            alt="placeholder"
             src="http://bulma.io/images/placeholders/128x128.png"
           />
         </figure>
@@ -3475,8 +3693,7 @@ exports[`Storyshots Media Nesting 1`] = `
               className="image is-48x48"
             >
               <img
-                alt={null}
-                onError={[Function]}
+                alt="placeholder"
                 src="http://bulma.io/images/placeholders/96x96.png"
               />
             </figure>
@@ -3530,8 +3747,7 @@ exports[`Storyshots Media Nesting 1`] = `
               className="image is-48x48"
             >
               <img
-                alt={null}
-                onError={[Function]}
+                alt="placeholder"
                 src="http://bulma.io/images/placeholders/96x96.png"
               />
             </figure>
@@ -3569,8 +3785,7 @@ exports[`Storyshots Media Nesting 1`] = `
           className="image is-64x64"
         >
           <img
-            alt={null}
-            onError={[Function]}
+            alt="placeholder"
             src="http://bulma.io/images/placeholders/128x128.png"
           />
         </figure>

@@ -16,7 +16,7 @@ import Group from './control/Group';
 import Heading from './elements/Heading';
 import Hero from './layout/Hero';
 import Icon from './elements/Icon';
-import Image from './elements/Image';
+import ImageContainer from './elements/ImageContainer';
 import Level from './components/Level';
 import Media from './components/Media';
 import Menu from './components/Menu';
@@ -52,7 +52,7 @@ export {
   Heading,
   Hero,
   Icon,
-  Image,
+  ImageContainer,
   Level,
   Media,
   Menu,

@@ -4,18 +4,28 @@ import classNames from '../modifiers';
 
 /**
 * This is _the_ control component. It is used for spacing between form controls and buttons.
-* Use this directly in really special cases,
-* although the recommeneded approach is to use <Addons />, <Group /> etc.
 */
-const Control = ({ addons, centered, expanded, grouped, horizontal, loading, right, ...props }) => {
+const Control = ({
+    addons, addonsCentered, addonsRight,
+    expanded,
+    grouped, groupedCentered, groupedRight,
+    horizontal,
+    icon, iconRight,
+    loading,
+    ...props
+  }) => {
   const [classes, restProps] = classNames(props, 'control', {
     'has-addons': addons,
-    'has-addons-centered': centered,
+    'has-addons-centered': addonsCentered,
+    'has-addons-right': addonsRight,
     'is-expanded': expanded,
     'is-grouped': grouped,
+    'is-grouped-centered': groupedCentered,
+    'is-grouped-right': groupedRight,
     'is-horizontal': horizontal,
+    'has-icon': icon,
+    'has-icon-right': iconRight,
     'is-loading': loading,
-    'has-addons-right': right,
   });
 
   return (
@@ -23,26 +33,32 @@ const Control = ({ addons, centered, expanded, grouped, horizontal, loading, rig
   );
 };
 
-Control.isControl = true;
-
 Control.propTypes = {
   addons: PropTypes.bool,
-  centered: PropTypes.bool,
-  grouped: PropTypes.bool,
-  horizontal: PropTypes.bool,
+  addonsCentered: PropTypes.bool,
+  addonsRight: PropTypes.bool,
   expanded: PropTypes.bool,
+  grouped: PropTypes.bool,
+  groupedCentered: PropTypes.bool,
+  groupedRight: PropTypes.bool,
+  horizontal: PropTypes.bool,
+  icon: PropTypes.bool,
+  iconRight: PropTypes.bool,
   loading: PropTypes.bool,
-  right: PropTypes.bool,
 };
 
 Control.defaultProps = {
   addons: false,
-  centered: false,
+  addonsCentered: false,
+  addonsRight: false,
   expanded: false,
   grouped: false,
+  groupedCentered: false,
+  groupedRight: false,
   horizontal: false,
+  icon: false,
+  iconRight: false,
   loading: false,
-  right: false,
 };
 
 export default Control;

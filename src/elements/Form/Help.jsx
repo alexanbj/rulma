@@ -5,7 +5,7 @@ import classNames, { colorPropType } from '../../modifiers';
 const Help = (props) => {
   const [classes, restProps] = classNames(props, 'help');
   return (
-    <span className={classes} {...restProps} />
+    <div className={classes} {...restProps} />
   );
 };
 

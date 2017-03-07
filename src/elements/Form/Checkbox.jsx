@@ -1,27 +1,50 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-const Checkbox = ({ className, children, disabled, ...props }) =>
-  <label className={classNames('checkbox', { 'is-disabled': disabled })}>
-    <input
-      className={classNames('checkbox', className)}
-      disabled={disabled}
-      type="checkbox"
-      {...props}
-    />
-    {children}
-  </label>;
+import Control from '../../control/Control';
+
+const Checkbox = ({ children, className, control, disabled, id, ...props }) => {
+  const checkbox = (
+    <label
+      className={classNames('checkbox', { 'is-disabled': disabled })}
+      htmlFor={id}
+    >
+      <input
+        className={className}
+        disabled={disabled}
+        id={id}
+        type="checkbox"
+        {...props}
+      />
+      {children}
+    </label>
+  );
+
+  if (control) {
+    return (
+      <Control>
+        {checkbox}
+      </Control>
+    );
+  }
+
+  return checkbox;
+};
 
 Checkbox.propTypes = {
-  className: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
+  control: PropTypes.bool,      // Wraps the Checkbox in a <Control />
   disabled: PropTypes.bool,
+  id: PropTypes.string,         // Will be set as the id on the checkbox and as htmlFor on the label
 };
 
 Checkbox.defaultProps = {
-  className: null,
   children: null,
+  className: null,
+  control: false,
   disabled: false,
+  id: null,
 };
 
 export default Checkbox;

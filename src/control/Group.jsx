@@ -3,29 +3,18 @@ import React, { PropTypes } from 'react';
 import Control from './Control';
 
 // If the child isn't already another Control element, we need to wrap it with a control
-const Group = ({ children, ...props }) => (
-  <Control grouped {...props}>
-    {React.Children.map(children, (child) => {
-      if (child.type && child.type.isControl) {
-        return child;
-      }
-
-      return (
-        <Control>
-          {child}
-        </Control>
-      );
-    })}
-  </Control>
-  );
+const Group = ({ centered, right, ...props }) => (
+  <Control grouped groupedCentered={centered} groupedRight={right} {...props} />
+);
 
 Group.propTypes = {
-  children: PropTypes.any,
+  centered: PropTypes.bool,
+  right: PropTypes.bool,
 };
 
 Group.defaultProps = {
-  children: null,
+  centered: false,
+  right: false,
 };
-
 
 export default Group;

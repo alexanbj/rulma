@@ -11,7 +11,6 @@ const Icon = ({ className, icon, spin, fw, size, ...rest }) => {
 
   return (
     <span
-      aria-hidden
       className={classNames('icon', className, { [`is-${size}`]: size })}
       {...rest}
     >

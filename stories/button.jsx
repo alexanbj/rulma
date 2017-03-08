@@ -4,11 +4,11 @@ import { Addons, Container, Button, Group, Icon, Notification } from '../src/';
 
 function buttons(props, text) {
   return [
-    <Button key="default" {...props}>{text}</Button>,
-    <Button key="primary" {...props} color="primary">{text}</Button>,
-    <Button key="info" {...props} color="info">{text}</Button>,
-    <Button key="success" {...props} color="success">{text}</Button>,
-    <Button key="danger" {...props} color="danger">{text}</Button>,
+    <Button control key="default" {...props}>{text}</Button>,
+    <Button control key="primary" {...props} color="primary">{text}</Button>,
+    <Button control key="info" {...props} color="info">{text}</Button>,
+    <Button control key="success" {...props} color="success">{text}</Button>,
+    <Button control key="danger" {...props} color="danger">{text}</Button>,
   ];
 }
 
@@ -20,46 +20,46 @@ storiesOf('Button', module)
   ))
   .add('Colors', () =>
     <div>
-      <Group>
-        <Button>Button</Button>
-        <Button color="white">White</Button>
-        <Button color="light">Light</Button>
-        <Button color="dark">Dark</Button>
-        <Button color="black">Black</Button>
-        <Button color="link">Link</Button>
+      <Group centered>
+        <Button control>Button</Button>
+        <Button control color="white">White</Button>
+        <Button control color="light">Light</Button>
+        <Button control color="dark">Dark</Button>
+        <Button control color="black">Black</Button>
+        <Button control color="link">Link</Button>
       </Group>
-      <Group>
-        <Button color="primary">Primary</Button>
-        <Button color="info">Info</Button>
-        <Button color="success">Success</Button>
-        <Button color="warning">Warning</Button>
-        <Button color="danger">Danger</Button>
+      <Group centered>
+        <Button control color="primary">Primary</Button>
+        <Button control color="info">Info</Button>
+        <Button control color="success">Success</Button>
+        <Button control color="warning">Warning</Button>
+        <Button control color="danger">Danger</Button>
       </Group>
     </div>,
   )
   .add('Sizes', () =>
-    <Group>
-      <Button size="small">Small</Button>
-      <Button>Normal</Button>
-      <Button size="medium">Medium</Button>
-      <Button size="large">Large</Button>
+    <Group centered>
+      <Button control size="small">Small</Button>
+      <Button control>Normal</Button>
+      <Button control size="medium">Medium</Button>
+      <Button control size="large">Large</Button>
     </Group>,
   )
   .add('Outlined', () =>
-    <Group>
+    <Group centered>
       {buttons({ outlined: true }, 'Outlined')}
     </Group>,
   )
   .add('Inverted', () =>
     <Notification color="primary">
-      <Group>
+      <Group centered>
         {buttons({ inverted: true }, 'Inverted').slice(1)}
       </Group>
     </Notification>,
   )
   .add('Inverted and outlined', () =>
     <Notification color="primary">
-      <Group textCentered>
+      <Group centered>
         {buttons({ inverted: true, outlined: true }, 'Inverted').slice(1)}
       </Group>
     </Notification>,
@@ -70,17 +70,17 @@ storiesOf('Button', module)
     </div>,
   )
   .add('Disabled', () =>
-    <Group>
+    <Group centered>
       {buttons({ disabled: true }, 'Disabled')}
     </Group>,
   )
   .add('Active', () =>
-    <Group>
+    <Group centered>
       {buttons({ active: true }, 'Active')}
     </Group>,
   )
   .add('Loading', () =>
-    <Group>
+    <Group centered>
       {buttons({ loading: true }, 'Loading')}
     </Group>,
   )
@@ -92,62 +92,67 @@ storiesOf('Button', module)
         </Button>
       </Group>
       <Group>
-        <Button>
+        <Button control>
           <Icon size="small" icon="header" />
         </Button>
-        <Button>
+        <Button control>
           <Icon icon="header" />
         </Button>
       </Group>
       <Group>
-        <Button size="medium">
+        <Button control size="medium">
           <Icon size="small" icon="header" />
         </Button>
-        <Button size="medium">
+        <Button control size="medium">
           <Icon icon="header" />
         </Button>
-        <Button size="medium">
+        <Button control size="medium">
           <Icon size="medium" icon="header" />
         </Button>
       </Group>
       <Group textCentered>
-        <Button size="large">
+        <Button control size="large">
           <Icon size="small" icon="header" />
         </Button>
-        <Button size="large">
+        <Button control size="large">
           <Icon icon="header" />
         </Button>
-        <Button size="large">
+        <Button control size="large">
           <Icon size="medium" icon="header" />
         </Button>
-        <Button size="large">
+        <Button control size="large">
           <Icon size="large" icon="header" />
         </Button>
       </Group>
     </div>,
   )
   .add('Button group', () =>
-    <Group>
-      <Button color="primary">Save changes</Button>
-      <Button>Cancel</Button>
-      <Button color="danger">Delete</Button>
+    <Group centered>
+      <Button control color="primary">Save changes</Button>
+      <Button control >Cancel</Button>
+      <Button control color="danger">Delete</Button>
     </Group>,
   )
   .add('Button addons', () =>
-    <Addons>
-      <Button>Left</Button>
+    <Addons centered>
+      <Button>
+        <Icon icon="align-left" size="small" />
+        <span>
+          Left
+        </span>
+      </Button>
       <Button>Center</Button>
       <Button>Right</Button>
     </Addons>,
   )
   .add('Button group with addons', () =>
-    <Group>
+    <Group centered>
       <Addons>
         <Button>Bold</Button>
         <Button>Italic</Button>
         <Button>Underline</Button>
       </Addons>
-      <Addons right>
+      <Addons>
         <Button>Left</Button>
         <Button>Center</Button>
         <Button>Right</Button>

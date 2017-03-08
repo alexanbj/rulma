@@ -2,8 +2,8 @@ import React, { PropTypes } from 'react';
 
 import Control from './Control';
 
-const Addons = props =>
-  <Control addons {...props} />;
+const Addons = ({ centered, right, ...props }) =>
+  <Control addons addonsCentered={centered} addonsRight={right} {...props} />;
 
 Addons.propTypes = {
   centered: PropTypes.bool,
@@ -14,7 +14,5 @@ Addons.defaultProps = {
   centered: false,
   right: false,
 };
-
-Addons.isControl = true;
 
 export default Addons;

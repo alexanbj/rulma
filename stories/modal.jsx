@@ -1,28 +1,62 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
-import { Button, Modal } from '../src/';
+import { storiesOf } from '@kadira/storybook';
 
-const onHide = action('onHide');
+import { Box, Button, Content, ImageContainer, Media, Modal } from '../src/';
+import Toggler from './Toggler';
 
 storiesOf('Modal', module)
-  .add('Classic', () =>
-    <Modal onHide={onHide}>
-      <Modal.Header onHide={onHide}>
-        <Modal.Title>Modal title</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        One fine body...
-      </Modal.Body>
-      <Modal.Footer>
-        <Button>Close</Button>
-        <Button color="primary">Save changes</Button>
-      </Modal.Footer>
-    </Modal>,
+  .add('Modal', () =>
+    <Toggler>
+      {(toggle, value) => (
+        <div>
+          <Button onClick={toggle}>Launch modal</Button>
+          {value &&
+            <Modal onClose={toggle}>
+              <Box>
+                <Media>
+                  <Media.Left>
+                    <ImageContainer dimension="64x64">
+                      <img src="http://bulma.io/images/placeholders/128x128.png" alt="placeholder" />
+                    </ImageContainer>
+                  </Media.Left>
+                  <Media.Content>
+                    <Content>
+                      <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean efficitur sit amet massa fringilla egestas.
+                        Nullam condimentum luctus turpis.
+                      </p>
+                    </Content>
+                  </Media.Content>
+                </Media>
+              </Box>
+            </Modal>
+          }
+        </div>
+      )}
+    </Toggler>,
   )
-  .add('Fancy', () =>
-    <Modal onHide={onHide} classic={false}>
-      <Button color="danger">
-        Lorem ipsum something
-      </Button>
-    </Modal>,
+  .add('Classic', () =>
+    <Toggler>
+      {(toggle, value) => (
+        <div>
+          <Button onClick={toggle}>Launch modal</Button>
+          {value &&
+            <Modal onClose={toggle} classic>
+              <Modal.Header onClose={toggle}>
+                <Modal.Title>Modal title</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                One fine body...
+              </Modal.Body>
+              <Modal.Footer>
+                <Button color="success">Save changes</Button>
+                <Button onClick={toggle}>Close</Button>
+              </Modal.Footer>
+            </Modal>
+          }
+        </div>
+      )}
+    </Toggler>,
   );

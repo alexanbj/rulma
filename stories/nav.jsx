@@ -1,28 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
+
 import { Container, Button, Icon, Nav } from '../src/';
-
-class Toggler extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      value: false,
-    };
-    this.toggle = this.toggle.bind(this);
-  }
-
-  toggle() {
-    this.setState(state => ({ value: !state.value }));
-  }
-
-  render() {
-    return this.props.children(this.toggle, this.state.value);
-  }
-}
-
-Toggler.propTypes = {
-  children: React.PropTypes.func.isRequired,
-};
+import Toggler from './Toggler';
 
 storiesOf('Nav', module)
   .add('Nav', () =>

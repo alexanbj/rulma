@@ -90,7 +90,7 @@ storiesOf('Columns', module)
   .add('12 columns', () =>
     <div>
       <Columns>
-        <Column cols="8">
+        <Column size="8">
           <Notification color="info">8</Notification>
         </Column>
         <Column>
@@ -137,17 +137,17 @@ storiesOf('Columns', module)
   .add('Offsets', () =>
     <div>
       <Columns>
-        <Column size="1/2" offsetSize="1/4">
+        <Column size="1/2" offset="1/4">
           <Notification color="info">1/2 with a 1/4 offset</Notification>
         </Column>
       </Columns>
       <Columns>
-        <Column cols="4" offsetCols="8">
+        <Column size="4" offset="8">
           <Notification color="info">4 cols with 8 cols offset</Notification>
         </Column>
       </Columns>
       <Columns>
-        <Column cols="11" offsetCols="1">
+        <Column size="11" offset="1">
           <Notification color="info">11 cols with 1 col offset</Notification>
         </Column>
       </Columns>

@@ -12,21 +12,38 @@ const sizes = new Map([
 ]);
 
 const Column = ({
-  cols, narrow, offsetCols, size,
-  offsetSize, desktopSize, tabletSize, mobileSize, ...props
+  size,
+  mobile, tablet, desktop, widescreen,
+  offset, mobileOffset, tabletOffset, desktopOffset, widescreenOffset,
+  narrow, mobileNarrow, tabletNarrow, desktopNarrow, widescreenNarrow,
+  full, mobileFull, tabletFull, desktopFull, widescreenFull,
+  ...props
 }) => {
-  // TODO: Narrow for different viewports
   const [classes, restProps] = classNames(props, 'column', {
-    [`is-${cols}`]: cols,
-    [`is-offset-${offsetCols}`]: offsetCols,
+    [`is-${sizes.get(size) || size}`]: size,
 
-    [`is-${sizes.get(size)}`]: size,
-    [`is-${sizes.get(desktopSize)}-desktop`]: desktopSize,
-    [`is-${sizes.get(tabletSize)}-tablet`]: tabletSize,
-    [`is-${sizes.get(mobileSize)}-mobile`]: mobileSize,
-    [`is-offset-${sizes.get(offsetSize)}`]: offsetSize,
+    [`is-${sizes.get(mobile) || mobile}-mobile`]: mobile,
+    [`is-${sizes.get(tablet) || tablet}-tablet`]: tablet,
+    [`is-${sizes.get(desktop) || desktop}-desktop`]: desktop,
+    [`is-${sizes.get(widescreen) || widescreen}-widescreen`]: widescreen,
+
+    [`is-offset-${sizes.get(offset) || offset}`]: offset,
+    [`is-offset-${sizes.get(mobileOffset) || mobileOffset}-mobile`]: mobileOffset,
+    [`is-offset-${sizes.get(tabletOffset) || tabletOffset}-tablet`]: tabletOffset,
+    [`is-offset-${sizes.get(desktopOffset) || desktopOffset}-desktop`]: desktopOffset,
+    [`is-offset-${sizes.get(widescreenOffset) || widescreenOffset}-widescreen`]: widescreenOffset,
 
     'is-narrow': narrow,
+    'is-narrow-mobile': mobileNarrow,
+    'is-narrow-tablet': tabletNarrow,
+    'is-narrow-desktop': desktopNarrow,
+    'is-narrow-widescreen': widescreenNarrow,
+
+    'is-full': full,
+    'is-full-mobile': mobileFull,
+    'is-full-tablet': tabletFull,
+    'is-full-desktop': desktopFull,
+    'is-full-widescreen': widescreenFull,
   });
 
   return (
@@ -34,37 +51,63 @@ const Column = ({
   );
 };
 
-const sizeProp = PropTypes.oneOf(['3/4', '2/3', '1/2', '1/3', '1/4']);
-const colsProp = PropTypes.oneOf(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']);
+const sizeProp = PropTypes.oneOf([
+  '3/4', '2/3', '1/2', '1/3', '1/4',
+  '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+]);
 
 Column.propTypes = {
-  cols: colsProp,
-  offsetCols: colsProp,
-
-  // TODO: Narrow for different viewports
-  narrow: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.oneOf(['mobile', 'tablet', 'dekstop']),
-  ]),
-
   size: sizeProp,
-  offsetSize: sizeProp,
-  desktopSize: sizeProp,
-  tabletSize: sizeProp,
-  mobileSize: sizeProp,
+  mobile: sizeProp,
+  tablet: sizeProp,
+  desktop: sizeProp,
+  widescreen: sizeProp,
+
+  offset: sizeProp,
+  mobileOffset: sizeProp,
+  tabletOffset: sizeProp,
+  desktopOffset: sizeProp,
+  widescreenOffset: sizeProp,
+
+  narrow: PropTypes.bool,
+  mobileNarrow: PropTypes.bool,
+  tabletNarrow: PropTypes.bool,
+  desktopNarrow: PropTypes.bool,
+  widescreenNarrow: PropTypes.bool,
+
+  full: PropTypes.bool,
+  mobileFull: PropTypes.bool,
+  tabletFull: PropTypes.bool,
+  desktopFull: PropTypes.bool,
+  widescreenFull: PropTypes.bool,
 };
 
 Column.defaultProps = {
-  cols: null,
-  offsetCols: null,
+  size: null,
+  mobile: null,
+  tablet: null,
+  desktop: null,
+  widescreen: null,
+
+  offset: null,
+  mobileOffset: null,
+  tabletOffset: null,
+  desktopOffset: null,
+  widescreenOffset: null,
+
 
   narrow: false,
+  mobileNarrow: false,
+  tabletNarrow: false,
+  desktopNarrow: false,
+  widescreenNarrow: false,
 
-  size: null,
-  offsetSize: null,
-  desktopSize: null,
-  tabletSize: null,
-  mobileSize: null,
+  full: false,
+  mobileFull: false,
+  tabletFull: false,
+  desktopFull: false,
+  widescreenFull: false,
 };
 
 export default Column;

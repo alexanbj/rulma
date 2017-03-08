@@ -20,8 +20,8 @@ import Hero from './layout/Hero';
 import Horizontal from './elements/Form/Horizontal';
 import Icon from './elements/Icon';
 import Input from './elements/Form/Input';
-import Image from './elements/Image';
 import Label from './elements/Form/Label';
+import ImageContainer from './elements/ImageContainer';
 import Level from './components/Level';
 import Media from './components/Media';
 import Menu from './components/Menu';
@@ -64,8 +64,8 @@ export {
   Horizontal,
   Icon,
   Input,
-  Image,
   Label,
+  ImageContainer,
   Level,
   Media,
   Menu,

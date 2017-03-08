@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Button, Container, Delete, Form, Level, Image, Media } from '../src/';
+import { Button, Container, Delete, Form, Level, ImageContainer, Media } from '../src/';
 
 storiesOf('Media', module)
   .addDecorator(story => (
@@ -11,7 +11,9 @@ storiesOf('Media', module)
   .add('Media', () =>
     <Media>
       <Media.Left>
-        <Image dimension="64x64" src="http://bulma.io/images/placeholders/128x128.png" />
+        <ImageContainer dimension="64x64">
+          <img src="http://bulma.io/images/placeholders/128x128.png" alt="placeholder" />
+        </ImageContainer>
       </Media.Left>
       <Media.Content>
         <p>
@@ -45,7 +47,9 @@ storiesOf('Media', module)
   .add('Form', () =>
     <Media>
       <Media.Left>
-        <Image dimension="64x64" src="http://bulma.io/images/placeholders/128x128.png" />
+        <ImageContainer dimension="64x64">
+          <img src="http://bulma.io/images/placeholders/128x128.png" alt="placeholder" />
+        </ImageContainer>
       </Media.Left>
       <Media.Content>
         <Form.Textarea placeholder="Add comment" />
@@ -66,7 +70,9 @@ storiesOf('Media', module)
     <div>
       <Media>
         <Media.Left>
-          <Image dimension="64x64" src="http://bulma.io/images/placeholders/128x128.png" />
+          <ImageContainer dimension="64x64">
+            <img src="http://bulma.io/images/placeholders/128x128.png" alt="placeholder" />
+          </ImageContainer>
         </Media.Left>
         <Media.Content>
           <strong>Barbara Middleton</strong>
@@ -78,7 +84,9 @@ storiesOf('Media', module)
           <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
           <Media>
             <Media.Left>
-              <Image dimension="48x48" src="http://bulma.io/images/placeholders/96x96.png" />
+              <ImageContainer dimension="48x48">
+                <img src="http://bulma.io/images/placeholders/96x96.png" alt="placeholder" />
+              </ImageContainer>
             </Media.Left>
             <Media.Content>
               <strong>Sean Brown</strong>
@@ -106,7 +114,9 @@ storiesOf('Media', module)
           </Media>
           <Media>
             <Media.Left>
-              <Image dimension="48x48" src="http://bulma.io/images/placeholders/96x96.png" />
+              <ImageContainer dimension="48x48">
+                <img src="http://bulma.io/images/placeholders/96x96.png" alt="placeholder" />
+              </ImageContainer>
             </Media.Left>
             <Media.Content>
               <strong>Kayli Eunice </strong>
@@ -123,7 +133,9 @@ storiesOf('Media', module)
       </Media>
       <Media>
         <Media.Left>
-          <Image dimension="64x64" src="http://bulma.io/images/placeholders/128x128.png" />
+          <ImageContainer dimension="64x64">
+            <img src="http://bulma.io/images/placeholders/128x128.png" alt="placeholder" />
+          </ImageContainer>
         </Media.Left>
         <Media.Content>
           <Form.Textarea placeholder="Add comment" />

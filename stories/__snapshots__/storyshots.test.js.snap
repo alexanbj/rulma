@@ -2105,7 +2105,41 @@ exports[`Storyshots Footer Footer 1`] = `
   <div
     className="container"
   >
-    TODO: Something cool here
+    <div
+      className="content has-text-centered"
+    >
+      <p>
+        <strong>
+          rulma
+        </strong>
+        , a React component library for 
+        <a
+          href="https://github.com/jgthms/bulma"
+        >
+          Bulma
+        </a>
+        . The source code is licensed 
+        <a
+          href="http://opensource.org/licenses/mit-license.php"
+        >
+          MIT
+        </a>
+        .
+      </p>
+      <p>
+        <a
+          href="https://github.com/alexanbj/rulma"
+        >
+          <span
+            className="icon"
+          >
+            <i
+              className="fa fa-github"
+            />
+          </span>
+        </a>
+      </p>
+    </div>
   </div>
 </footer>
 `;

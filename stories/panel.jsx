@@ -20,11 +20,11 @@ storiesOf('Panel', module)
         </p>
       </Panel.Block>
       <Panel.Tabs>
-        <a className="is-active">All</a>
-        <a>Public</a>
-        <a>Private</a>
-        <a>Sources</a>
-        <a>Forks</a>
+        <Panel.Tab active>All</Panel.Tab>
+        <Panel.Tab>Public</Panel.Tab>
+        <Panel.Tab>PrivPanel.Tabte</Panel.Tab>
+        <Panel.Tab>Sources</Panel.Tab>
+        <Panel.Tab>Forks</Panel.Tab>
       </Panel.Tabs>
       <Panel.Block.Anchor active>
         <Panel.Icon icon="book" />
@@ -49,7 +49,4 @@ storiesOf('Panel', module)
       <Panel.Block>
         <Button color="primary" outlined fullWidth>Reset all filters</Button>
       </Panel.Block>
-
-    </Panel>
-)
-);
+    </Panel>));

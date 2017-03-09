@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-const PanelIcon = ({icon, spin, fw, ...rest }) => {
+const PanelIcon = ({ icon, spin, fw, ...rest }) => {
   const classes = {
     'fa-fw': fw,
     'fa-spin': spin,

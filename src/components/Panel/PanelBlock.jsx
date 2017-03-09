@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import classNames from 'classnames';
-
-const PanelBlockAnchor = ({ className, active, ...props }) => {
-  const classes = classNames('panel-block', className, {'is-active': active});
-  return (<a className={classes} {...props} />);
-};
-
-const PanelBlockLabel = ({ className, ...props }) =>
-  <label className={classNames("panel-block", className)} {...props} />;
+import PanelBlockAnchor from './PanelBlockAnchor';
+import PanelBlockLabel from './PanelBlockLabel';
 
 const PanelBlock = ({ className, ...props }) =>
-  <div className={classNames(className, "panel-block")} {...props} />;
+  <div className={classNames(className, 'panel-block')} {...props} />;
+
+PanelBlock.propTypes = {
+  className: PropTypes.string,
+};
+
+PanelBlock.defaultProps = {
+  className: null,
+};
 
 PanelBlock.Anchor = PanelBlockAnchor;
 PanelBlock.Label = PanelBlockLabel;

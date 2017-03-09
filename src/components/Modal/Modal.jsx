@@ -1,44 +1,50 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-// We want onHide click the modal background (outside of the modal)
+// Disabled because we want to trigger onClose when clicking the backdrop (ie. outside the modal)
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
-import Portal from 'react-portal';
 
+import Portal from './Portal';
 import ModalHeader from './ModalHeader';
 import ModalBody from './ModalBody';
 import ModalFooter from './ModalFooter';
 import ModalTitle from './ModalTitle';
 
+// TODO: Trap focus in modal because of accessibility
 class Modal extends React.Component {
 
   componentDidMount() {
-    // Autofocus the content of the modal when it is shown, better for accessibility!
-    if (this.props.show && this.props.autoFocus) {
+    this.focus();
+  }
+
+  focus() {
+    if (this.props.autoFocus) {
       this.modal.lastChild.focus();
     }
   }
 
   render() {
-    if (!this.props.show) {
-      return null;
-    }
+    const { classic, closeBackdropButton, closeOnBackdrop, closeOnEsc, role, onClose } = this.props;
 
-    const { classic, onHide, closeOnEsc } = this.props;
-
-    // TODO: Check if the modal div should have tabIndex="-1"
-    // TODO: Probably not hide onClick of background when not classic? Prop based perhaps
+    // TODO: Check if the modal should have tabIndex="-1"
     return (
-      <Portal closeOnEsc={closeOnEsc} isOpened onClose={onHide}>
+      <Portal closeOnEsc={closeOnEsc} onClose={onClose}>
         <div className={classNames('modal is-active', this.props.className)}>
-          <div className="modal-background" onClick={onHide} />
+          <div className="modal-background" onClick={onClose && closeOnBackdrop ? onClose : null} />
           <div
+            aria-label={this.props['aria-label']}
+            aria-labelledby={this.props['aria-labelledby']}
             className={classic ? 'modal-card' : 'modal-content'}
             ref={(c) => { this.modal = c; }}
+            role={role}
           >
             {this.props.children}
           </div>
-          {closeOnEsc && !classic &&
-            <button aria-label="Lukk" className="modal-close" onClick={onHide} />
+          {onClose && closeBackdropButton &&
+            <button
+              aria-label="Close"
+              className="modal-close"
+              onClick={onClose}
+            />
           }
         </div>
       </Portal>
@@ -47,24 +53,37 @@ class Modal extends React.Component {
 }
 
 Modal.propTypes = {
-  autoFocus: PropTypes.bool.isRequired,
-  children: PropTypes.any,
-  classic: PropTypes.bool.isRequired,
+  'aria-label': PropTypes.string,                 // The label for the modal. Should be provided for accessibility (if not, used aria-labelledby)
+  'aria-labelledby': PropTypes.string,            // The id of the element that labels the modal (usally ModalTitle when classic). This our aria-label should be provided.
+  autoFocus: PropTypes.bool.isRequired,           // Focus the modal content when it mounts
+  children: PropTypes.node,
+  classic: PropTypes.bool.isRequired,             // Classic modal. Use Header, Body and Footer
   className: PropTypes.string,
-  // For now we assume that if Esc closes the modal, we should also display a close button for the non classic modal
-  closeOnEsc: PropTypes.bool.isRequired,
-  onHide: PropTypes.func.isRequired,
-  show: PropTypes.bool.isRequired,
+  closeBackdropButton: PropTypes.bool.isRequired, // Show a close button on the backdrop
+  closeOnBackdrop: PropTypes.bool.isRequired,     // If clicking the backdrop should call onClose
+  closeOnEsc: PropTypes.bool.isRequired,          // If Esc should call onClose
+  role: PropTypes.oneOf([
+    'dialog',
+    'alertdialog',
+  ]),
+  onClose: PropTypes.func,                        // Callback when dismissal is requested
 };
 
 Modal.defaultProps = {
+  'aria-label': null,
+  'aria-labelledby': null,
+
   autoFocus: true,
   children: null,
-  classic: true,
+  classic: false,
   className: null,
+
+  closeBackdropButton: true,
+  closeOnBackdrop: true,
   closeOnEsc: true,
-  onHide: {},
-  show: true,
+  role: 'dialog',
+
+  onClose: null,
 };
 
 Modal.Header = ModalHeader;

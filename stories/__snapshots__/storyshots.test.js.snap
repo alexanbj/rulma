@@ -4844,9 +4844,31 @@ exports[`Storyshots Message Header 1`] = `
 </div>
 `;
 
-exports[`Storyshots Modal Classic 1`] = `null`;
+exports[`Storyshots Modal Classic 1`] = `
+<div>
+  <button
+    className="button"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Launch modal
+  </button>
+</div>
+`;
 
-exports[`Storyshots Modal Fancy 1`] = `null`;
+exports[`Storyshots Modal Modal 1`] = `
+<div>
+  <button
+    className="button"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Launch modal
+  </button>
+</div>
+`;
 
 exports[`Storyshots Nav Modifiers 1`] = `
 <nav

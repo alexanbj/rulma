@@ -3,27 +3,27 @@ import classNames from 'classnames';
 
 import { Delete } from '../../';
 
-const ModalHeader = ({ className, children, onHide, onHideAriaLabel, ...props }) => (
+const ModalHeader = ({ className, children, onClose, closeButtonAriaLabel, ...props }) => (
   <header className={classNames('modal-card-head', className)} {...props}>
     {children}
-    {onHide &&
-      <Delete onClick={onHide} aria-label={onHideAriaLabel} />
+    {onClose &&
+      <Delete onClick={onClose} aria-label={closeButtonAriaLabel} />
     }
   </header>
 );
 
 ModalHeader.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.node,
   className: PropTypes.string,
-  onHide: PropTypes.func,
-  onHideAriaLabel: PropTypes.string.isRequired,
+  closeButtonAriaLabel: PropTypes.string.isRequired,
+  onClose: PropTypes.func,                            // Display a close button in the header
 };
 
 ModalHeader.defaultProps = {
   children: null,
   className: null,
-  onHide: null,
-  onHideAriaLabel: 'Lukk',
+  closeButtonAriaLabel: 'Close',
+  onClose: null,
 };
 
 export default ModalHeader;

@@ -24,7 +24,7 @@ const Pagination = ({ centered, children, className, next, prev, right, ...props
 
 Pagination.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.any,
+  children: PropTypes.node,
   centered: PropTypes.bool,
   next: PropTypes.element,
   prev: PropTypes.element,

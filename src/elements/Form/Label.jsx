@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
+/* eslint-disable jsx-a11y/label-has-for */
 const Label = ({ className, control, ...props }) => {
   const label = (
     <label className={classNames('label', className)} {...props} />

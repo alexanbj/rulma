@@ -24,5 +24,11 @@ import 'bulma/css/bulma.css';
 
 If not using webpack, you can simply include it in directly in the html `<head>` section from some CDN of your choosing:
 ```html
-<link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.css">
+```
+
+#### Font Awesome
+You probably want icons, so while you're at it, drop some [Font Awesome](http://fontawesome.io/) in there as well:
+```html
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 ```

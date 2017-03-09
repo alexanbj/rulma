@@ -5450,16 +5450,24 @@ exports[`Storyshots Panel Panel 1`] = `
       >
         All
       </a>
-      <a>
+      <a
+        className=""
+      >
         Public
       </a>
-      <a>
-        Private
+      <a
+        className=""
+      >
+        PrivPanel.Tabte
       </a>
-      <a>
+      <a
+        className=""
+      >
         Sources
       </a>
-      <a>
+      <a
+        className=""
+      >
         Forks
       </a>
     </p>
@@ -5517,6 +5525,7 @@ exports[`Storyshots Panel Panel 1`] = `
     </a>
     <label
       className="panel-block"
+      htmlFor={null}
     >
       <input
         type="checkbox"

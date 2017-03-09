@@ -35,8 +35,8 @@
   },
   "homepage": "https://github.com/alexanbj/rulma#readme",
   "dependencies": {
-    "classnames": "^2.2.5",
-    "lodash": "^4.17.4"
+    "blacklist": "^1.1.4",
+    "classnames": "^2.2.5"
   },
   "jest": {
     "moduleNameMapper": {

@@ -1,6 +1,6 @@
 import { PropTypes } from 'react';
 import classNames from 'classnames';
-import { omit } from 'lodash';
+import blacklist from 'blacklist';
 
 export const colorPropType = PropTypes.oneOf([
   'primary',
@@ -56,7 +56,7 @@ export default function bulmaClassNames(props, ...args) {
       [`is-${props.color}`]: props.color,
       [`is-${props.size}`]: props.size,
     }),
-    omit(props, [
+    blacklist(props,
       'className',
       'color',
       'size',
@@ -70,6 +70,6 @@ export default function bulmaClassNames(props, ...args) {
       'hiddenTablet',
       'hiddenTouch',
       'hiddenDesktop',
-    ]),
+    ),
   ];
 }

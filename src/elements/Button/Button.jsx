@@ -1,13 +1,15 @@
 import React, { PropTypes } from 'react';
+import blacklist from 'blacklist';
 
 import Control from '../../control';
 import classNames, { sizePropType, colorPropType } from '../../modifiers';
 
 
 const Button = ({
-    active, control, expanded, fullWidth, inverted, loading, outlined, ...props
+    active, control, expanded, fullWidth, inverted, loading, outlined, tag, ...props
   }) => {
-  const [classes, restProps] = classNames(props, 'button', {
+  // eslint-disable-next-line prefer-const
+  let [classes, restProps] = classNames(props, 'button', {
     'is-active': active,
     'is-expanded': expanded,
     'is-inverted': inverted,
@@ -15,8 +17,16 @@ const Button = ({
     'is-outlined': outlined,
     'is-fullwidth': fullWidth,
   });
+
+  const Tag = Object.prototype.hasOwnProperty.call(restProps, 'href') && tag === 'button' ? 'a' : tag;
+
+  // The bold assumption that everything that isn't a button should have the type prop removed
+  if (Tag !== 'button') {
+    restProps = blacklist(restProps, 'type');
+  }
+
   const button = (
-    <button className={classes} {...restProps} />
+    <Tag className={classes} {...restProps} />
   );
 
   if (control) {
@@ -38,10 +48,13 @@ Button.propTypes = {
   expanded: PropTypes.bool,           // Within addons and groups
   fullWidth: PropTypes.bool,
   disabled: PropTypes.bool,
+  // eslint-disable-next-line react/require-default-props
+  href: PropTypes.string,
   inverted: PropTypes.bool,
   loading: PropTypes.bool,
   outlined: PropTypes.bool,
   size: sizePropType,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   type: PropTypes.oneOf([
     'button',
     'submit',
@@ -62,6 +75,7 @@ Button.defaultProps = {
   loading: false,
   outlined: false,
   size: null,
+  tag: 'button',
   type: 'button',
 };
 

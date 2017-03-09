@@ -37,11 +37,13 @@ storiesOf('Nav', module)
             </Nav.Item>
             <Nav.Item>
               <span>
-                <Button>Tweet</Button>
-              </span>
-            </Nav.Item>
-            <Nav.Item>
-              <span>
+                <Button
+                  color="info"
+                  outlined
+                  href="https://twitter.com"
+                >
+                  Tweet
+                </Button>
                 <Button color="primary">Download</Button>
               </span>
             </Nav.Item>

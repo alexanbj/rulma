@@ -5060,17 +5060,13 @@ exports[`Storyshots Nav Nav 1`] = `
     <span
       className="nav-item"
     >
-      <button
-        className="button"
+      <a
+        className="button is-outlined is-info"
         disabled={false}
-        type="button"
+        href="https://twitter.com"
       >
         Tweet
-      </button>
-    </span>
-    <span
-      className="nav-item"
-    >
+      </a>
       <button
         className="button is-primary"
         disabled={false}

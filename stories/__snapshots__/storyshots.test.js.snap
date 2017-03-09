@@ -2980,16 +2980,16 @@ exports[`Storyshots Hero Colors 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Primary title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Primary subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3002,16 +3002,16 @@ exports[`Storyshots Hero Colors 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Info title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Info subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3024,16 +3024,16 @@ exports[`Storyshots Hero Colors 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Success title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Success subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3046,16 +3046,16 @@ exports[`Storyshots Hero Colors 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Warning title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Warning subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3068,16 +3068,16 @@ exports[`Storyshots Hero Colors 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Danger title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Danger subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3090,16 +3090,16 @@ exports[`Storyshots Hero Colors 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Light title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Light subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3112,16 +3112,16 @@ exports[`Storyshots Hero Colors 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Dark title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Dark subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3138,16 +3138,16 @@ exports[`Storyshots Hero Fullheight 1`] = `
     <div
       className="container"
     >
-      <p
+      <h3
         className="title is-3"
       >
         Hero title
-      </p>
-      <p
+      </h3>
+      <h5
         className="subtitle is-5"
       >
         Hero subtitle
-      </p>
+      </h5>
     </div>
   </div>
 </section>
@@ -3164,16 +3164,16 @@ exports[`Storyshots Hero Gradient 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Primary title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Primary subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3186,16 +3186,16 @@ exports[`Storyshots Hero Gradient 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Info title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Info subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3208,16 +3208,16 @@ exports[`Storyshots Hero Gradient 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Success title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Success subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3230,16 +3230,16 @@ exports[`Storyshots Hero Gradient 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Warning title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Warning subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3252,16 +3252,16 @@ exports[`Storyshots Hero Gradient 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Danger title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Danger subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3274,16 +3274,16 @@ exports[`Storyshots Hero Gradient 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Light title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Light subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3296,16 +3296,16 @@ exports[`Storyshots Hero Gradient 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Dark title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Dark subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3322,16 +3322,16 @@ exports[`Storyshots Hero Hero 1`] = `
     <div
       className="container"
     >
-      <p
+      <h3
         className="title is-3"
       >
         Hero title
-      </p>
-      <p
+      </h3>
+      <h5
         className="subtitle is-5"
       >
         Hero subtitle
-      </p>
+      </h5>
     </div>
   </div>
 </section>
@@ -3348,16 +3348,16 @@ exports[`Storyshots Hero Sizes 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Medium title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Medium subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3370,16 +3370,16 @@ exports[`Storyshots Hero Sizes 1`] = `
       <div
         className="container"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Large title
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           Large subtitle
-        </p>
+        </h5>
       </div>
     </div>
   </section>
@@ -3450,16 +3450,16 @@ exports[`Storyshots Hero With Nav and Tabs 1`] = `
     <div
       className="container has-text-centered"
     >
-      <p
+      <h3
         className="title is-3"
       >
         Hero title
-      </p>
-      <p
+      </h3>
+      <h5
         className="subtitle is-5"
       >
         Hero subtitle
-      </p>
+      </h5>
     </div>
   </div>
   <div
@@ -3856,11 +3856,11 @@ exports[`Storyshots Level Centered 1`] = `
             >
               Tweets
             </p>
-            <p
+            <h3
               className="title is-3"
             >
               1337
-            </p>
+            </h3>
           </div>
         </div>
         <div
@@ -3872,11 +3872,11 @@ exports[`Storyshots Level Centered 1`] = `
             >
               Following
             </p>
-            <p
+            <h3
               className="title is-3"
             >
               13
-            </p>
+            </h3>
           </div>
         </div>
         <div
@@ -3888,11 +3888,11 @@ exports[`Storyshots Level Centered 1`] = `
             >
               Followers
             </p>
-            <p
+            <h3
               className="title is-3"
             >
               42 000
-            </p>
+            </h3>
           </div>
         </div>
         <div
@@ -3904,11 +3904,11 @@ exports[`Storyshots Level Centered 1`] = `
             >
               Likes
             </p>
-            <p
+            <h3
               className="title is-3"
             >
               666
-            </p>
+            </h3>
           </div>
         </div>
       </div>
@@ -3930,14 +3930,14 @@ exports[`Storyshots Level Level 1`] = `
       <div
         className="level-item"
       >
-        <p
+        <h5
           className="subtitle is-5"
         >
           <strong>
             123
           </strong>
            posts
-        </p>
+        </h5>
       </div>
     </div>
     <div
@@ -4003,11 +4003,11 @@ exports[`Storyshots Level Mobile 1`] = `
         >
           Tweets
         </p>
-        <p
+        <h3
           className="title is-3"
         >
           1337
-        </p>
+        </h3>
       </div>
     </div>
     <div
@@ -4019,11 +4019,11 @@ exports[`Storyshots Level Mobile 1`] = `
         >
           Following
         </p>
-        <p
+        <h3
           className="title is-3"
         >
           13
-        </p>
+        </h3>
       </div>
     </div>
     <div
@@ -4035,11 +4035,11 @@ exports[`Storyshots Level Mobile 1`] = `
         >
           Followers
         </p>
-        <p
+        <h3
           className="title is-3"
         >
           42 000
-        </p>
+        </h3>
       </div>
     </div>
     <div
@@ -4051,11 +4051,11 @@ exports[`Storyshots Level Mobile 1`] = `
         >
           Likes
         </p>
-        <p
+        <h3
           className="title is-3"
         >
           666
-        </p>
+        </h3>
       </div>
     </div>
   </div>
@@ -6408,30 +6408,30 @@ exports[`Storyshots Tiles Tiles 1`] = `
           <div
             className="tile is-child notification is-primary"
           >
-            <p
+            <h3
               className="title is-3"
             >
               Vertical...
-            </p>
-            <p
+            </h3>
+            <h5
               className="subtitle is-5"
             >
               Top tile
-            </p>
+            </h5>
           </div>
           <div
             className="tile is-child notification is-warning"
           >
-            <p
+            <h3
               className="title is-3"
             >
               ...tiles
-            </p>
-            <p
+            </h3>
+            <h5
               className="subtitle is-5"
             >
               Bottom tile
-            </p>
+            </h5>
           </div>
         </div>
         <div
@@ -6440,11 +6440,11 @@ exports[`Storyshots Tiles Tiles 1`] = `
           <div
             className="tile is-child notification is-info"
           >
-            <p
+            <h3
               className="title is-3"
             >
               Middle tile
-            </p>
+            </h3>
           </div>
         </div>
       </div>
@@ -6454,16 +6454,16 @@ exports[`Storyshots Tiles Tiles 1`] = `
         <div
           className="tile is-child notification is-danger"
         >
-          <p
+          <h3
             className="title is-3"
           >
             Wide tile
-          </p>
-          <p
+          </h3>
+          <h5
             className="subtitle is-5"
           >
             Aligned with the right tile
-          </p>
+          </h5>
         </div>
       </div>
     </div>
@@ -6473,16 +6473,16 @@ exports[`Storyshots Tiles Tiles 1`] = `
       <div
         className="tile is-child notification is-success"
       >
-        <p
+        <h3
           className="title is-3"
         >
           Tall tile
-        </p>
-        <p
+        </h3>
+        <h5
           className="subtitle is-5"
         >
           With even more content
-        </p>
+        </h5>
         <div
           className="content"
         >
@@ -6502,44 +6502,44 @@ exports[`Storyshots Title Combined 1`] = `
     <div
       className="block"
     >
-      <p
+      <h1
         className="title is-1"
       >
         Title 1
-      </p>
-      <p
+      </h1>
+      <h3
         className="subtitle is-3"
       >
         Subtitle 3
-      </p>
+      </h3>
     </div>
     <div
       className="block"
     >
-      <p
+      <h2
         className="title is-2"
       >
         Title 2
-      </p>
-      <p
+      </h2>
+      <h4
         className="subtitle is-4"
       >
         Subtitle 4
-      </p>
+      </h4>
     </div>
     <div
       className="block"
     >
-      <p
+      <h3
         className="title is-3"
       >
         Title 3 (default)
-      </p>
-      <p
+      </h3>
+      <h5
         className="subtitle is-5"
       >
         Subtitle 5 (default)
-      </p>
+      </h5>
     </div>
   </div>
 </div>
@@ -6550,61 +6550,66 @@ exports[`Storyshots Title Sizes 1`] = `
   className="container has-text-centered"
 >
   <div>
-    <p
+    <h1
       className="title is-1"
     >
       Title 1
-    </p>
-    <p
+    </h1>
+    <h2
       className="title is-2"
     >
       Title 2
-    </p>
-    <p
+    </h2>
+    <h3
       className="title is-3"
     >
       Title 3 (default size)
-    </p>
-    <p
+    </h3>
+    <h4
       className="title is-4"
     >
       Title 5
-    </p>
-    <p
+    </h4>
+    <h5
       className="title is-5"
     >
       Title 5
-    </p>
-    <p
+    </h5>
+    <h6
       className="title is-6"
     >
       Title 6
-    </p>
-    <p
-      className="subtitle is-5"
+    </h6>
+    <h1
+      className="subtitle is-1"
     >
       Subtitle 1
-    </p>
-    <p
-      className="subtitle is-5"
+    </h1>
+    <h2
+      className="subtitle is-2"
     >
       Subtitle 2
-    </p>
-    <p
-      className="subtitle is-5"
+    </h2>
+    <h3
+      className="subtitle is-3"
     >
       Subtitle 3
-    </p>
-    <p
+    </h3>
+    <h4
+      className="subtitle is-4"
+    >
+      Subtitle 4
+    </h4>
+    <h5
       className="subtitle is-5"
     >
       Subtitle 5 (default size)
-    </p>
-    <p
-      className="subtitle is-5"
+    </h5>
+    <h6
+      className="subtitle is-6"
     >
       Subtitle 6
-    </p>
+    </h6>
   </div>
 </div>
 `;
@@ -6614,16 +6619,16 @@ exports[`Storyshots Title Title 1`] = `
   className="container has-text-centered"
 >
   <div>
-    <p
+    <h3
       className="title is-3"
     >
       Title
-    </p>
-    <p
+    </h3>
+    <h5
       className="subtitle is-5"
     >
       Subtitle
-    </p>
+    </h5>
   </div>
 </div>
 `;

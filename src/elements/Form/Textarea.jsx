@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-import Control from '../../control/Control';
+import Control from '../../control';
 
 const Textarea = ({ control, className, fullWidth, inline, ...props }) => {
   const classes = classNames('textarea', className, {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Control from '../../control/Control';
+import Control from './Control';
 
 const Horizontal = props =>
   <Control horizontal {...props} />;

@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-import Control from '../../control/Control';
+import Control from '../../control';
 import classNames, { colorPropType, sizePropType } from '../../modifiers';
 
 const Input = ({ control, expanded, fullWidth, inline, ...props }) => {

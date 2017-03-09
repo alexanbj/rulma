@@ -2,7 +2,7 @@ import React from 'react';
 
 import Checkbox from './Checkbox';
 import Help from './Help';
-import Horizontal from './Horizontal';
+import { Horizontal } from '../../control';
 import Input from './Input';
 import Label from './Label';
 import Radio from './Radio';

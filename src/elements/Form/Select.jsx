@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 import classNames, { sizePropType } from '../../modifiers';
-import Control from '../../control/Control';
+import Control from '../../control';
 
 const Select = ({ control, expanded, fullWidth, ...props }) => {
   const [classes, restProps] = classNames(props, 'select', {

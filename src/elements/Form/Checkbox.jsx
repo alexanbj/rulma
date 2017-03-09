@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-import Control from '../../control/Control';
+import Control from '../../control';
 
 const Checkbox = ({ children, className, control, disabled, id, ...props }) => {
   const checkbox = (

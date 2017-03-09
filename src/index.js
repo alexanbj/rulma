@@ -17,7 +17,7 @@ import Group from './control/Group';
 import Heading from './elements/Heading';
 import Help from './elements/Form/Help';
 import Hero from './layout/Hero';
-import Horizontal from './elements/Form/Horizontal';
+import Horizontal from './control/Horizontal';
 import Icon from './elements/Icon';
 import Input from './elements/Form/Input';
 import Label from './elements/Form/Label';

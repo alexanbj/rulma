@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-import Control from '../../control/Control';
+import Control from '../../control';
 import classNames, { sizePropType, colorPropType } from '../../modifiers';
 
 

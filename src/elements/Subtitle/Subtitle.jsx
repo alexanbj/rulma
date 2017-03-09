@@ -1,21 +1,27 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
-const Subtitle = ({ className, level, ...props }) => {
-  const classes = classNames(`subtitle is-${level}`, className);
+const Subtitle = ({ className, size, tag, ...props }) => {
+  const classes = classNames(`subtitle is-${size}`, className);
+  const Tag = tag === 'h' ? `${tag}${size}` : tag;
   return (
-    <p className={classes} {...props} />
+    <Tag className={classes} {...props} />
   );
 };
 
 Subtitle.propTypes = {
   className: PropTypes.string,
-  level: PropTypes.oneOf(['1', '2', '3', '4', '5', '6']),
+  size: PropTypes.oneOf([
+    '1', '2', '3', '4', '5', '6',
+    1, 2, 3, 4, 5, 6,
+  ]),
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Subtitle.defaultProps = {
   className: null,
-  level: '5',
+  size: '5',
+  tag: 'h',
 };
 
 

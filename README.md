@@ -1,6 +1,9 @@
 # Rulma
 
-React components for [Bulma](https://github.com/jgthms/bulma)
+React components for [Bulma](https://github.com/jgthms/bulma).
+
+#### Disclaimer
+Rulma is in the early stages, with active development, so it could be subject to breaking changes.
 
 ## Getting started
 #### Install

@@ -1,32 +1,32 @@
 import React, { PropTypes } from 'react';
+import classNames from '../../modifiers';
 
-// this component generates lint error:
-// Visible, non-interactive elements should not have mouse or keyboard event listeners
-const MenuItem = ({ children, open, onClick, ...props }) => {
-  const hasSingleChild = children.constructor.name === 'Object';
+/* eslint-disable jsx-a11y/anchor-has-content */
+const MenuItem = ({ active, menu, open, tag: Tag, ...props }) => {
+  const [classes, restProps] = classNames(props, { 'is-active': active });
   return (
-    <li
-      onClick={onClick}
-      {...props}
-    >
-      {hasSingleChild ? children : children[0]}
-      {hasSingleChild ? null : open && children[1]}
+    <li>
+      <Tag className={classes} {...restProps} />
+      {open && menu}
     </li>
   );
 };
 
 MenuItem.propTypes = {
+  active: PropTypes.bool,
   open: PropTypes.bool,
-  onClick: PropTypes.func,
-  children: PropTypes.oneOfType([
-    PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element),
-  ]).isRequired,
+  menu: PropTypes.func,
+  tag: PropTypes.oneOfType([  // Something that renders as anchor, such as a React Router Link
+    PropTypes.func,
+    PropTypes.string,
+  ]),
 };
 
 MenuItem.defaultProps = {
-  open: false,
-  onClick: () => {},
+  active: false,
+  open: true,
+  menu: null,
+  tag: 'a',
 };
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import { Container, Menu } from '../src/';
 
 storiesOf('Menu', module)
@@ -12,66 +12,33 @@ storiesOf('Menu', module)
     <Menu>
       <Menu.Label>General</Menu.Label>
       <Menu.List>
-        <Menu.ItemLink>Dashboard</Menu.ItemLink>
-        <Menu.ItemLink>Customers</Menu.ItemLink>
+        <Menu.Item>Dashboard</Menu.Item>
+        <Menu.Item>Customers</Menu.Item>
       </Menu.List>
       <Menu.Label>Administration</Menu.Label>
       <Menu.List>
-        <Menu.ItemLink>Team Settings</Menu.ItemLink>
-        <Menu.Item open onClick={action('clicked')}>
-          <Menu.ItemLink>Click me</Menu.ItemLink>
-          <Menu.SubList>
-            <Menu.ItemLink>Members</Menu.ItemLink>
-            <Menu.ItemLink>Plugins</Menu.ItemLink>
-            <Menu.ItemLink>Add a member</Menu.ItemLink>
-          </Menu.SubList>
+        <Menu.Item>Team Settings</Menu.Item>
+        <Menu.Item
+          active
+          menu={
+            <Menu.List>
+              <Menu.Item>Members</Menu.Item>
+              <Menu.Item>Plugins</Menu.Item>
+              <Menu.Item>Add a member</Menu.Item>
+            </Menu.List>
+          }
+        >
+          Manage Your Team
         </Menu.Item>
-        <Menu.ItemLink>Invitations</Menu.ItemLink>
-        <Menu.ItemLink>Cloud Storage Environment Settings</Menu.ItemLink>
-        <Menu.ItemLink>Authentication</Menu.ItemLink>
+        <Menu.Item>Invitations</Menu.Item>
+        <Menu.Item>Cloud Storage Environment Settings</Menu.Item>
+        <Menu.Item>Authentication</Menu.Item>
       </Menu.List>
       <Menu.Label>Transactions</Menu.Label>
       <Menu.List>
-        <Menu.ItemLink>Payments</Menu.ItemLink>
-        <Menu.ItemLink>Transfers</Menu.ItemLink>
-        <Menu.ItemLink>Balance</Menu.ItemLink>
+        <Menu.Item>Payments</Menu.Item>
+        <Menu.Item>Transfers</Menu.Item>
+        <Menu.Item>Balance</Menu.Item>
       </Menu.List>
     </Menu>
-  ))
-  .add('open menu items', () =>
-    <Menu>
-      <Menu.Label>Administration</Menu.Label>
-      <Menu.List>
-        <Menu.Item>
-          <Menu.ItemLink>Team Settings</Menu.ItemLink>
-        </Menu.Item>
-        <Menu.Item open>
-          <Menu.ItemLink>Submenu</Menu.ItemLink>
-          <Menu.SubList>
-            <Menu.ItemLink>Members</Menu.ItemLink>
-            <Menu.ItemLink>Plugins</Menu.ItemLink>
-            <Menu.ItemLink>Add a member</Menu.ItemLink>
-          </Menu.SubList>
-        </Menu.Item>
-      </Menu.List>
-    </Menu>,
-  )
-  .add('closed menu items', () =>
-    <Menu>
-      <Menu.Label>Administration</Menu.Label>
-      <Menu.List>
-        <Menu.Item>
-          <Menu.ItemLink>Team Settings</Menu.ItemLink>
-        </Menu.Item>
-        <Menu.Item>
-          <Menu.ItemLink>Closed menu</Menu.ItemLink>
-          <Menu.SubList>
-            <Menu.ItemLink>Members</Menu.ItemLink>
-            <Menu.ItemLink>Plugins</Menu.ItemLink>
-            <Menu.ItemLink>Add a member</Menu.ItemLink>
-          </Menu.SubList>
-        </Menu.Item>
-      </Menu.List>
-    </Menu>,
-  );
-
+  ));

@@ -4375,7 +4375,7 @@ exports[`Storyshots Menu Menu 1`] = `
 <div
   className="container"
 >
-  <aside
+  <div
     className="menu"
   >
     <p
@@ -4389,7 +4389,6 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className=""
-          href={null}
         >
           Dashboard
         </a>
@@ -4397,7 +4396,6 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className=""
-          href={null}
         >
           Customers
         </a>
@@ -4414,7 +4412,6 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className=""
-          href={null}
         >
           Team Settings
         </a>
@@ -4422,29 +4419,38 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className="is-active"
-          href={null}
         >
-          Manage Your team
+          Manage Your Team
         </a>
+        <ul
+          className=""
+        >
+          <li>
+            <a
+              className=""
+            >
+              Members
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+            >
+              Plugins
+            </a>
+          </li>
+          <li>
+            <a
+              className=""
+            >
+              Add a member
+            </a>
+          </li>
+        </ul>
       </li>
-      <ul>
-        <li>
-          <a
-            className=""
-            href={null}
-          >
-            Lol
-          </a>
-        </li>
-      </ul>
-    </ul>
-    <ul
-      className="menu-list"
-    >
       <li>
         <a
           className=""
-          href={null}
         >
           Invitations
         </a>
@@ -4452,7 +4458,6 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className=""
-          href={null}
         >
           Cloud Storage Environment Settings
         </a>
@@ -4460,7 +4465,6 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className=""
-          href={null}
         >
           Authentication
         </a>
@@ -4477,7 +4481,6 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className=""
-          href={null}
         >
           Payments
         </a>
@@ -4485,7 +4488,6 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className=""
-          href={null}
         >
           Transfers
         </a>
@@ -4493,13 +4495,12 @@ exports[`Storyshots Menu Menu 1`] = `
       <li>
         <a
           className=""
-          href={null}
         >
           Balance
         </a>
       </li>
     </ul>
-  </aside>
+  </div>
 </div>
 `;
 

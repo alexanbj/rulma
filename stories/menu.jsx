@@ -8,7 +8,7 @@ storiesOf('Menu', module)
       {story()}
     </Container>
   ))
-  .add('Menu', () =>
+  .add('Menu', () => (
     <Menu>
       <Menu.Label>General</Menu.Label>
       <Menu.List>
@@ -18,12 +18,18 @@ storiesOf('Menu', module)
       <Menu.Label>Administration</Menu.Label>
       <Menu.List>
         <Menu.Item>Team Settings</Menu.Item>
-        <Menu.Item active>Manage Your team</Menu.Item>
-        <ul>
-          <Menu.Item>Lol</Menu.Item>
-        </ul>
-      </Menu.List>
-      <Menu.List>
+        <Menu.Item
+          active
+          menu={
+            <Menu.List>
+              <Menu.Item>Members</Menu.Item>
+              <Menu.Item>Plugins</Menu.Item>
+              <Menu.Item>Add a member</Menu.Item>
+            </Menu.List>
+          }
+        >
+          Manage Your Team
+        </Menu.Item>
         <Menu.Item>Invitations</Menu.Item>
         <Menu.Item>Cloud Storage Environment Settings</Menu.Item>
         <Menu.Item>Authentication</Menu.Item>
@@ -34,5 +40,5 @@ storiesOf('Menu', module)
         <Menu.Item>Transfers</Menu.Item>
         <Menu.Item>Balance</Menu.Item>
       </Menu.List>
-    </Menu>,
-  );
+    </Menu>
+  ));

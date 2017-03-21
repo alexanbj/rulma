@@ -11,6 +11,7 @@ import Container from './layout/Container';
 import Control from './control/Control';
 import Content from './elements/Content';
 import Delete from './elements/Delete';
+import Field from './control/Field';
 import Form from './elements/Form';
 import Footer from './layout/Footer';
 import Group from './control/Group';
@@ -55,6 +56,7 @@ export {
   Control,
   Content,
   Delete,
+  Field,
   Footer,
   Form,
   Group,

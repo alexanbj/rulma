@@ -129,33 +129,57 @@ storiesOf('Button', module)
   .add('Button group', () =>
     <Group centered>
       <Button control color="primary">Save changes</Button>
-      <Button control >Cancel</Button>
+      <Button control>Cancel</Button>
       <Button control color="danger">Delete</Button>
     </Group>,
   )
   .add('Button addons', () =>
     <Addons centered>
-      <Button>
+      <Button control>
         <Icon icon="align-left" size="small" />
         <span>
           Left
         </span>
       </Button>
-      <Button>Center</Button>
-      <Button>Right</Button>
+      <Button control>
+        <Icon icon="align-center" size="small" />
+        <span>Center</span>
+      </Button>
+      <Button control>
+        <Icon icon="align-right" size="small" />
+        <span>Right</span>
+      </Button>
     </Addons>,
   )
   .add('Button group with addons', () =>
     <Group centered>
       <Addons>
-        <Button>Bold</Button>
-        <Button>Italic</Button>
-        <Button>Underline</Button>
+        <Button control>
+          <Icon icon="bold" size="small" />
+          <span>Bold</span>
+        </Button>
+        <Button control>
+          <Icon icon="italic" size="small" />
+          <span>Italic</span>
+        </Button>
+        <Button control>
+          <Icon icon="underline" size="small" />
+          <span>Underline</span>
+        </Button>
       </Addons>
       <Addons>
-        <Button>Left</Button>
-        <Button>Center</Button>
-        <Button>Right</Button>
+        <Button control>
+          <Icon icon="align-left" size="small" />
+          <span>Left</span>
+        </Button>
+        <Button control>
+          <Icon icon="align-center" size="small" />
+          <span>Center</span>
+        </Button>
+        <Button control>
+          <Icon icon="align-right" size="small" />
+          <span>Right</span>
+        </Button>
       </Addons>
     </Group>,
   );

@@ -29,6 +29,7 @@ import Message from './components/Message';
 import Modal from './components/Modal';
 import Nav from './components/Nav';
 import Notification from './elements/Notification';
+import Panel from './components/Panel';
 import Pagination from './components/Pagination';
 import Progress from './elements/Progress';
 import Radio from './elements/Form/Radio';
@@ -74,6 +75,7 @@ export {
   Nav,
   Notification,
   Pagination,
+  Panel,
   Progress,
   Radio,
   Section,

@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-import Control from './Control';
+import Field from './Field';
 
 const Horizontal = props =>
-  <Control horizontal {...props} />;
+  <Field horizontal {...props} />;
+
+Horizontal.propTypes = {
+  className: PropTypes.string,
+};
+
+Horizontal.defaultProps = {
+  className: null,
+};
 
 export default Horizontal;

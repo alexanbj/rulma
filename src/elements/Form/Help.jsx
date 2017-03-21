@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-import classNames, { colorPropType } from '../../modifiers';
+import modifiers, { colorPropType } from '../../modifiers';
 
-const Help = (props) => {
-  const [classes, restProps] = classNames(props, 'help');
+const Help = ({ tag: Tag, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'help');
+
   return (
-    <div className={classes} {...restProps} />
+    <Tag className={classes} {...restProps} />
   );
 };
 
 Help.propTypes = {
+  className: PropTypes.string,
   color: colorPropType,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Help.defaultProps = {
+  className: null,
   color: null,
+  tag: 'div',
 };
 
 export default Help;

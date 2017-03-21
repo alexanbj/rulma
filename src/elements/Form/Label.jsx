@@ -2,14 +2,14 @@ import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
 /* eslint-disable jsx-a11y/label-has-for */
-const Label = ({ className, control, ...props }) => {
+const Label = ({ className, field, ...props }) => {
   const label = (
     <label className={classNames('label', className)} {...props} />
   );
 
-  if (control) {
+  if (field) {
     return (
-      <div className="control-label">{label}</div>
+      <div className="field-label">{label}</div>
     );
   }
 
@@ -18,12 +18,12 @@ const Label = ({ className, control, ...props }) => {
 
 Label.propTypes = {
   className: PropTypes.string,
-  control: PropTypes.bool,
+  field: PropTypes.bool,
 };
 
 Label.defaultProps = {
   className: null,
-  control: false,        // Turns the label into a side label in horizontal forms
+  field: false,        // Used inside horizontal forms
 };
 
 export default Label;

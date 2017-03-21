@@ -19,7 +19,7 @@ storiesOf('Notification', module)
       {story()}
     </Container>
   ))
-  .add(null, () =>
+  .add('Notification', () =>
     <div>
       {notification()}
       {notification('primary')}

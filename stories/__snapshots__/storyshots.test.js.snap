@@ -5080,7 +5080,7 @@ exports[`Storyshots Nav Nav 1`] = `
 </nav>
 `;
 
-exports[`Storyshots Notification  1`] = `
+exports[`Storyshots Notification Notification 1`] = `
 <div
   className="container"
 >

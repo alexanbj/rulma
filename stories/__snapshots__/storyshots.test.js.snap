@@ -5156,9 +5156,9 @@ exports[`Storyshots Pagination Centered 1`] = `
       Previous
     </a>
     <a
-      className="pagination-next is-disabled"
+      className="pagination-next"
     >
-      Next
+      Next page
     </a>
     <ul
       className="pagination-list"
@@ -5230,9 +5230,9 @@ exports[`Storyshots Pagination Disabled 1`] = `
       Previous
     </a>
     <a
-      className="pagination-next is-disabled"
+      className="pagination-next"
     >
-      Next
+      Next page
     </a>
     <ul
       className="pagination-list"
@@ -5276,9 +5276,9 @@ exports[`Storyshots Pagination Pagination 1`] = `
       Previous
     </a>
     <a
-      className="pagination-next is-disabled"
+      className="pagination-next"
     >
-      Next
+      Next page
     </a>
     <ul
       className="pagination-list"
@@ -5350,9 +5350,9 @@ exports[`Storyshots Pagination Right 1`] = `
       Previous
     </a>
     <a
-      className="pagination-next is-disabled"
+      className="pagination-next"
     >
-      Next
+      Next page
     </a>
     <ul
       className="pagination-list"
@@ -5408,6 +5408,299 @@ exports[`Storyshots Pagination Right 1`] = `
       </li>
     </ul>
   </nav>
+</div>
+`;
+
+exports[`Storyshots Pagination Sizes 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="block"
+    >
+      <nav
+        className="pagination is-right is-small"
+      >
+        <a
+          className="pagination-previous"
+        >
+          Previous
+        </a>
+        <a
+          className="pagination-next"
+        >
+          Next page
+        </a>
+        <ul
+          className="pagination-list"
+        >
+          <li>
+            <a
+              className="pagination-link"
+            >
+              1
+            </a>
+          </li>
+          <li>
+            <span
+              className="pagination-ellipsis"
+            >
+              …
+            </span>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              45
+            </a>
+          </li>
+          <li>
+            <a
+              className="pagination-link is-current"
+            >
+              46
+            </a>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              47
+            </a>
+          </li>
+          <li>
+            <span
+              className="pagination-ellipsis"
+            >
+              …
+            </span>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              84
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div
+      className="block"
+    >
+      <nav
+        className="pagination is-right"
+      >
+        <a
+          className="pagination-previous"
+        >
+          Previous
+        </a>
+        <a
+          className="pagination-next"
+        >
+          Next page
+        </a>
+        <ul
+          className="pagination-list"
+        >
+          <li>
+            <a
+              className="pagination-link"
+            >
+              1
+            </a>
+          </li>
+          <li>
+            <span
+              className="pagination-ellipsis"
+            >
+              …
+            </span>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              45
+            </a>
+          </li>
+          <li>
+            <a
+              className="pagination-link is-current"
+            >
+              46
+            </a>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              47
+            </a>
+          </li>
+          <li>
+            <span
+              className="pagination-ellipsis"
+            >
+              …
+            </span>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              84
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div
+      className="block"
+    >
+      <nav
+        className="pagination is-right is-medium"
+      >
+        <a
+          className="pagination-previous"
+        >
+          Previous
+        </a>
+        <a
+          className="pagination-next"
+        >
+          Next page
+        </a>
+        <ul
+          className="pagination-list"
+        >
+          <li>
+            <a
+              className="pagination-link"
+            >
+              1
+            </a>
+          </li>
+          <li>
+            <span
+              className="pagination-ellipsis"
+            >
+              …
+            </span>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              45
+            </a>
+          </li>
+          <li>
+            <a
+              className="pagination-link is-current"
+            >
+              46
+            </a>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              47
+            </a>
+          </li>
+          <li>
+            <span
+              className="pagination-ellipsis"
+            >
+              …
+            </span>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              84
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div
+      className="block"
+    >
+      <nav
+        className="pagination is-right is-large"
+      >
+        <a
+          className="pagination-previous"
+        >
+          Previous
+        </a>
+        <a
+          className="pagination-next"
+        >
+          Next page
+        </a>
+        <ul
+          className="pagination-list"
+        >
+          <li>
+            <a
+              className="pagination-link"
+            >
+              1
+            </a>
+          </li>
+          <li>
+            <span
+              className="pagination-ellipsis"
+            >
+              …
+            </span>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              45
+            </a>
+          </li>
+          <li>
+            <a
+              className="pagination-link is-current"
+            >
+              46
+            </a>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              47
+            </a>
+          </li>
+          <li>
+            <span
+              className="pagination-ellipsis"
+            >
+              …
+            </span>
+          </li>
+          <li>
+            <a
+              className="pagination-link"
+            >
+              84
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </div>
 `;
 

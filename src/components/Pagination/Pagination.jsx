@@ -1,24 +1,25 @@
 import React, { PropTypes } from 'react';
-import classNames from 'classnames';
+
+import modifiers, { sizePropType } from '../../modifiers/';
 
 import PaginationItem from './PaginationItem';
 import PaginationPrev from './PaginationPrev';
 import PaginationNext from './PaginationNext';
 
-const Pagination = ({ centered, children, className, next, prev, right, ...props }) => {
-  const classes = classNames('pagination', className, {
+const Pagination = ({ centered, children, next, prev, right, tag: Tag, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'pagination', {
     'is-right': right,
     'is-centered': centered,
   });
 
   return (
-    <nav className={classes} {...props}>
+    <Tag className={classes} {...restProps}>
       {prev}
       {next}
       <ul className="pagination-list">
         {children}
       </ul>
-    </nav>
+    </Tag>
   );
 };
 
@@ -29,6 +30,8 @@ Pagination.propTypes = {
   next: PropTypes.element,
   prev: PropTypes.element,
   right: PropTypes.bool,
+  size: sizePropType,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Pagination.defaultProps = {
@@ -38,6 +41,8 @@ Pagination.defaultProps = {
   next: null,
   prev: null,
   right: false,
+  size: null,
+  tag: 'nav',
 };
 
 Pagination.Prev = PaginationPrev;

@@ -45,4 +45,20 @@ storiesOf('Title', module)
         <Subtitle>Subtitle 5 (default)</Subtitle>
       </Block>
     </div>,
+  )
+  .add('Spaced', () =>
+    <div>
+      <Block>
+        <Title spaced size="1">Title 1</Title>
+        <Subtitle size="3">Subtitle 3</Subtitle>
+      </Block>
+      <Block>
+        <Title spaced size="2">Title 2</Title>
+        <Subtitle size="4">Subtitle 4</Subtitle>
+      </Block>
+      <Block>
+        <Title spaced>Title 3 (default)</Title>
+        <Subtitle>Subtitle 5 (default)</Subtitle>
+      </Block>
+    </div>,
   );

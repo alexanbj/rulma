@@ -6611,6 +6611,57 @@ exports[`Storyshots Title Sizes 1`] = `
 </div>
 `;
 
+exports[`Storyshots Title Spaced 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div>
+    <div
+      className="block"
+    >
+      <h1
+        className="title is-1 is-spaced"
+      >
+        Title 1
+      </h1>
+      <h3
+        className="subtitle is-3"
+      >
+        Subtitle 3
+      </h3>
+    </div>
+    <div
+      className="block"
+    >
+      <h2
+        className="title is-2 is-spaced"
+      >
+        Title 2
+      </h2>
+      <h4
+        className="subtitle is-4"
+      >
+        Subtitle 4
+      </h4>
+    </div>
+    <div
+      className="block"
+    >
+      <h3
+        className="title is-3 is-spaced"
+      >
+        Title 3 (default)
+      </h3>
+      <h5
+        className="subtitle is-5"
+      >
+        Subtitle 5 (default)
+      </h5>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Title Title 1`] = `
 <div
   className="container has-text-centered"

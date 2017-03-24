@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react';
-import classNames from 'classnames';
+import modifiers from '../../modifiers';
 
-const Title = ({ className, size, spaced, tag, ...props }) => {
-  const classes = classNames(
+const Title = ({ size, spaced, tag, ...props }) => {
+  const [classes, restProps] = modifiers(
+    props,
     `title is-${size}`,
-    className,
     {
       'is-spaced': spaced,
     },
@@ -13,7 +13,7 @@ const Title = ({ className, size, spaced, tag, ...props }) => {
   const Tag = tag === 'h' ? `${tag}${size}` : tag;
 
   return (
-    <Tag className={classes} {...props} />
+    <Tag className={classes} {...restProps} />
   );
 };
 

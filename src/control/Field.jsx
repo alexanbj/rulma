@@ -12,6 +12,7 @@ const Field = (
     groupedCentered,
     groupedRight,
     horizontal,
+    narrow,
     tag: Tag,
     ...props
   },
@@ -25,6 +26,7 @@ const Field = (
     'is-grouped-centered': groupedCentered,
     'is-grouped-right': groupedRight,
     'is-horizontal': horizontal,
+    'is-narrow': narrow,
   });
 
   return <Tag className={classes} {...restProps} />;
@@ -40,6 +42,7 @@ Field.propTypes = {
   groupedCentered: PropTypes.bool,
   groupedRight: PropTypes.bool,
   horizontal: PropTypes.bool,
+  narrow: false,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
@@ -53,6 +56,7 @@ Field.defaultProps = {
   groupedCentered: false,
   groupedRight: false,
   horizontal: false,
+  narrow: false,
   tag: 'div',
 };
 

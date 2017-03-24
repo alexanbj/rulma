@@ -6,6 +6,7 @@ const Field = (
   {
     addons,
     addonsCentered,
+    addonsFullWidth,
     addonsRight,
     grouped,
     groupedCentered,
@@ -18,6 +19,7 @@ const Field = (
   const [classes, restProps] = modifiers(props, 'field', {
     'has-addons': addons,
     'has-addons-centered': addonsCentered,
+    'has-addons-fullwidth': addonsFullWidth,
     'has-addons-right': addonsRight,
     'is-grouped': grouped,
     'is-grouped-centered': groupedCentered,
@@ -31,6 +33,7 @@ const Field = (
 Field.propTypes = {
   addons: PropTypes.bool,
   addonsCentered: PropTypes.bool,
+  addonsFullWidth: PropTypes.bool,
   addonsRight: PropTypes.bool,
   className: PropTypes.string,
   grouped: PropTypes.bool,
@@ -43,6 +46,7 @@ Field.propTypes = {
 Field.defaultProps = {
   addons: false,
   addonsCentered: false,
+  addonsFullWidth: false,
   addonsRight: false,
   className: null,
   grouped: false,

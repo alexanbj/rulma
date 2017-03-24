@@ -20,7 +20,7 @@ storiesOf('Form', module)
         <Input control placeholder="Text input" />
       </Field>
       <Field>
-      <Label>Username</Label>
+        <Label>Username</Label>
         <Control icon iconRight>
           <Input color="success" placeholder="Text input" defaultValue="rulma" />
           <Icon icon="check" size="small" />
@@ -91,11 +91,11 @@ storiesOf('Form', module)
         />
       </Field>
       <Field>
-      <Input
-        control
-        color="danger"
-        placeholder="Danger input"
-      />
+        <Input
+          control
+          color="danger"
+          placeholder="Danger input"
+        />
       </Field>
     </Form>,
   )

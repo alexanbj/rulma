@@ -1105,27 +1105,81 @@ exports[`Storyshots Card Card 1`] = `
   className="container"
 >
   <div
-    className="card"
+    className="columns"
   >
     <div
-      className="card-content"
+      className="column is-one-third is-offset-one-third"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-      <a>
-        @bulmaio
-      </a>
-      . 
-      <a>
-        #css
-      </a>
-       
-      <a>
-        #responsive
-      </a>
-      <br />
-      <small>
-        11:09 PM - 1 Jan 2016
-      </small>
+      <div
+        className="card"
+      >
+        <div
+          className="card-image"
+        >
+          <figure
+            className="image is-4by3"
+          >
+            <img
+              alt="img"
+              src="http://bulma.io/images/placeholders/1280x960.png"
+            />
+          </figure>
+        </div>
+        <div
+          className="card-content"
+        >
+          <article
+            className="media"
+          >
+            <div
+              className="media-left"
+            >
+              <figure
+                className="image is-48x48"
+              >
+                <img
+                  alt="img"
+                  src="http://bulma.io/images/placeholders/96x96.png"
+                />
+              </figure>
+            </div>
+            <div
+              className="media-content"
+            >
+              <h4
+                className="title is-4"
+              >
+                John Smith
+              </h4>
+              <h6
+                className="subtitle is-6"
+              >
+                @johnsmith
+              </h6>
+            </div>
+          </article>
+          <div
+            className="content"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+            <a>
+              @bulmaio
+            </a>
+            . 
+            <a>
+              #css
+            </a>
+             
+            <a>
+              #responsive
+            </a>
+            <br />
+            <small>
+              11:09 PM - 1 Jan 2016
+            </small>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

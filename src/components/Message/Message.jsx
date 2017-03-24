@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-import classNames, { colorPropType, modifierPropTypes } from '../../modifiers';
+import modifiers, { colorPropType, modifierPropTypes } from '../../modifiers';
 
 import MessageHeader from './MessageHeader';
 import MessageBody from './MessageBody';
 
-const Message = (props) => {
-  const [classes, restProps] = classNames(props, 'message');
+const Message = ({ tag: Tag, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'message');
+
   return (
-    <article className={classes} {...restProps} />
+    <Tag className={classes} {...restProps} />
   );
 };
 
 Message.propTypes = {
   color: colorPropType,
   ...modifierPropTypes,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Message.defaultProps = {
   color: null,
+  tag: 'div',
 };
 
 Message.Header = MessageHeader;

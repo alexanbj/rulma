@@ -1,21 +1,22 @@
 import React, { PropTypes } from 'react';
 
-import classNames, { modifierPropTypes, sizePropType } from '../../modifiers';
+import modifiers, { modifierPropTypes, sizePropType } from '../../modifiers';
 
 import Tab from './Tab';
 
-const Tabs = ({ boxed, centered, children, fullWidth, right, toggle, ...props }) => {
-  const [classes, restProps] = classNames(props, 'tabs', {
+const Tabs = ({ boxed, centered, children, fullWidth, right, tag: Tag, toggle, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'tabs', {
     'is-centered': centered,
     'is-right': right,
     'is-boxed': boxed,
     'is-toggle': toggle,
     'is-fullwidth': fullWidth,
   });
+
   return (
-    <div className={classes} {...restProps}>
+    <Tag className={classes} {...restProps}>
       <ul>{children}</ul>
-    </div>
+    </Tag>
   );
 };
 
@@ -27,6 +28,7 @@ Tabs.propTypes = {
   ...modifierPropTypes,
   right: PropTypes.bool,
   size: sizePropType,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   toggle: PropTypes.bool,
 };
 
@@ -37,6 +39,7 @@ Tabs.defaultProps = {
   fullWidth: false,
   right: false,
   size: null,
+  tag: 'div',
   toggle: false,
 };
 

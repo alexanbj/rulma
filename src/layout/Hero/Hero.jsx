@@ -1,18 +1,19 @@
 import React, { PropTypes } from 'react';
 
-import classNames, { colorPropType, sizePropType } from '../../modifiers';
+import modifiers, { colorPropType, sizePropType } from '../../modifiers';
 
 import HeroHeader from './HeroHeader';
 import HeroBody from './HeroBody';
 import HeroFooter from './HeroFooter';
 
-const Hero = ({ bold, fullheight, ...props }) => {
-  const [classes, restProps] = classNames(props, 'hero', {
+const Hero = ({ bold, fullheight, tag: Tag, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'hero', {
     'is-bold': bold,
     'is-fullheight': fullheight,
   });
+
   return (
-    <section className={classes} {...restProps} />
+    <Tag className={classes} {...restProps} />
   );
 };
 
@@ -21,6 +22,7 @@ Hero.propTypes = {
   color: colorPropType,
   fullheight: PropTypes.bool,
   size: sizePropType,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Hero.defaultProps = {
@@ -28,6 +30,7 @@ Hero.defaultProps = {
   color: null,
   fullheight: false,
   size: null,
+  tag: 'section',
 };
 
 Hero.Header = HeroHeader;

@@ -21,7 +21,7 @@ exports[`Storyshots Button Active 1`] = `
   className="container has-text-centered"
 >
   <div
-    className="control is-grouped is-grouped-centered"
+    className="field is-grouped is-grouped-centered"
   >
     <div
       className="control"
@@ -87,38 +87,68 @@ exports[`Storyshots Button Button addons 1`] = `
   className="container has-text-centered"
 >
   <div
-    className="control has-addons has-addons-centered"
+    className="field has-addons has-addons-centered"
   >
-    <button
-      className="button"
-      disabled={false}
-      type="button"
+    <div
+      className="control"
     >
-      <span
-        className="icon is-small"
+      <button
+        className="button"
+        disabled={false}
+        type="button"
       >
-        <i
-          className="fa fa-align-left"
-        />
-      </span>
-      <span>
-        Left
-      </span>
-    </button>
-    <button
-      className="button"
-      disabled={false}
-      type="button"
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-align-left"
+          />
+        </span>
+        <span>
+          Left
+        </span>
+      </button>
+    </div>
+    <div
+      className="control"
     >
-      Center
-    </button>
-    <button
-      className="button"
-      disabled={false}
-      type="button"
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-align-center"
+          />
+        </span>
+        <span>
+          Center
+        </span>
+      </button>
+    </div>
+    <div
+      className="control"
     >
-      Right
-    </button>
+      <button
+        className="button"
+        disabled={false}
+        type="button"
+      >
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-align-right"
+          />
+        </span>
+        <span>
+          Right
+        </span>
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -128,7 +158,7 @@ exports[`Storyshots Button Button group 1`] = `
   className="container has-text-centered"
 >
   <div
-    className="control is-grouped is-grouped-centered"
+    className="field is-grouped is-grouped-centered"
   >
     <div
       className="control"
@@ -172,57 +202,135 @@ exports[`Storyshots Button Button group with addons 1`] = `
   className="container has-text-centered"
 >
   <div
-    className="control is-grouped is-grouped-centered"
+    className="field is-grouped is-grouped-centered"
   >
     <div
-      className="control has-addons"
+      className="field has-addons"
     >
-      <button
-        className="button"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Bold
-      </button>
-      <button
-        className="button"
-        disabled={false}
-        type="button"
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-bold"
+            />
+          </span>
+          <span>
+            Bold
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
       >
-        Italic
-      </button>
-      <button
-        className="button"
-        disabled={false}
-        type="button"
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-italic"
+            />
+          </span>
+          <span>
+            Italic
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
       >
-        Underline
-      </button>
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-underline"
+            />
+          </span>
+          <span>
+            Underline
+          </span>
+        </button>
+      </div>
     </div>
     <div
-      className="control has-addons"
+      className="field has-addons"
     >
-      <button
-        className="button"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Left
-      </button>
-      <button
-        className="button"
-        disabled={false}
-        type="button"
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-align-left"
+            />
+          </span>
+          <span>
+            Left
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
       >
-        Center
-      </button>
-      <button
-        className="button"
-        disabled={false}
-        type="button"
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-align-center"
+            />
+          </span>
+          <span>
+            Center
+          </span>
+        </button>
+      </div>
+      <div
+        className="control"
       >
-        Right
-      </button>
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          <span
+            className="icon is-small"
+          >
+            <i
+              className="fa fa-align-right"
+            />
+          </span>
+          <span>
+            Right
+          </span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -234,7 +342,7 @@ exports[`Storyshots Button Colors 1`] = `
 >
   <div>
     <div
-      className="control is-grouped is-grouped-centered"
+      className="field is-grouped is-grouped-centered"
     >
       <div
         className="control"
@@ -304,7 +412,7 @@ exports[`Storyshots Button Colors 1`] = `
       </div>
     </div>
     <div
-      className="control is-grouped is-grouped-centered"
+      className="field is-grouped is-grouped-centered"
     >
       <div
         className="control"
@@ -371,7 +479,7 @@ exports[`Storyshots Button Disabled 1`] = `
   className="container has-text-centered"
 >
   <div
-    className="control is-grouped is-grouped-centered"
+    className="field is-grouped is-grouped-centered"
   >
     <div
       className="control"
@@ -502,7 +610,7 @@ exports[`Storyshots Button Icons only 1`] = `
 >
   <div>
     <div
-      className="control is-grouped"
+      className="field is-grouped"
     >
       <button
         className="button is-small"
@@ -519,7 +627,7 @@ exports[`Storyshots Button Icons only 1`] = `
       </button>
     </div>
     <div
-      className="control is-grouped"
+      className="field is-grouped"
     >
       <div
         className="control"
@@ -557,7 +665,7 @@ exports[`Storyshots Button Icons only 1`] = `
       </div>
     </div>
     <div
-      className="control is-grouped"
+      className="field is-grouped"
     >
       <div
         className="control"
@@ -612,7 +720,7 @@ exports[`Storyshots Button Icons only 1`] = `
       </div>
     </div>
     <div
-      className="control is-grouped has-text-centered"
+      className="field is-grouped has-text-centered"
     >
       <div
         className="control"
@@ -695,7 +803,7 @@ exports[`Storyshots Button Inverted 1`] = `
     className="notification is-primary"
   >
     <div
-      className="control is-grouped is-grouped-centered"
+      className="field is-grouped is-grouped-centered"
     >
       <div
         className="control"
@@ -754,7 +862,7 @@ exports[`Storyshots Button Inverted and outlined 1`] = `
     className="notification is-primary"
   >
     <div
-      className="control is-grouped is-grouped-centered"
+      className="field is-grouped is-grouped-centered"
     >
       <div
         className="control"
@@ -810,7 +918,7 @@ exports[`Storyshots Button Loading 1`] = `
   className="container has-text-centered"
 >
   <div
-    className="control is-grouped is-grouped-centered"
+    className="field is-grouped is-grouped-centered"
   >
     <div
       className="control"
@@ -876,7 +984,7 @@ exports[`Storyshots Button Outlined 1`] = `
   className="container has-text-centered"
 >
   <div
-    className="control is-grouped is-grouped-centered"
+    className="field is-grouped is-grouped-centered"
   >
     <div
       className="control"
@@ -942,7 +1050,7 @@ exports[`Storyshots Button Sizes 1`] = `
   className="container has-text-centered"
 >
   <div
-    className="control is-grouped is-grouped-centered"
+    className="field is-grouped is-grouped-centered"
   >
     <div
       className="control"
@@ -2045,7 +2153,7 @@ exports[`Storyshots Delete Messages 1`] = `
 <div
   className="container"
 >
-  <article
+  <div
     className="message"
   >
     <div
@@ -2062,7 +2170,7 @@ exports[`Storyshots Delete Messages 1`] = `
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
     </div>
-  </article>
+  </div>
 </div>
 `;
 
@@ -2150,55 +2258,79 @@ exports[`Storyshots Form Addons 1`] = `
 >
   <div>
     <div
-      className="control has-addons"
+      className="field has-addons"
     >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Find repository"
-        type="text"
-      />
-      <button
-        className="button is-info"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Search
-      </button>
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Find repository"
+          type="text"
+        />
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-info"
+          disabled={false}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
     </div>
     <div
-      className="control has-addons has-addons-centered"
+      className="field has-addons has-addons-centered"
     >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Find repository"
-        type="text"
-      />
-      <button
-        className="button is-info"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Search
-      </button>
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Find repository"
+          type="text"
+        />
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-info"
+          disabled={false}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
     </div>
     <div
-      className="control has-addons has-addons-right"
+      className="field has-addons has-addons-right"
     >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Find repository"
-        type="text"
-      />
-      <button
-        className="button is-info"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Search
-      </button>
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Find repository"
+          type="text"
+        />
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-info"
+          disabled={false}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -2210,54 +2342,74 @@ exports[`Storyshots Form Colors 1`] = `
 >
   <form>
     <div
-      className="control"
+      className="field"
     >
-      <input
-        className="input is-primary"
-        disabled={false}
-        placeholder="Primary input"
-        type="text"
-      />
+      <div
+        className="control"
+      >
+        <input
+          className="input is-primary"
+          disabled={false}
+          placeholder="Primary input"
+          type="text"
+        />
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <input
-        className="input is-info"
-        disabled={false}
-        placeholder="Info input"
-        type="text"
-      />
+      <div
+        className="control"
+      >
+        <input
+          className="input is-info"
+          disabled={false}
+          placeholder="Info input"
+          type="text"
+        />
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <input
-        className="input is-success"
-        disabled={false}
-        placeholder="Success input"
-        type="text"
-      />
+      <div
+        className="control"
+      >
+        <input
+          className="input is-success"
+          disabled={false}
+          placeholder="Success input"
+          type="text"
+        />
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <input
-        className="input is-warning"
-        disabled={false}
-        placeholder="Warning input"
-        type="text"
-      />
+      <div
+        className="control"
+      >
+        <input
+          className="input is-warning"
+          disabled={false}
+          placeholder="Warning input"
+          type="text"
+        />
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <input
-        className="input is-danger"
-        disabled={false}
-        placeholder="Danger input"
-        type="text"
-      />
+      <div
+        className="control"
+      >
+        <input
+          className="input is-danger"
+          disabled={false}
+          placeholder="Danger input"
+          type="text"
+        />
+      </div>
     </div>
   </form>
 </div>
@@ -2269,84 +2421,112 @@ exports[`Storyshots Form Disabled 1`] = `
 >
   <div>
     <div
-      className="control"
+      className="field"
     >
-      <input
-        className="input"
-        disabled={true}
-        placeholder="Disabled input"
-        type="text"
-      />
-    </div>
-    <div
-      className="control"
-    >
-      <textarea
-        className="textarea"
-        disabled={true}
-        placeholder="Disabled textarea"
-      />
-    </div>
-    <div
-      className="control"
-    >
-      <label
-        className="checkbox is-disabled"
-        htmlFor={null}
+      <div
+        className="control"
       >
         <input
-          className={null}
+          className="input"
           disabled={true}
-          id={null}
-          type="checkbox"
+          placeholder="Disabled input"
+          type="text"
         />
-        Remember me
-      </label>
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <label
-        className="radio is-disabled"
-        htmlFor={null}
+      <div
+        className="control"
       >
-        <input
-          className={null}
+        <textarea
+          className="textarea"
           disabled={true}
-          id={null}
-          name="question"
-          type="radio"
+          placeholder="Disabled textarea"
         />
-        Yes
-      </label>
-      <label
-        className="radio is-disabled"
-        htmlFor={null}
-      >
-        <input
-          className={null}
-          disabled={true}
-          id={null}
-          name="question"
-          type="radio"
-        />
-        No
-      </label>
+      </div>
     </div>
-    <button
-      className="button is-primary"
-      disabled={true}
-      type="submit"
+    <div
+      className="field"
     >
-      Submit
-    </button>
-    <button
-      className="button is-link"
-      disabled={true}
-      type="button"
+      <div
+        className="control"
+      >
+        <label
+          className="checkbox is-disabled"
+          htmlFor={null}
+        >
+          <input
+            className={null}
+            disabled={true}
+            id={null}
+            type="checkbox"
+          />
+          Remember me
+        </label>
+      </div>
+    </div>
+    <div
+      className="field"
     >
-      Cancel
-    </button>
+      <div
+        className="control"
+      >
+        <label
+          className="radio is-disabled"
+          htmlFor={null}
+        >
+          <input
+            className={null}
+            disabled={true}
+            id={null}
+            name="question"
+            type="radio"
+          />
+          Yes
+        </label>
+        <label
+          className="radio is-disabled"
+          htmlFor={null}
+        >
+          <input
+            className={null}
+            disabled={true}
+            id={null}
+            name="question"
+            type="radio"
+          />
+          No
+        </label>
+      </div>
+    </div>
+    <div
+      className="field is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button is-primary"
+          disabled={true}
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button"
+          disabled={true}
+          type="button"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -2357,36 +2537,48 @@ exports[`Storyshots Form Expanded addons 1`] = `
 >
   <div>
     <div
-      className="control has-addons"
+      className="field has-addons"
     >
-      <span
-        className="select"
+      <div
+        className="control"
       >
-        <select>
-          <option>
-            $
-          </option>
-          <option>
-            €
-          </option>
-          <option>
-            £
-          </option>
-        </select>
-      </span>
-      <input
-        className="input is-expanded"
-        disabled={false}
-        placeholder="Amount of money"
-        type="text"
-      />
-      <button
-        className="button"
-        disabled={false}
-        type="button"
+        <span
+          className="select"
+        >
+          <select>
+            <option>
+              $
+            </option>
+            <option>
+              €
+            </option>
+            <option>
+              £
+            </option>
+          </select>
+        </span>
+      </div>
+      <div
+        className="control is-expanded"
       >
-        Transfer
-      </button>
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Amount of money"
+          type="text"
+        />
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button"
+          disabled={false}
+          type="button"
+        >
+          Transfer
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -2397,171 +2589,211 @@ exports[`Storyshots Form Form 1`] = `
   className="container"
 >
   <div>
-    <label
-      className="label"
-    >
-      Name
-    </label>
     <div
-      className="control"
+      className="field"
     >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Text input"
-        type="text"
-      />
-    </div>
-    <label
-      className="label"
-    >
-      Username
-    </label>
-    <div
-      className="control has-icon has-icon-right"
-    >
-      <input
-        className="input is-success"
-        defaultValue="rulma"
-        disabled={false}
-        placeholder="Text input"
-        type="text"
-      />
-      <span
-        className="icon is-small"
+      <label
+        className="label"
       >
-        <i
-          className="fa fa-check"
-        />
-      </span>
+        Name
+      </label>
       <div
-        className="help is-success"
+        className="control"
       >
-        The username is available
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Text input"
+          type="text"
+        />
       </div>
     </div>
-    <label
-      className="label"
-    >
-      Email
-    </label>
     <div
-      className="control has-icon has-icon-right"
+      className="field"
     >
-      <input
-        className="input is-danger"
-        defaultValue="hello@"
-        disabled={false}
-        placeholder="Email input"
-        type="email"
-      />
-      <span
-        className="icon is-small"
+      <label
+        className="label"
       >
-        <i
-          className="fa fa-warning"
-        />
-      </span>
+        Username
+      </label>
       <div
-        className="help is-danger"
+        className="control has-icon has-icon-right"
       >
-        The email is invalid
+        <input
+          className="input is-success"
+          defaultValue="rulma"
+          disabled={false}
+          placeholder="Text input"
+          type="text"
+        />
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-check"
+          />
+        </span>
+        <div
+          className="help is-success"
+        >
+          The username is available
+        </div>
       </div>
     </div>
-    <label
-      className="label"
-    >
-      Subject
-    </label>
     <div
-      className="control"
-    >
-      <span
-        className="select"
-      >
-        <select>
-          <option>
-            Select dropdown
-          </option>
-          <option>
-            with options
-          </option>
-        </select>
-      </span>
-    </div>
-    <label
-      className="label"
-    >
-      Message
-    </label>
-    <div
-      className="control"
-    >
-      <textarea
-        className="textarea"
-        placeholder="Textarea"
-      />
-    </div>
-    <div
-      className="control"
+      className="field"
     >
       <label
-        className="checkbox"
-        htmlFor="remember"
+        className="label"
+      >
+        Email
+      </label>
+      <div
+        className="control has-icon has-icon-right"
       >
         <input
-          className={null}
+          className="input is-danger"
+          defaultValue="hello@"
           disabled={false}
-          id="remember"
-          type="checkbox"
+          placeholder="Email input"
+          type="email"
         />
-        Remember me
-      </label>
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-warning"
+          />
+        </span>
+        <div
+          className="help is-danger"
+        >
+          The email is invalid
+        </div>
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
       <label
-        className="radio"
-        htmlFor="radio1"
+        className="label"
       >
-        <input
-          className={null}
-          disabled={false}
-          id="radio1"
-          name="question"
-          type="radio"
-        />
-        Yes
+        Subject
       </label>
-      <label
-        className="radio"
-        htmlFor="radio2"
+      <div
+        className="control"
       >
-        <input
-          className={null}
-          disabled={false}
-          id="radio2"
-          name="question"
-          type="radio"
-        />
-        No
-      </label>
+        <span
+          className="select"
+        >
+          <select>
+            <option>
+              Select dropdown
+            </option>
+            <option>
+              with options
+            </option>
+          </select>
+        </span>
+      </div>
     </div>
-    <button
-      className="button is-primary"
-      disabled={false}
-      type="submit"
+    <div
+      className="field"
     >
-      Submit
-    </button>
-    <button
-      className="button is-link"
-      disabled={false}
-      type="button"
+      <label
+        className="label"
+      >
+        Message
+      </label>
+      <div
+        className="control"
+      >
+        <textarea
+          className="textarea"
+          placeholder="Textarea"
+        />
+      </div>
+    </div>
+    <div
+      className="field"
     >
-      Cancel
-    </button>
+      <div
+        className="control"
+      >
+        <label
+          className="checkbox"
+          htmlFor="remember"
+        >
+          <input
+            className={null}
+            disabled={false}
+            id="remember"
+            type="checkbox"
+          />
+          Remember me
+        </label>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="control"
+      >
+        <label
+          className="radio"
+          htmlFor="radio1"
+        >
+          <input
+            className={null}
+            disabled={false}
+            id="radio1"
+            name="question"
+            type="radio"
+          />
+          Yes
+        </label>
+        <label
+          className="radio"
+          htmlFor="radio2"
+        >
+          <input
+            className={null}
+            disabled={false}
+            id="radio2"
+            name="question"
+            type="radio"
+          />
+          No
+        </label>
+      </div>
+    </div>
+    <div
+      className="field is-grouped"
+    >
+      <div
+        className="control"
+      >
+        <button
+          className="button is-primary"
+          disabled={false}
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-link"
+          disabled={false}
+          type="button"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -2571,7 +2803,7 @@ exports[`Storyshots Form Form group 1`] = `
   className="container"
 >
   <div
-    className="control is-grouped"
+    className="field is-grouped"
   >
     <div
       className="control is-expanded"
@@ -2600,10 +2832,10 @@ exports[`Storyshots Form Horizontal form 1`] = `
 >
   <div>
     <div
-      className="control is-horizontal"
+      className="field is-horizontal"
     >
       <div
-        className="control-label"
+        className="field-label"
       >
         <label
           className="label"
@@ -2612,7 +2844,7 @@ exports[`Storyshots Form Horizontal form 1`] = `
         </label>
       </div>
       <div
-        className="control is-grouped"
+        className="field is-grouped"
       >
         <div
           className="control is-expanded"
@@ -2633,14 +2865,19 @@ exports[`Storyshots Form Horizontal form 1`] = `
             placeholder="Email"
             type="text"
           />
+          <div
+            className="help is-success"
+          >
+            The email is correct
+          </div>
         </div>
       </div>
     </div>
     <div
-      className="control is-horizontal"
+      className="field is-horizontal"
     >
       <div
-        className="control-label"
+        className="field-label"
       >
         <label
           className="label"
@@ -2666,10 +2903,10 @@ exports[`Storyshots Form Horizontal form 1`] = `
       </div>
     </div>
     <div
-      className="control is-horizontal"
+      className="field is-horizontal"
     >
       <div
-        className="control-label"
+        className="field-label"
       >
         <label
           className="label"
@@ -2696,46 +2933,62 @@ exports[`Storyshots Form Icons 1`] = `
 >
   <div>
     <div
-      className="control has-icon"
+      className="field"
     >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Email"
-        type="email"
-      />
-      <span
-        className="icon is-small"
+      <div
+        className="control has-icon"
       >
-        <i
-          className="fa fa-envelope"
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Email"
+          type="email"
         />
-      </span>
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-envelope"
+          />
+        </span>
+      </div>
     </div>
     <div
-      className="control has-icon"
+      className="field"
     >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Password"
-        type="password"
-      />
-      <span
-        className="icon is-small"
+      <div
+        className="control has-icon"
       >
-        <i
-          className="fa fa-lock"
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Password"
+          type="password"
         />
-      </span>
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-lock"
+          />
+        </span>
+      </div>
     </div>
-    <button
-      className="button is-success"
-      disabled={false}
-      type="button"
+    <div
+      className="field"
     >
-      Login
-    </button>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-success"
+          disabled={false}
+          type="button"
+        >
+          Login
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -2746,72 +2999,88 @@ exports[`Storyshots Form Icons right 1`] = `
 >
   <div>
     <div
-      className="control has-icon has-icon-right"
+      className="field"
     >
-      <input
-        className="input is-small"
-        disabled={false}
-        placeholder="Email"
-        type="email"
-      />
-      <span
-        className="icon is-small"
+      <div
+        className="control has-icon has-icon-right"
       >
-        <i
-          className="fa fa-check"
+        <input
+          className="input is-small"
+          disabled={false}
+          placeholder="Email"
+          type="email"
         />
-      </span>
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-check"
+          />
+        </span>
+      </div>
     </div>
     <div
-      className="control has-icon has-icon-right"
+      className="field"
     >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Email"
-        type="email"
-      />
-      <span
-        className="icon"
+      <div
+        className="control has-icon has-icon-right"
       >
-        <i
-          className="fa fa-check"
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Email"
+          type="email"
         />
-      </span>
+        <span
+          className="icon"
+        >
+          <i
+            className="fa fa-check"
+          />
+        </span>
+      </div>
     </div>
     <div
-      className="control has-icon has-icon-right"
+      className="field"
     >
-      <input
-        className="input is-medium"
-        disabled={false}
-        placeholder="Email"
-        type="email"
-      />
-      <span
-        className="icon is-medium"
+      <div
+        className="control has-icon has-icon-right"
       >
-        <i
-          className="fa fa-check"
+        <input
+          className="input is-medium"
+          disabled={false}
+          placeholder="Email"
+          type="email"
         />
-      </span>
+        <span
+          className="icon is-medium"
+        >
+          <i
+            className="fa fa-check"
+          />
+        </span>
+      </div>
     </div>
     <div
-      className="control has-icon has-icon-right"
+      className="field"
     >
-      <input
-        className="input is-large"
-        disabled={false}
-        placeholder="Email"
-        type="email"
-      />
-      <span
-        className="icon is-large"
+      <div
+        className="control has-icon has-icon-right"
       >
-        <i
-          className="fa fa-check"
+        <input
+          className="input is-large"
+          disabled={false}
+          placeholder="Email"
+          type="email"
         />
-      </span>
+        <span
+          className="icon is-large"
+        >
+          <i
+            className="fa fa-check"
+          />
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -2823,22 +3092,30 @@ exports[`Storyshots Form Loading 1`] = `
 >
   <div>
     <div
-      className="control is-loading"
+      className="field"
     >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Loading input"
-        type="text"
-      />
+      <div
+        className="control is-loading"
+      >
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Loading input"
+          type="text"
+        />
+      </div>
     </div>
     <div
-      className="control is-loading"
+      className="field"
     >
-      <textarea
-        className="textarea"
-        placeholder="Loading textarea"
-      />
+      <div
+        className="control is-loading"
+      >
+        <textarea
+          className="textarea"
+          placeholder="Loading textarea"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -2850,108 +3127,140 @@ exports[`Storyshots Form Sizes 1`] = `
 >
   <form>
     <div
-      className="control"
+      className="field"
     >
-      <input
-        className="input is-small"
-        disabled={false}
-        placeholder="Small input"
-        type="text"
-      />
-    </div>
-    <div
-      className="control"
-    >
-      <input
-        className="input"
-        disabled={false}
-        placeholder="Default input"
-        type="text"
-      />
-    </div>
-    <div
-      className="control"
-    >
-      <input
-        className="input is-medium"
-        disabled={false}
-        placeholder="Medium input"
-        type="text"
-      />
-    </div>
-    <div
-      className="control"
-    >
-      <input
-        className="input is-large"
-        disabled={false}
-        placeholder="Large input"
-        type="text"
-      />
-    </div>
-    <div
-      className="control"
-    >
-      <span
-        className="select is-small"
+      <div
+        className="control"
       >
-        <select>
-          <option>
-            Select dropdown
-          </option>
-          <option>
-            with options
-          </option>
-        </select>
-      </span>
+        <input
+          className="input is-small"
+          disabled={false}
+          placeholder="Small input"
+          type="text"
+        />
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <span
-        className="select"
+      <div
+        className="control"
       >
-        <select>
-          <option>
-            Select dropdown
-          </option>
-          <option>
-            with options
-          </option>
-        </select>
-      </span>
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Default input"
+          type="text"
+        />
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <span
-        className="select is-medium"
+      <div
+        className="control"
       >
-        <select>
-          <option>
-            Select dropdown
-          </option>
-          <option>
-            with options
-          </option>
-        </select>
-      </span>
+        <input
+          className="input is-medium"
+          disabled={false}
+          placeholder="Medium input"
+          type="text"
+        />
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <span
-        className="select is-large"
+      <div
+        className="control"
       >
-        <select>
-          <option>
-            Select dropdown
-          </option>
-          <option>
-            with options
-          </option>
-        </select>
-      </span>
+        <input
+          className="input is-large"
+          disabled={false}
+          placeholder="Large input"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="control"
+      >
+        <span
+          className="select is-small"
+        >
+          <select>
+            <option>
+              Select dropdown
+            </option>
+            <option>
+              with options
+            </option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="control"
+      >
+        <span
+          className="select"
+        >
+          <select>
+            <option>
+              Select dropdown
+            </option>
+            <option>
+              with options
+            </option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="control"
+      >
+        <span
+          className="select is-medium"
+        >
+          <select>
+            <option>
+              Select dropdown
+            </option>
+            <option>
+              with options
+            </option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="control"
+      >
+        <span
+          className="select is-large"
+        >
+          <select>
+            <option>
+              Select dropdown
+            </option>
+            <option>
+              with options
+            </option>
+          </select>
+        </span>
+      </div>
     </div>
   </form>
 </div>
@@ -4509,7 +4818,7 @@ exports[`Storyshots Message Body only 1`] = `
   className="container"
 >
   <div>
-    <article
+    <div
       className="message"
     >
       <div
@@ -4529,8 +4838,8 @@ exports[`Storyshots Message Body only 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-dark"
     >
       <div
@@ -4550,8 +4859,8 @@ exports[`Storyshots Message Body only 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-primary"
     >
       <div
@@ -4571,8 +4880,8 @@ exports[`Storyshots Message Body only 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-info"
     >
       <div
@@ -4592,8 +4901,8 @@ exports[`Storyshots Message Body only 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-success"
     >
       <div
@@ -4613,8 +4922,8 @@ exports[`Storyshots Message Body only 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-warning"
     >
       <div
@@ -4634,8 +4943,8 @@ exports[`Storyshots Message Body only 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-danger"
     >
       <div
@@ -4655,7 +4964,7 @@ exports[`Storyshots Message Body only 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
+    </div>
   </div>
 </div>
 `;
@@ -4665,7 +4974,7 @@ exports[`Storyshots Message Header 1`] = `
   className="container"
 >
   <div>
-    <article
+    <div
       className="message"
     >
       <div
@@ -4694,8 +5003,8 @@ exports[`Storyshots Message Header 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-dark"
     >
       <div
@@ -4724,8 +5033,8 @@ exports[`Storyshots Message Header 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-primary"
     >
       <div
@@ -4754,8 +5063,8 @@ exports[`Storyshots Message Header 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-info"
     >
       <div
@@ -4784,8 +5093,8 @@ exports[`Storyshots Message Header 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-success"
     >
       <div
@@ -4814,8 +5123,8 @@ exports[`Storyshots Message Header 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-warning"
     >
       <div
@@ -4844,8 +5153,8 @@ exports[`Storyshots Message Header 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="message is-danger"
     >
       <div
@@ -4874,7 +5183,7 @@ exports[`Storyshots Message Header 1`] = `
         </em>
         , in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
       </div>
-    </article>
+    </div>
   </div>
 </div>
 `;

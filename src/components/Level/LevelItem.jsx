@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-import classNames from '../../modifiers';
+import modifiers from '../../modifiers';
 
-const LevelItem = (props) => {
-  const [classes, restProps] = classNames(props, 'level-item');
+const LevelItem = ({ tag: Tag, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'level-item');
+
   return (
-    <div className={classes} {...restProps} />
+    <Tag className={classes} {...restProps} />
   );
+};
+
+LevelItem.propTypes = {
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+};
+
+LevelItem.defaultProps = {
+  tag: 'div',
 };
 
 export default LevelItem;

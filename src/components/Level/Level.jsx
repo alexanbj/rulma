@@ -5,24 +5,26 @@ import LevelLeft from './LevelLeft';
 import LevelRight from './LevelRight';
 import LevelItem from './LevelItem';
 
-const Level = ({ className, mobile, ...props }) => {
+const Level = ({ className, mobile, tag: Tag, ...props }) => {
   const classes = classNames('level', className, {
     'is-mobile': mobile,
   });
 
   return (
-    <div className={classes} {...props} />
+    <Tag className={classes} {...props} />
   );
 };
 
 Level.propTypes = {
   className: PropTypes.string,
   mobile: PropTypes.bool,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Level.defaultProps = {
   className: null,
   mobile: false,
+  tag: 'div',
 };
 
 // Add the sub components to the top level export for ease of use

@@ -4,9 +4,7 @@ import classNames, { modifierPropTypes } from '../../modifiers';
 
 const NavLeft = (props) => {
   const [classes, restProps] = classNames(props, 'nav-left');
-  return (
-    <div className={classes} {...restProps} />
-  );
+  return <div className={classes} {...restProps} />;
 };
 
 NavLeft.propTypes = {

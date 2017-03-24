@@ -9,8 +9,7 @@ import Radio from './Radio';
 import Select from './Select';
 import Textarea from './Textarea';
 
-const Form = ({ ...props }) =>
-  <form {...props} />;
+const Form = ({ ...props }) => <form {...props} />;
 
 Form.Checkbox = Checkbox;
 Form.Input = Input;

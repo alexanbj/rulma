@@ -9,9 +9,7 @@ import modifiers, { modifierPropTypes } from '../../modifiers';
 const Box = ({ tag: Tag, ...props }) => {
   const [classes, restProps] = modifiers(props, 'box');
 
-  return (
-    <Tag className={classes} {...restProps} />
-  );
+  return <Tag className={classes} {...restProps} />;
 };
 
 Box.propTypes = {

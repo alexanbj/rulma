@@ -8,9 +8,7 @@ const Table = ({ bordered, narrow, striped, ...props }) => {
     'is-striped': striped,
   });
 
-  return (
-    <table className={classes} {...restProps} />
-  );
+  return <table className={classes} {...restProps} />;
 };
 
 Table.propTypes = {

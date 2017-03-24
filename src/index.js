@@ -1,4 +1,3 @@
-
 import Addons from './control/Addons';
 import Box from './elements/Box';
 import Block from './elements/Block';

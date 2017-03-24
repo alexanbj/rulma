@@ -8,9 +8,7 @@ import MessageBody from './MessageBody';
 const Message = ({ tag: Tag, ...props }) => {
   const [classes, restProps] = modifiers(props, 'message');
 
-  return (
-    <Tag className={classes} {...restProps} />
-  );
+  return <Tag className={classes} {...restProps} />;
 };
 
 Message.propTypes = {

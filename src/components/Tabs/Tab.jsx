@@ -5,9 +5,7 @@ const Tab = ({ active, className, ...props }) => {
   const classes = classNames(className, {
     'is-active': active,
   });
-  return (
-    <li className={classes} {...props} />
-  );
+  return <li className={classes} {...props} />;
 };
 
 Tab.propTypes = {

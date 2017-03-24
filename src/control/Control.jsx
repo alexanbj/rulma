@@ -2,13 +2,16 @@ import React, { PropTypes } from 'react';
 
 import modifiers from '../modifiers';
 
-const Control = ({
+const Control = (
+  {
     expanded,
-    icon, iconRight,
+    icon,
+    iconRight,
     loading,
     tag: Tag,
     ...props
-  }) => {
+  },
+) => {
   const [classes, restProps] = modifiers(props, 'control', {
     'is-expanded': expanded,
     'has-icon': icon,
@@ -16,9 +19,7 @@ const Control = ({
     'is-loading': loading,
   });
 
-  return (
-    <Tag className={classes} {...restProps} />
-  );
+  return <Tag className={classes} {...restProps} />;
 };
 
 Control.propTypes = {

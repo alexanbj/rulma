@@ -31,7 +31,8 @@ export default class Portal extends React.Component {
   }
 
   handleKeydown(e) {
-    if (e.keyCode === 27) { // 27 = Esc
+    if (e.keyCode === 27) {
+      // 27 = Esc
       this.props.onClose();
     }
   }

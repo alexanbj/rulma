@@ -5,9 +5,7 @@ import CardHeaderIcon from './CardHeaderIcon';
 
 const CardHeader = ({ className, ...props }) => {
   const classes = classNames('card-header', className);
-  return (
-    <header className={classes} {...props} />
-  );
+  return <header className={classes} {...props} />;
 };
 
 CardHeader.propTypes = {

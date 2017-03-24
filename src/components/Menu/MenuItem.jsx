@@ -17,7 +17,8 @@ MenuItem.propTypes = {
   className: PropTypes.string,
   open: PropTypes.bool,
   menu: PropTypes.func,
-  tag: PropTypes.oneOfType([  // Something that renders as anchor, such as a React Router Link
+  tag: PropTypes.oneOfType([
+    // Something that renders as anchor, such as a React Router Link
     PropTypes.func,
     PropTypes.string,
   ]),
@@ -30,6 +31,5 @@ MenuItem.defaultProps = {
   menu: null,
   tag: 'a',
 };
-
 
 export default MenuItem;

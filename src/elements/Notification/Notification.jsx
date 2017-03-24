@@ -4,9 +4,7 @@ import modifiers, { colorPropType, modifierPropTypes } from '../../modifiers';
 
 const Notification = (props) => {
   const [classes, restProps] = modifiers(props, 'notification');
-  return (
-    <div className={classes} {...restProps} />
-  );
+  return <div className={classes} {...restProps} />;
 };
 
 Notification.propTypes = {

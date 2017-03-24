@@ -4,10 +4,19 @@ import blacklist from 'blacklist';
 import Control from '../../control';
 import classNames, { sizePropType, colorPropType } from '../../modifiers';
 
-
-const Button = ({
-    active, control, expanded, fullWidth, inverted, loading, outlined, tag, ...props
-  }) => {
+const Button = (
+  {
+    active,
+    control,
+    expanded,
+    fullWidth,
+    inverted,
+    loading,
+    outlined,
+    tag,
+    ...props
+  },
+) => {
   // eslint-disable-next-line prefer-const
   let [classes, restProps] = classNames(props, 'button', {
     'is-active': active,
@@ -18,16 +27,16 @@ const Button = ({
     'is-fullwidth': fullWidth,
   });
 
-  const Tag = Object.prototype.hasOwnProperty.call(restProps, 'href') && tag === 'button' ? 'a' : tag;
+  const Tag = Object.prototype.hasOwnProperty.call(restProps, 'href') && tag === 'button'
+    ? 'a'
+    : tag;
 
   // The bold assumption that everything that isn't a button should have the type prop removed
   if (Tag !== 'button') {
     restProps = blacklist(restProps, 'type');
   }
 
-  const button = (
-    <Tag className={classes} {...restProps} />
-  );
+  const button = <Tag className={classes} {...restProps} />;
 
   if (control) {
     return (
@@ -44,8 +53,8 @@ Button.propTypes = {
   active: PropTypes.bool,
   className: PropTypes.string,
   color: colorPropType,
-  control: PropTypes.bool,            // Wraps the button in a <Control />
-  expanded: PropTypes.bool,           // Within addons and groups
+  control: PropTypes.bool, // Wraps the button in a <Control />
+  expanded: PropTypes.bool, // Within addons and groups
   fullWidth: PropTypes.bool,
   disabled: PropTypes.bool,
   // eslint-disable-next-line react/require-default-props
@@ -55,12 +64,7 @@ Button.propTypes = {
   outlined: PropTypes.bool,
   size: sizePropType,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  type: PropTypes.oneOf([
-    'button',
-    'submit',
-    'reset',
-    'menu',
-  ]).isRequired,
+  type: PropTypes.oneOf(['button', 'submit', 'reset', 'menu']).isRequired,
 };
 
 Button.defaultProps = {

@@ -3,9 +3,7 @@ import classNames, { sizePropType } from '../../modifiers';
 
 const Delete = (props) => {
   const [classes, restProps] = classNames(props, 'delete');
-  return (
-    <button className={classes} {...restProps} />
-  );
+  return <button className={classes} {...restProps} />;
 };
 
 Delete.propTypes = {

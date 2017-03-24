@@ -2,13 +2,19 @@ import React, { PropTypes } from 'react';
 
 import modifiers from '../modifiers';
 
-const Field = ({
-    addons, addonsCentered, addonsRight,
-    grouped, groupedCentered, groupedRight,
+const Field = (
+  {
+    addons,
+    addonsCentered,
+    addonsRight,
+    grouped,
+    groupedCentered,
+    groupedRight,
     horizontal,
     tag: Tag,
     ...props
-  }) => {
+  },
+) => {
   const [classes, restProps] = modifiers(props, 'field', {
     'has-addons': addons,
     'has-addons-centered': addonsCentered,
@@ -19,9 +25,7 @@ const Field = ({
     'is-horizontal': horizontal,
   });
 
-  return (
-    <Tag className={classes} {...restProps} />
-  );
+  return <Tag className={classes} {...restProps} />;
 };
 
 Field.propTypes = {

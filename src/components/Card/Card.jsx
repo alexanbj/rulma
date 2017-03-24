@@ -9,9 +9,7 @@ import CardContent from './CardContent';
 
 const Card = ({ className, ...props }) => {
   const classes = classNames('card', className);
-  return (
-    <div className={classes} {...props} />
-  );
+  return <div className={classes} {...props} />;
 };
 
 Card.propTypes = {

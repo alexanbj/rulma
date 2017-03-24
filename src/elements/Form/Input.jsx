@@ -10,9 +10,7 @@ const Input = ({ control, expanded, fullWidth, inline, ...props }) => {
     'is-inline': inline,
   });
 
-  const input = (
-    <input className={classes} {...restProps} />
-  );
+  const input = <input className={classes} {...restProps} />;
 
   if (control) {
     return (
@@ -27,9 +25,9 @@ const Input = ({ control, expanded, fullWidth, inline, ...props }) => {
 
 Input.propTypes = {
   color: colorPropType,
-  control: PropTypes.bool,              // Wraps the Input in a <Control />
+  control: PropTypes.bool, // Wraps the Input in a <Control />
   disabled: PropTypes.bool,
-  expanded: PropTypes.bool,             // Applies within Addons and Groups
+  expanded: PropTypes.bool, // Applies within Addons and Groups
   fullWidth: PropTypes.bool,
   inline: PropTypes.bool,
   placeholder: PropTypes.string,

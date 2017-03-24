@@ -10,9 +10,7 @@ const Level = ({ className, mobile, tag: Tag, ...props }) => {
     'is-mobile': mobile,
   });
 
-  return (
-    <Tag className={classes} {...props} />
-  );
+  return <Tag className={classes} {...props} />;
 };
 
 Level.propTypes = {

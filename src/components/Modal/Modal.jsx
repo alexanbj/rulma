@@ -11,7 +11,6 @@ import ModalTitle from './ModalTitle';
 
 // TODO: Trap focus in modal because of accessibility
 class Modal extends React.Component {
-
   componentDidMount() {
     this.focus();
   }
@@ -34,18 +33,16 @@ class Modal extends React.Component {
             aria-label={this.props['aria-label']}
             aria-labelledby={this.props['aria-labelledby']}
             className={classic ? 'modal-card' : 'modal-content'}
-            ref={(c) => { this.modal = c; }}
+            ref={(c) => {
+              this.modal = c;
+            }}
             role={role}
           >
             {this.props.children}
           </div>
-          {onClose && closeBackdropButton &&
-            <button
-              aria-label="Close"
-              className="modal-close"
-              onClick={onClose}
-            />
-          }
+          {onClose &&
+            closeBackdropButton &&
+            <button aria-label="Close" className="modal-close" onClick={onClose} />}
         </div>
       </Portal>
     );
@@ -53,20 +50,17 @@ class Modal extends React.Component {
 }
 
 Modal.propTypes = {
-  'aria-label': PropTypes.string,                 // The label for the modal. Should be provided for accessibility (if not, used aria-labelledby)
-  'aria-labelledby': PropTypes.string,            // The id of the element that labels the modal (usally ModalTitle when classic). This our aria-label should be provided.
-  autoFocus: PropTypes.bool.isRequired,           // Focus the modal content when it mounts
+  'aria-label': PropTypes.string, // The label for the modal. Should be provided for accessibility (if not, used aria-labelledby)
+  'aria-labelledby': PropTypes.string, // The id of the element that labels the modal (usally ModalTitle when classic). This our aria-label should be provided.
+  autoFocus: PropTypes.bool.isRequired, // Focus the modal content when it mounts
   children: PropTypes.node,
-  classic: PropTypes.bool.isRequired,             // Classic modal. Use Header, Body and Footer
+  classic: PropTypes.bool.isRequired, // Classic modal. Use Header, Body and Footer
   className: PropTypes.string,
   closeBackdropButton: PropTypes.bool.isRequired, // Show a close button on the backdrop
-  closeOnBackdrop: PropTypes.bool.isRequired,     // If clicking the backdrop should call onClose
-  closeOnEsc: PropTypes.bool.isRequired,          // If Esc should call onClose
-  role: PropTypes.oneOf([
-    'dialog',
-    'alertdialog',
-  ]),
-  onClose: PropTypes.func,                        // Callback when dismissal is requested
+  closeOnBackdrop: PropTypes.bool.isRequired, // If clicking the backdrop should call onClose
+  closeOnEsc: PropTypes.bool.isRequired, // If Esc should call onClose
+  role: PropTypes.oneOf(['dialog', 'alertdialog']),
+  onClose: PropTypes.func, // Callback when dismissal is requested
 };
 
 Modal.defaultProps = {

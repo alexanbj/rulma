@@ -10,9 +10,7 @@ const Columns = ({ gapless, multiline, responsive, vCentered, ...props }) => {
     [`is-${responsive}`]: responsive,
   });
 
-  return (
-    <div className={classes} {...restProps} />
-  );
+  return <div className={classes} {...restProps} />;
 };
 
 Columns.propTypes = {

@@ -3,9 +3,7 @@ import modifiers from '../../modifiers';
 
 const CardImage = ({ tag: Tag, ...props }) => {
   const [classes, restProps] = modifiers(props, 'card-image');
-  return (
-    <Tag className={classes} {...restProps} />
-  );
+  return <Tag className={classes} {...restProps} />;
 };
 
 CardImage.propTypes = {

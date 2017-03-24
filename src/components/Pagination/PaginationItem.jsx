@@ -6,7 +6,7 @@ const PaginationItem = ({ active, children, className, disabled, ellipsis, ...pr
     return (
       <li>
         <span className={classNames('pagination-ellipsis', className)}>
-          &hellip;
+          …
         </span>
       </li>
     );

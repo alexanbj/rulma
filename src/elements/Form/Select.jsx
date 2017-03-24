@@ -15,17 +15,15 @@ const Select = ({ control, expanded, fullWidth, ...props }) => {
   );
 
   if (control) {
-    return (
-      <Control>{select}</Control>
-    );
+    return <Control>{select}</Control>;
   }
 
   return select;
 };
 
 Select.propTypes = {
-  control: PropTypes.bool,          // Wraps the Select in a <Control />
-  expanded: PropTypes.bool,         // Within addons and groups
+  control: PropTypes.bool, // Wraps the Select in a <Control />
+  expanded: PropTypes.bool, // Within addons and groups
   fullWidth: PropTypes.bool,
   size: sizePropType,
 };

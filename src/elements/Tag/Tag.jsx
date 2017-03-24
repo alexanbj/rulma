@@ -4,9 +4,7 @@ import classNames, { colorPropType, sizePropType } from '../../modifiers';
 
 const Tag = (props) => {
   const [classes, restProps] = classNames(props, 'tag');
-  return (
-    <span className={classes} {...restProps} />
-  );
+  return <span className={classes} {...restProps} />;
 };
 
 Tag.propTypes = {

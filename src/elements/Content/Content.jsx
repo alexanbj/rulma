@@ -10,9 +10,7 @@ import classNames, { modifierPropTypes } from '../../modifiers';
  */
 const Content = (props) => {
   const [classes, restProps] = classNames(props, 'content');
-  return (
-    <div className={classes} {...restProps} />
-  );
+  return <div className={classes} {...restProps} />;
 };
 
 Content.propTypes = {

@@ -7,9 +7,7 @@ const Container = ({ fluid, ...props }) => {
     'is-fluid': fluid,
   });
 
-  return (
-    <div className={classes} {...restProps} />
-  );
+  return <div className={classes} {...restProps} />;
 };
 
 Container.propTypes = {

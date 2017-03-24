@@ -10,10 +10,7 @@ const Icon = ({ className, icon, spin, fw, size, ...rest }) => {
   };
 
   return (
-    <span
-      className={classNames('icon', className, { [`is-${size}`]: size })}
-      {...rest}
-    >
+    <span className={classNames('icon', className, { [`is-${size}`]: size })} {...rest}>
       <i className={classNames(`fa fa-${icon}`, classes)} />
     </span>
   );

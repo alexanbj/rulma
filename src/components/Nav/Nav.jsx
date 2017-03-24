@@ -12,9 +12,7 @@ const Nav = ({ className, shadow, ...props }) => {
     'has-shadow': shadow,
   });
 
-  return (
-    <nav className={classes} {...props} />
-  );
+  return <nav className={classes} {...props} />;
 };
 
 Nav.propTypes = {

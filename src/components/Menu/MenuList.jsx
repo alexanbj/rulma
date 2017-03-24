@@ -17,9 +17,7 @@ export default class MenuList extends React.Component {
       'menu-list': !this.context.isNestedMenuList,
     });
 
-    return (
-      <ul className={classes} {...props} />
-    );
+    return <ul className={classes} {...props} />;
   }
 }
 

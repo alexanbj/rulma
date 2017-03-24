@@ -5,9 +5,7 @@ import modifiers from '../../modifiers';
 const LevelItem = ({ tag: Tag, ...props }) => {
   const [classes, restProps] = modifiers(props, 'level-item');
 
-  return (
-    <Tag className={classes} {...restProps} />
-  );
+  return <Tag className={classes} {...restProps} />;
 };
 
 LevelItem.propTypes = {

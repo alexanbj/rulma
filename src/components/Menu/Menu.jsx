@@ -7,9 +7,7 @@ import MenuItem from './MenuItem';
 
 const Menu = ({ tag: Tag, className, ...props }) => {
   const classes = classNames('menu', className);
-  return (
-    <Tag className={classes} {...props} />
-  );
+  return <Tag className={classes} {...props} />;
 };
 
 Menu.propTypes = {

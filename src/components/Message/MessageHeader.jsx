@@ -3,9 +3,7 @@ import classNames, { modifierPropTypes } from '../../modifiers';
 
 const MessageHeader = (props) => {
   const [classes, restProps] = classNames(props, 'message-header');
-  return (
-    <div className={classes} {...restProps} />
-  );
+  return <div className={classes} {...restProps} />;
 };
 
 MessageHeader.propTypes = {

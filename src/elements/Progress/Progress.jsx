@@ -3,9 +3,7 @@ import classNames, { colorPropType, sizePropType, modifierPropTypes } from '../.
 
 const Progress = (props) => {
   const [classes, restProps] = classNames(props, 'progress');
-  return (
-    <progress className={classes} {...restProps} />
-  );
+  return <progress className={classes} {...restProps} />;
 };
 
 Progress.propTypes = {

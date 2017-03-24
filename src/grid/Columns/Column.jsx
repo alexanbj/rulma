@@ -11,14 +11,31 @@ const sizes = new Map([
   ['1/4', 'one-quarter'],
 ]);
 
-const Column = ({
-  size,
-  mobile, tablet, desktop, widescreen,
-  offset, mobileOffset, tabletOffset, desktopOffset, widescreenOffset,
-  narrow, mobileNarrow, tabletNarrow, desktopNarrow, widescreenNarrow,
-  full, mobileFull, tabletFull, desktopFull, widescreenFull,
-  ...props
-}) => {
+const Column = (
+  {
+    size,
+    mobile,
+    tablet,
+    desktop,
+    widescreen,
+    offset,
+    mobileOffset,
+    tabletOffset,
+    desktopOffset,
+    widescreenOffset,
+    narrow,
+    mobileNarrow,
+    tabletNarrow,
+    desktopNarrow,
+    widescreenNarrow,
+    full,
+    mobileFull,
+    tabletFull,
+    desktopFull,
+    widescreenFull,
+    ...props
+  },
+) => {
   const [classes, restProps] = classNames(props, 'column', {
     [`is-${sizes.get(size) || size}`]: size,
 
@@ -46,15 +63,39 @@ const Column = ({
     'is-full-widescreen': widescreenFull,
   });
 
-  return (
-    <div className={classes} {...restProps} />
-  );
+  return <div className={classes} {...restProps} />;
 };
 
 const sizeProp = PropTypes.oneOf([
-  '3/4', '2/3', '1/2', '1/3', '1/4',
-  '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+  '3/4',
+  '2/3',
+  '1/2',
+  '1/3',
+  '1/4',
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
+  '9',
+  '10',
+  '11',
+  '12',
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
 ]);
 
 Column.propTypes = {
@@ -95,7 +136,6 @@ Column.defaultProps = {
   tabletOffset: null,
   desktopOffset: null,
   widescreenOffset: null,
-
 
   narrow: false,
   mobileNarrow: false,

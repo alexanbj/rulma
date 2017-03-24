@@ -5,9 +5,7 @@ import CardFooterItem from './CardFooterItem';
 
 const CardFooter = ({ className, ...props }) => {
   const classes = classNames('card-footer', className);
-  return (
-    <footer className={classes} {...props} />
-  );
+  return <footer className={classes} {...props} />;
 };
 
 CardFooter.propTypes = {

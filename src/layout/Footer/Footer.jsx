@@ -3,9 +3,7 @@ import classNames, { modifierPropTypes } from '../../modifiers';
 
 const Footer = (props) => {
   const [classes, restProps] = classNames(props, 'footer');
-  return (
-    <footer className={classes} {...restProps} />
-  );
+  return <footer className={classes} {...restProps} />;
 };
 
 Footer.propTypes = {

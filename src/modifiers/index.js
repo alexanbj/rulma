@@ -15,11 +15,7 @@ export const colorPropType = PropTypes.oneOf([
   'link',
 ]);
 
-export const sizePropType = PropTypes.oneOf([
-  'small',
-  'medium',
-  'large',
-]);
+export const sizePropType = PropTypes.oneOf(['small', 'medium', 'large']);
 
 export const modifierPropTypes = {
   className: PropTypes.string,
@@ -56,7 +52,8 @@ export default function bulmaClassNames(props, ...args) {
       [`is-${props.color}`]: props.color,
       [`is-${props.size}`]: props.size,
     }),
-    blacklist(props,
+    blacklist(
+      props,
       'className',
       'color',
       'size',

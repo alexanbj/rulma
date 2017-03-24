@@ -9,9 +9,7 @@ const Textarea = ({ control, className, fullWidth, inline, ...props }) => {
     'is-inline': inline,
   });
 
-  const textarea = (
-    <textarea className={classes} {...props} />
-  );
+  const textarea = <textarea className={classes} {...props} />;
 
   if (control) {
     return (
@@ -25,7 +23,7 @@ const Textarea = ({ control, className, fullWidth, inline, ...props }) => {
 };
 
 Textarea.propTypes = {
-  control: PropTypes.bool,          // Wraps the Textarea in a <Control />
+  control: PropTypes.bool, // Wraps the Textarea in a <Control />
   className: PropTypes.string,
   fullWidth: PropTypes.bool,
   inline: PropTypes.bool,

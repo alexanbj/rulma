@@ -5,8 +5,9 @@ import MediaLeft from './MediaLeft';
 import MediaContent from './MediaContent';
 import MediaRight from './MediaRight';
 
-const Media = ({ className, ...props }) =>
-  <article className={classNames('media', className)} {...props} />;
+const Media = ({ className, ...props }) => (
+  <article className={classNames('media', className)} {...props} />
+);
 
 Media.propTypes = {
   className: PropTypes.string,

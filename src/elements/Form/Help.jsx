@@ -5,9 +5,7 @@ import modifiers, { colorPropType } from '../../modifiers';
 const Help = ({ tag: Tag, ...props }) => {
   const [classes, restProps] = modifiers(props, 'help');
 
-  return (
-    <Tag className={classes} {...restProps} />
-  );
+  return <Tag className={classes} {...restProps} />;
 };
 
 Help.propTypes = {

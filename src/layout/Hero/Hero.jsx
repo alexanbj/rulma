@@ -12,9 +12,7 @@ const Hero = ({ bold, fullheight, tag: Tag, ...props }) => {
     'is-fullheight': fullheight,
   });
 
-  return (
-    <Tag className={classes} {...restProps} />
-  );
+  return <Tag className={classes} {...restProps} />;
 };
 
 Hero.propTypes = {

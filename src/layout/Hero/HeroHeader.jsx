@@ -4,9 +4,7 @@ import classNames, { modifierPropTypes } from '../../modifiers';
 
 const HeroHeader = (props) => {
   const [classes, restProps] = classNames(props, 'hero-head');
-  return (
-    <div className={classes} {...restProps} />
-  );
+  return <div className={classes} {...restProps} />;
 };
 
 HeroHeader.propTypes = {

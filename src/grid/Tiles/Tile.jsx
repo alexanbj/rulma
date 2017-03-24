@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react';
 
-import classNames, { modifierPropTypes } from '../../modifiers';
+import modifiers, { modifierPropTypes } from '../../modifiers';
 
-const Tile = ({ ancestor, child, children, cols, parent, vertical, ...props }) => {
-  const [classes, restProps] = classNames(props, 'tile', {
+const Tile = ({ ancestor, child, children, parent, size, vertical, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'tile', {
     'is-ancestor': ancestor,
     'is-child': child,
     'is-parent': parent,
     'is-vertical': vertical,
-    [`is-${cols}`]: cols,
+    [`is-${size}`]: size,
   }, child ? React.Children.only(children).props.className : null);
 
   /**
@@ -32,17 +32,20 @@ const Tile = ({ ancestor, child, children, cols, parent, vertical, ...props }) =
 Tile.propTypes = {
   ancestor: PropTypes.bool,
   child: PropTypes.bool,
-  cols: PropTypes.oneOf(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']),
   ...modifierPropTypes,
   parent: PropTypes.bool,
+  size: PropTypes.oneOf([
+    '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+   ]),
   vertical: PropTypes.bool,
 };
 
 Tile.defaultProps = {
   ancestor: false,
   child: false,
-  cols: null,
   parent: false,
+  size: null,
   vertical: false,
 };
 

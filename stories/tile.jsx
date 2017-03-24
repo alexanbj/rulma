@@ -10,7 +10,7 @@ storiesOf('Tiles', module)
   ))
   .add('Tiles', () =>
     <Tile ancestor>
-      <Tile vertical parent cols="8">
+      <Tile vertical cols="8">
         <Tile>
           <Tile parent vertical>
             <Tile child>

@@ -7050,7 +7050,7 @@ exports[`Storyshots Tiles Tiles 1`] = `
     className="tile is-ancestor"
   >
     <div
-      className="tile is-parent is-vertical is-8"
+      className="tile is-vertical is-8"
     >
       <div
         className="tile"

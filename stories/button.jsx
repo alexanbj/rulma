@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Addons, Container, Button, Group, Icon, Notification } from '../src/';
+import { Addons, Container, Button, Field, Group, Icon, Notification } from '../src/';
 
 function buttons(props, text) {
   return [
@@ -66,7 +66,7 @@ storiesOf('Button', module)
   )
   .add('Fullwidth', () =>
     <div>
-      {buttons({ fullWidth: true }, 'Fullwidth')}
+      {buttons({ fullWidth: true }, 'Fullwidth').map(b => <Field>{b}</Field>)}
     </div>,
   )
   .add('Disabled', () =>

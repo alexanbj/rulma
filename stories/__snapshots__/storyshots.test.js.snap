@@ -546,59 +546,79 @@ exports[`Storyshots Button Fullwidth 1`] = `
 >
   <div>
     <div
-      className="control"
+      className="field"
     >
-      <button
-        className="button is-fullwidth"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Fullwidth
-      </button>
+        <button
+          className="button is-fullwidth"
+          disabled={false}
+          type="button"
+        >
+          Fullwidth
+        </button>
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <button
-        className="button is-fullwidth is-primary"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Fullwidth
-      </button>
+        <button
+          className="button is-fullwidth is-primary"
+          disabled={false}
+          type="button"
+        >
+          Fullwidth
+        </button>
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <button
-        className="button is-fullwidth is-info"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Fullwidth
-      </button>
+        <button
+          className="button is-fullwidth is-info"
+          disabled={false}
+          type="button"
+        >
+          Fullwidth
+        </button>
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <button
-        className="button is-fullwidth is-success"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Fullwidth
-      </button>
+        <button
+          className="button is-fullwidth is-success"
+          disabled={false}
+          type="button"
+        >
+          Fullwidth
+        </button>
+      </div>
     </div>
     <div
-      className="control"
+      className="field"
     >
-      <button
-        className="button is-fullwidth is-danger"
-        disabled={false}
-        type="button"
+      <div
+        className="control"
       >
-        Fullwidth
-      </button>
+        <button
+          className="button is-fullwidth is-danger"
+          disabled={false}
+          type="button"
+        >
+          Fullwidth
+        </button>
+      </div>
     </div>
   </div>
 </div>

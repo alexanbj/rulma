@@ -604,6 +604,77 @@ exports[`Storyshots Button Fullwidth 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button Fullwidth addons 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <div
+    className="field has-addons has-addons-centered has-addons-fullwidth"
+  >
+    <div
+      className="control"
+    >
+      <button
+        className="button is-fullwidth"
+        disabled={false}
+        type="button"
+      >
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-align-left"
+          />
+        </span>
+        <span>
+          Left
+        </span>
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-fullwidth"
+        disabled={false}
+        type="button"
+      >
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-align-center"
+          />
+        </span>
+        <span>
+          Center
+        </span>
+      </button>
+    </div>
+    <div
+      className="control"
+    >
+      <button
+        className="button is-fullwidth"
+        disabled={false}
+        type="button"
+      >
+        <span
+          className="icon is-small"
+        >
+          <i
+            className="fa fa-align-right"
+          />
+        </span>
+        <span>
+          Right
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button Icons only 1`] = `
 <div
   className="container has-text-centered"

@@ -151,6 +151,24 @@ storiesOf('Button', module)
       </Button>
     </Addons>,
   )
+  .add('Fullwidth addons', () =>
+    <Addons centered fullWidth>
+      <Button control fullWidth>
+        <Icon icon="align-left" size="small" />
+        <span>
+          Left
+        </span>
+      </Button>
+      <Button control fullWidth>
+        <Icon icon="align-center" size="small" />
+        <span>Center</span>
+      </Button>
+      <Button control fullWidth>
+        <Icon icon="align-right" size="small" />
+        <span>Right</span>
+      </Button>
+    </Addons>,
+  )
   .add('Button group with addons', () =>
     <Group centered>
       <Addons>

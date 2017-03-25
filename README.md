@@ -1,6 +1,8 @@
 # Rulma
 
-React components for [Bulma](https://github.com/jgthms/bulma).
+[![build status](https://img.shields.io/travis/alexanbj/rulma/master.svg?style=flat-square)](https://travis-ci.org/alexanbj/rulma)
+
+> React components for [Bulma](https://github.com/jgthms/bulma).
 
 #### Disclaimer
 Rulma is in the early stages, with active development, so it could be subject to breaking changes.

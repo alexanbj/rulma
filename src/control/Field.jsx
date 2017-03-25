@@ -42,7 +42,7 @@ Field.propTypes = {
   groupedCentered: PropTypes.bool,
   groupedRight: PropTypes.bool,
   horizontal: PropTypes.bool,
-  narrow: false,
+  narrow: PropTypes.bool,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 

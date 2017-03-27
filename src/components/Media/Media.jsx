@@ -1,20 +1,23 @@
 import React, { PropTypes } from 'react';
-import classNames from 'classnames';
+import modifiers from '../../modifiers';
 
 import MediaLeft from './MediaLeft';
 import MediaContent from './MediaContent';
 import MediaRight from './MediaRight';
 
-const Media = ({ className, ...props }) => (
-  <article className={classNames('media', className)} {...props} />
-);
+const Media = ({ tag: Tag, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'media');
+  return <Tag className={classes} {...restProps} />;
+};
 
 Media.propTypes = {
   className: PropTypes.string,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Media.defaultProps = {
   className: null,
+  tag: 'div',
 };
 
 Media.Left = MediaLeft;

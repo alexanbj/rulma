@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-import classNames from '../../modifiers';
+import modifiers from '../../modifiers';
 
-const MediaContent = (props) => {
-  const [classes, restProps] = classNames(props, 'media-content');
-  return <div className={classes} {...restProps} />;
+const MediaContent = ({ tag: Tag, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'media-content');
+  return <Tag className={classes} {...restProps} />;
+};
+
+MediaContent.propTypes = {
+  className: PropTypes.string,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+};
+
+MediaContent.defaultProps = {
+  className: null,
+  tag: 'div',
 };
 
 export default MediaContent;

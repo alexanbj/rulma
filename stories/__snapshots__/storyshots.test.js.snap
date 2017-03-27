@@ -1219,7 +1219,7 @@ exports[`Storyshots Card Card 1`] = `
         <div
           className="card-content"
         >
-          <article
+          <div
             className="media"
           >
             <div
@@ -1248,7 +1248,7 @@ exports[`Storyshots Card Card 1`] = `
                 @johnsmith
               </h6>
             </div>
-          </article>
+          </div>
           <div
             className="content"
           >
@@ -4520,7 +4520,7 @@ exports[`Storyshots Media Form 1`] = `
 <div
   className="container"
 >
-  <article
+  <div
     className="media"
   >
     <div
@@ -4578,7 +4578,7 @@ exports[`Storyshots Media Form 1`] = `
         </div>
       </div>
     </div>
-  </article>
+  </div>
 </div>
 `;
 
@@ -4586,7 +4586,7 @@ exports[`Storyshots Media Media 1`] = `
 <div
   className="container"
 >
-  <article
+  <div
     className="media"
   >
     <div
@@ -4655,7 +4655,7 @@ exports[`Storyshots Media Media 1`] = `
         className="delete"
       />
     </div>
-  </article>
+  </div>
 </div>
 `;
 
@@ -4664,7 +4664,7 @@ exports[`Storyshots Media Nesting 1`] = `
   className="container"
 >
   <div>
-    <article
+    <div
       className="media"
     >
       <div
@@ -4698,7 +4698,7 @@ exports[`Storyshots Media Nesting 1`] = `
           </a>
            · 3 hrs
         </small>
-        <article
+        <div
           className="media"
         >
           <div
@@ -4732,7 +4732,7 @@ exports[`Storyshots Media Nesting 1`] = `
               </a>
                · 2 hrs
             </small>
-            <article
+            <div
               className="media"
             >
               <div
@@ -4740,8 +4740,8 @@ exports[`Storyshots Media Nesting 1`] = `
               >
                 Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
               </div>
-            </article>
-            <article
+            </div>
+            <div
               className="media"
             >
               <div
@@ -4749,10 +4749,10 @@ exports[`Storyshots Media Nesting 1`] = `
               >
                 Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
               </div>
-            </article>
+            </div>
           </div>
-        </article>
-        <article
+        </div>
+        <div
           className="media"
         >
           <div
@@ -4787,10 +4787,10 @@ exports[`Storyshots Media Nesting 1`] = `
                · 2 hrs
             </small>
           </div>
-        </article>
+        </div>
       </div>
-    </article>
-    <article
+    </div>
+    <div
       className="media"
     >
       <div
@@ -4820,7 +4820,7 @@ exports[`Storyshots Media Nesting 1`] = `
           Post comment
         </button>
       </div>
-    </article>
+    </div>
   </div>
 </div>
 `;

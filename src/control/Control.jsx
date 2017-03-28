@@ -2,6 +2,10 @@ import React, { PropTypes } from 'react';
 
 import modifiers from '../modifiers';
 
+/**
+* Should only contain a <Button />, <Input />, <Select /> or <Textarea />
+* <Help /> should NOT go here, but in the <Field /> that wraps a <Control />
+*/
 const Control = (
   {
     expanded,

@@ -11,13 +11,14 @@ import Control from './control/Control';
 import Content from './elements/Content';
 import Delete from './elements/Delete';
 import Field from './control/Field';
+import FieldBody from './control/FieldBody';
+import FieldLabel from './control/FieldLabel';
 import Form from './elements/Form';
 import Footer from './layout/Footer';
 import Group from './control/Group';
 import Heading from './elements/Heading';
 import Help from './elements/Form/Help';
 import Hero from './layout/Hero';
-import Horizontal from './control/Horizontal';
 import Icon from './elements/Icon';
 import Input from './elements/Form/Input';
 import Label from './elements/Form/Label';
@@ -56,13 +57,14 @@ export {
   Content,
   Delete,
   Field,
+  FieldBody,
+  FieldLabel,
   Footer,
   Form,
   Group,
   Heading,
   Help,
   Hero,
-  Horizontal,
   Icon,
   Input,
   Label,

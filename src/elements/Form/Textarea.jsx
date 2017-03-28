@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 import modifiers, { sizePropType, colorPropType } from '../../modifiers';
 import Control from '../../control';
 
-const Textarea = ({ control, fullWidth, inline, ...props }) => {
+const Textarea = ({ fullWidth, inline, loading, noControl, ...props }) => {
   const [classes, restProps] = modifiers(props, 'textarea', {
     'is-fullwidth': fullWidth,
     'is-inline': inline,
@@ -11,9 +11,9 @@ const Textarea = ({ control, fullWidth, inline, ...props }) => {
 
   const textarea = <textarea className={classes} {...restProps} />;
 
-  if (control) {
+  if (!noControl) {
     return (
-      <Control>
+      <Control loading={loading}>
         {textarea}
       </Control>
     );
@@ -24,10 +24,11 @@ const Textarea = ({ control, fullWidth, inline, ...props }) => {
 
 Textarea.propTypes = {
   color: colorPropType,
-  control: PropTypes.bool, // Wraps the Textarea in a <Control />
   className: PropTypes.string,
-  fullWidth: PropTypes.bool,
+  fullWidth: PropTypes.bool, // Defined in Bulma's CSS. But does it do anything for textareas?
   inline: PropTypes.bool,
+  loading: PropTypes.bool, // Show a loading indicator. Requires a control container
+  noControl: PropTypes.bool, // Don't wrap the textarea with a control container
   placeholder: PropTypes.string,
   size: sizePropType,
 };
@@ -38,6 +39,8 @@ Textarea.defaultProps = {
   className: null,
   fullWidth: false,
   inline: false,
+  loading: false,
+  noControl: false,
   placeholder: null,
   size: null,
 };

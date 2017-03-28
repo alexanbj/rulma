@@ -2587,6 +2587,7 @@ exports[`Storyshots Form Disabled 1`] = `
       >
         <textarea
           className="textarea"
+          control={false}
           disabled={true}
           placeholder="Disabled textarea"
         />
@@ -2725,6 +2726,46 @@ exports[`Storyshots Form Expanded addons 1`] = `
         </button>
       </div>
     </div>
+    <div
+      className="field has-addons"
+    >
+      <div
+        className="control is-expanded"
+      >
+        <span
+          className="select is-fullwidth"
+        >
+          <select>
+            <option
+              value="Norway"
+            >
+              Norway
+            </option>
+            <option
+              value="Sweden"
+            >
+              Sweden
+            </option>
+            <option
+              value="Denmark"
+            >
+              Denmark
+            </option>
+          </select>
+        </span>
+      </div>
+      <div
+        className="control"
+      >
+        <button
+          className="button is-primary"
+          disabled={false}
+          type="button"
+        >
+          Choose
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -2748,6 +2789,15 @@ exports[`Storyshots Form Form 1`] = `
         <input
           className="input"
           disabled={false}
+          icon={
+            <Icon
+              className={null}
+              fw={false}
+              icon="save"
+              size="small"
+              spin={false}
+            />
+          }
           placeholder="Text input"
           type="text"
         />
@@ -2778,11 +2828,11 @@ exports[`Storyshots Form Form 1`] = `
             className="fa fa-check"
           />
         </span>
-        <div
-          className="help is-success"
-        >
-          The username is available
-        </div>
+      </div>
+      <div
+        className="help is-success"
+      >
+        The username is available
       </div>
     </div>
     <div
@@ -2810,11 +2860,11 @@ exports[`Storyshots Form Form 1`] = `
             className="fa fa-warning"
           />
         </span>
-        <div
-          className="help is-danger"
-        >
-          The email is invalid
-        </div>
+      </div>
+      <div
+        className="help is-danger"
+      >
+        The email is invalid
       </div>
     </div>
     <div
@@ -2855,6 +2905,7 @@ exports[`Storyshots Form Form 1`] = `
       >
         <textarea
           className="textarea"
+          control={false}
           placeholder="Textarea"
         />
       </div>
@@ -2989,27 +3040,35 @@ exports[`Storyshots Form Horizontal form 1`] = `
         </label>
       </div>
       <div
-        className="field is-grouped"
+        className="field-body"
       >
         <div
-          className="control is-expanded"
+          className="field is-grouped"
         >
-          <input
-            className="input"
-            disabled={false}
-            placeholder="Name"
-            type="text"
-          />
+          <div
+            className="control is-expanded"
+          >
+            <input
+              className="input"
+              disabled={false}
+              placeholder="Name"
+              type="text"
+            />
+          </div>
         </div>
         <div
-          className="control is-expanded"
+          className="field"
         >
-          <input
-            className="input"
-            disabled={false}
-            placeholder="Email"
-            type="text"
-          />
+          <div
+            className="control is-expanded"
+          >
+            <input
+              className="input"
+              disabled={false}
+              placeholder="Email"
+              type="text"
+            />
+          </div>
           <div
             className="help is-success"
           >
@@ -3027,24 +3086,116 @@ exports[`Storyshots Form Horizontal form 1`] = `
         <label
           className="label"
         >
+          Department
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="control"
+        >
+          <span
+            className="select is-fullwidth"
+          >
+            <select>
+              <option>
+                Business development
+              </option>
+              <option>
+                Marketing
+              </option>
+              <option>
+                Sales
+              </option>
+            </select>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label"
+      >
+        <label
+          className="label"
+        >
+          Already a member?
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field is-narrow"
+        >
+          <div
+            className="control"
+          >
+            <label
+              className="radio"
+              htmlFor={null}
+            >
+              <input
+                className={null}
+                disabled={false}
+                id={null}
+                type="radio"
+              />
+              Yes
+            </label>
+            <label
+              className="radio"
+              htmlFor={null}
+            >
+              <input
+                className={null}
+                disabled={false}
+                id={null}
+                type="radio"
+              />
+              No
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label"
+      >
+        <label
+          className="label"
+        >
           Subject
         </label>
       </div>
       <div
-        className="control"
+        className="field-body"
       >
-        <span
-          className="select is-fullwidth"
+        <div
+          className="field"
         >
-          <select>
-            <option>
-              Select dropdown
-            </option>
-            <option>
-              with options
-            </option>
-          </select>
-        </span>
+          <div
+            className="control"
+          >
+            <input
+              className="input is-danger"
+              disabled={false}
+              placeholder="e.g. Partnership opportunity"
+              type="text"
+            />
+          </div>
+          <div
+            className="help is-danger"
+          >
+            This field is required
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -3060,12 +3211,47 @@ exports[`Storyshots Form Horizontal form 1`] = `
         </label>
       </div>
       <div
-        className="control"
+        className="field-body"
       >
-        <textarea
-          className="textarea"
-          placeholder="How can we help you?"
-        />
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              control={false}
+              placeholder="How can we help you?"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label"
+      />
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <button
+              className="button is-primary"
+              disabled={false}
+              type="button"
+            >
+              Send message
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -3258,6 +3444,7 @@ exports[`Storyshots Form Loading 1`] = `
       >
         <textarea
           className="textarea"
+          control={false}
           placeholder="Loading textarea"
         />
       </div>
@@ -3408,6 +3595,176 @@ exports[`Storyshots Form Sizes 1`] = `
       </div>
     </div>
   </form>
+</div>
+`;
+
+exports[`Storyshots Form Vertical label alignment 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label"
+      >
+        <label
+          className="label"
+        >
+          No padding
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <label
+              className="checkbox"
+              htmlFor={null}
+            >
+              <input
+                className={null}
+                disabled={false}
+                id={null}
+                type="checkbox"
+              />
+              Checkbox
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label"
+      >
+        <label
+          className="label"
+        >
+          Small padding
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input is-small"
+              disabled={false}
+              placeholder="Small sized input"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label"
+      >
+        <label
+          className="label"
+        >
+          Normal label
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input"
+              disabled={false}
+              placeholder="Normal sized input"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label"
+      >
+        <label
+          className="label"
+        >
+          Medium label
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input is-medium"
+              disabled={false}
+              placeholder="Medium sized input"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="field is-horizontal"
+    >
+      <div
+        className="field-label"
+      >
+        <label
+          className="label"
+        >
+          Large label
+        </label>
+      </div>
+      <div
+        className="field-body"
+      >
+        <div
+          className="field"
+        >
+          <div
+            className="control"
+          >
+            <input
+              className="input is-large"
+              disabled={false}
+              placeholder="Large sized input"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -4538,10 +4895,19 @@ exports[`Storyshots Media Form 1`] = `
     <div
       className="media-content"
     >
-      <textarea
-        className="textarea"
-        placeholder="Add comment"
-      />
+      <div
+        className="field"
+      >
+        <div
+          className="control"
+        >
+          <textarea
+            className="textarea"
+            control={false}
+            placeholder="Add comment"
+          />
+        </div>
+      </div>
       <div
         className="level"
       >
@@ -4563,18 +4929,22 @@ exports[`Storyshots Media Form 1`] = `
         <div
           className="level-right"
         >
-          <label
-            className="checkbox"
-            htmlFor={null}
+          <div
+            className="control"
           >
-            <input
-              className={null}
-              disabled={false}
-              id={null}
-              type="checkbox"
-            />
-            Press enter to submit
-          </label>
+            <label
+              className="checkbox"
+              htmlFor={null}
+            >
+              <input
+                className={null}
+                disabled={false}
+                id={null}
+                type="checkbox"
+              />
+              Press enter to submit
+            </label>
+          </div>
         </div>
       </div>
     </div>
@@ -4808,17 +5178,30 @@ exports[`Storyshots Media Nesting 1`] = `
       <div
         className="media-content"
       >
-        <textarea
-          className="textarea"
-          placeholder="Add comment"
-        />
-        <button
-          className="button is-primary"
-          disabled={false}
-          type="button"
+        <div
+          className="field"
         >
-          Post comment
-        </button>
+          <div
+            className="control"
+          >
+            <textarea
+              className="textarea"
+              control={false}
+              placeholder="Add comment"
+            />
+          </div>
+        </div>
+        <div
+          className="field"
+        >
+          <button
+            className="button is-primary"
+            disabled={false}
+            type="button"
+          >
+            Post comment
+          </button>
+        </div>
       </div>
     </div>
   </div>

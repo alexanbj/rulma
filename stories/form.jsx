@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Addons, Button, Control, Container, Field, Form, Help, Icon, Input, Label, Radio, Group, Horizontal, Checkbox, Select, Textarea } from '../src/';
+import { Addons, Button, Control, Container, Field, Form, Help, Icon, Input, Label, Radio, Group, Checkbox, Select, Textarea } from '../src/';
 
 const options = [
   <option key="1">Select dropdown</option>,
@@ -17,36 +17,42 @@ storiesOf('Form', module)
     <div>
       <Field>
         <Label>Name</Label>
-        <Input control placeholder="Text input" />
+        <Input placeholder="Text input" icon={<Icon size="small" icon="save" />} />
       </Field>
       <Field>
         <Label>Username</Label>
         <Control icon iconRight>
-          <Input color="success" placeholder="Text input" defaultValue="rulma" />
+          <Input noControl color="success" placeholder="Text input" defaultValue="rulma" />
           <Icon icon="check" size="small" />
-          <Help color="success">The username is available</Help>
         </Control>
+        <Help color="success">The username is available</Help>
       </Field>
       <Field>
         <Label>Email</Label>
         <Control icon iconRight>
-          <Input color="danger" placeholder="Email input" defaultValue="hello@" type="email" />
+          <Input
+            noControl
+            color="danger"
+            placeholder="Email input"
+            defaultValue="hello@"
+            type="email"
+          />
           <Icon icon="warning" size="small" />
-          <Help color="danger">The email is invalid</Help>
         </Control>
+        <Help color="danger">The email is invalid</Help>
       </Field>
       <Field>
         <Label>Subject</Label>
-        <Select control>
+        <Select>
           {options}
         </Select>
       </Field>
       <Field>
         <Label>Message</Label>
-        <Textarea control placeholder="Textarea" />
+        <Textarea placeholder="Textarea" />
       </Field>
       <Field>
-        <Checkbox id="remember" control>Remember me</Checkbox>
+        <Checkbox id="remember">Remember me</Checkbox>
       </Field>
       <Field>
         <Control>
@@ -64,35 +70,30 @@ storiesOf('Form', module)
     <Form>
       <Field>
         <Input
-          control
           color="primary"
           placeholder="Primary input"
         />
       </Field>
       <Field>
         <Input
-          control
           color="info"
           placeholder="Info input"
         />
       </Field>
       <Field>
         <Input
-          control
           color="success"
           placeholder="Success input"
         />
       </Field>
       <Field>
         <Input
-          control
           color="warning"
           placeholder="Warning input"
         />
       </Field>
       <Field>
         <Input
-          control
           color="danger"
           placeholder="Danger input"
         />
@@ -103,48 +104,44 @@ storiesOf('Form', module)
     <Form>
       <Field>
         <Input
-          control
           placeholder="Small input"
           size="small"
         />
       </Field>
       <Field>
         <Input
-          control
           placeholder="Default input"
         />
       </Field>
       <Field>
         <Input
-          control
           placeholder="Medium input"
           size="medium"
         />
       </Field>
       <Field>
         <Input
-          control
           placeholder="Large input"
           size="large"
         />
       </Field>
       <Field>
-        <Select control size="small">
+        <Select size="small">
           {options}
         </Select>
       </Field>
       <Field>
-        <Select control>
+        <Select>
           {options}
         </Select>
       </Field>
       <Field>
-        <Select control size="medium">
+        <Select size="medium">
           {options}
         </Select>
       </Field>
       <Field>
-        <Select control size="large">
+        <Select size="large">
           {options}
         </Select>
       </Field>
@@ -153,27 +150,23 @@ storiesOf('Form', module)
   .add('Loading', () =>
     <div>
       <Field>
-        <Control loading>
-          <Input placeholder="Loading input" />
-        </Control>
+        <Input loading placeholder="Loading input" />
       </Field>
       <Field>
-        <Control loading>
-          <Textarea placeholder="Loading textarea" />
-        </Control>
+        <Textarea loading placeholder="Loading textarea" />
       </Field>
     </div>,
   )
   .add('Disabled', () =>
     <div>
       <Field>
-        <Input control disabled placeholder="Disabled input" />
+        <Input disabled placeholder="Disabled input" />
       </Field>
       <Field>
-        <Textarea control disabled placeholder="Disabled textarea" />
+        <Textarea disabled placeholder="Disabled textarea" />
       </Field>
       <Field>
-        <Checkbox control disabled>Remember me</Checkbox>
+        <Checkbox disabled>Remember me</Checkbox>
       </Field>
       <Field>
         <Control>
@@ -191,13 +184,13 @@ storiesOf('Form', module)
     <div>
       <Field>
         <Control icon>
-          <Input placeholder="Email" type="email" />
+          <Input noControl placeholder="Email" type="email" />
           <Icon icon="envelope" size="small" />
         </Control>
       </Field>
       <Field>
         <Control icon>
-          <Input placeholder="Password" type="password" />
+          <Input noControl placeholder="Password" type="password" />
           <Icon icon="lock" size="small" />
         </Control>
       </Field>
@@ -210,25 +203,25 @@ storiesOf('Form', module)
     <div>
       <Field>
         <Control icon iconRight>
-          <Input placeholder="Email" type="email" size="small" />
+          <Input noControl placeholder="Email" type="email" size="small" />
           <Icon icon="check" size="small" />
         </Control>
       </Field>
       <Field>
         <Control icon iconRight>
-          <Input placeholder="Email" type="email" />
+          <Input noControl placeholder="Email" type="email" />
           <Icon icon="check" />
         </Control>
       </Field>
       <Field>
         <Control icon iconRight>
-          <Input placeholder="Email" type="email" size="medium" />
+          <Input noControl placeholder="Email" type="email" size="medium" />
           <Icon icon="check" size="medium" />
         </Control>
       </Field>
       <Field>
         <Control icon iconRight>
-          <Input placeholder="Email" type="email" size="large" />
+          <Input noControl placeholder="Email" type="email" size="large" />
           <Icon icon="check" size="large" />
         </Control>
       </Field>
@@ -237,15 +230,15 @@ storiesOf('Form', module)
   .add('Addons', () =>
     <div>
       <Addons>
-        <Input control placeholder="Find repository" />
+        <Input placeholder="Find repository" />
         <Button control color="info">Search</Button>
       </Addons>
       <Addons centered>
-        <Input control placeholder="Find repository" />
+        <Input placeholder="Find repository" />
         <Button control color="info">Search</Button>
       </Addons>
       <Addons right>
-        <Input control placeholder="Find repository" />
+        <Input placeholder="Find repository" />
         <Button control color="info">Search</Button>
       </Addons>
     </div>,
@@ -253,43 +246,133 @@ storiesOf('Form', module)
   .add('Expanded addons', () =>
     <div>
       <Addons>
-        <Select control>
+        <Select>
           <option>$</option>
           <option>€</option>
           <option>£</option>
         </Select>
-        <Input control expanded placeholder="Amount of money" />
+        <Input expanded placeholder="Amount of money" />
         <Button control>Transfer</Button>
+      </Addons>
+      <Addons>
+        <Select expanded fullWidth>
+          <option value="Norway">Norway</option>
+          <option value="Sweden">Sweden</option>
+          <option value="Denmark">Denmark</option>
+        </Select>
+        <Button control color="primary">Choose</Button>
       </Addons>
     </div>,
   )
   .add('Form group', () =>
     <Group>
-      <Input control expanded placeholder="Find repository" />
+      <Input expanded placeholder="Find repository" />
       <Button color="info">Search</Button>
     </Group>,
   )
   .add('Horizontal form', () =>
     <div>
-      <Horizontal>
+      <Field horizontal>
         <Label field>From</Label>
-        <Group>
-          <Input control expanded placeholder="Name" />
-          <Control expanded>
-            <Input placeholder="Email" />
+        <Field.Body>
+          <Field grouped>
+            <Input expanded placeholder="Name" />
+          </Field>
+          <Field>
+            <Input expanded placeholder="Email" />
             <Help color="success">The email is correct</Help>
-          </Control>
-        </Group>
-      </Horizontal>
-      <Horizontal>
+          </Field>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
+        <Label field>Department</Label>
+        <Field.Body>
+          <Select fullWidth>
+            <option>Business development</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+          </Select>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
+        <Label field>Already a member?</Label>
+        <Field.Body>
+          <Field narrow>
+            <Control>
+              <Radio>Yes</Radio>
+              <Radio>No</Radio>
+            </Control>
+          </Field>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
         <Label field>Subject</Label>
-        <Select fullWidth control>
-          {options}
-        </Select>
-      </Horizontal>
-      <Horizontal>
+        <Field.Body>
+          <Field>
+            <Input color="danger" placeholder="e.g. Partnership opportunity" />
+            <Help color="danger">This field is required</Help>
+          </Field>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
         <Label field>Question</Label>
-        <Textarea control placeholder="How can we help you?" />
-      </Horizontal>
+        <Field.Body>
+          <Field>
+            <Textarea placeholder="How can we help you?" />
+          </Field>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
+        <Field.Label />
+        <Field.Body>
+          <Field>
+            <Button control color="primary">Send message</Button>
+          </Field>
+        </Field.Body>
+      </Field>
+    </div>,
+  )
+  .add('Vertical label alignment', () =>
+    <div>
+      <Field horizontal>
+        <Label field>No padding</Label>
+        <Field.Body>
+          <Field>
+            <Checkbox>Checkbox</Checkbox>
+          </Field>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
+        <Label field>Small padding</Label>
+        <Field.Body>
+          <Field>
+            <Input size="small" placeholder="Small sized input" />
+          </Field>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
+        <Label field>Normal label</Label>
+        <Field.Body>
+          <Field>
+            <Input placeholder="Normal sized input" />
+          </Field>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
+        <Label field>Medium label</Label>
+        <Field.Body>
+          <Field>
+            <Input size="medium" placeholder="Medium sized input" />
+          </Field>
+        </Field.Body>
+      </Field>
+      <Field horizontal>
+        <Label field>Large label</Label>
+        <Field.Body>
+          <Field>
+            <Input size="large" placeholder="Large sized input" />
+          </Field>
+        </Field.Body>
+      </Field>
     </div>,
   );

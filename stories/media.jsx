@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Button, Container, Delete, Form, Level, ImageContainer, Media } from '../src/';
+import { Button, Container, Delete, Field, Form, Level, ImageContainer, Media } from '../src/';
 
 storiesOf('Media', module)
   .addDecorator(story => (
@@ -52,7 +52,9 @@ storiesOf('Media', module)
         </ImageContainer>
       </Media.Left>
       <Media.Content>
-        <Form.Textarea placeholder="Add comment" />
+        <Field>
+          <Form.Textarea placeholder="Add comment" />
+        </Field>
         <Level>
           <Level.Left>
             <Level.Item>
@@ -138,8 +140,12 @@ storiesOf('Media', module)
           </ImageContainer>
         </Media.Left>
         <Media.Content>
-          <Form.Textarea placeholder="Add comment" />
-          <Button color="primary">Post comment</Button>
+          <Field>
+            <Form.Textarea placeholder="Add comment" />
+          </Field>
+          <Field>
+            <Button color="primary">Post comment</Button>
+          </Field>
         </Media.Content>
       </Media>
     </div>,

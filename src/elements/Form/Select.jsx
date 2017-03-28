@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 import modifiers, { sizePropType } from '../../modifiers';
 import Control from '../../control';
 
-const Select = ({ control, expanded, fullWidth, ...props }) => {
+const Select = ({ expanded, fullWidth, noControl, ...props }) => {
   const [classes, restProps] = modifiers(props, 'select', {
     'is-fullwidth': fullWidth,
   });
@@ -14,7 +14,7 @@ const Select = ({ control, expanded, fullWidth, ...props }) => {
     </span>
   );
 
-  if (control) {
+  if (!noControl) {
     return (
       <Control expanded={expanded}>
         {select}
@@ -26,16 +26,16 @@ const Select = ({ control, expanded, fullWidth, ...props }) => {
 };
 
 Select.propTypes = {
-  control: PropTypes.bool, // Wraps the Select in a <Control />
   expanded: PropTypes.bool, // When within addons and groups
-  fullWidth: PropTypes.bool,
+  fullWidth: PropTypes.bool, // When not within addons and groups
+  noControl: PropTypes.bool, // Don't wrap the select with a control container
   size: sizePropType,
 };
 
 Select.defaultProps = {
-  control: false,
   expanded: false,
   fullWidth: false,
+  noControl: false,
   size: null,
 };
 

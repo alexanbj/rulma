@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react';
 
+import FieldBody from './FieldBody';
+import FieldLabel from './FieldLabel';
 import modifiers from '../modifiers';
 
 const Field = (
@@ -59,5 +61,8 @@ Field.defaultProps = {
   narrow: false,
   tag: 'div',
 };
+
+Field.Body = FieldBody;
+Field.Label = FieldLabel;
 
 export default Field;

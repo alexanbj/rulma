@@ -1,12 +1,13 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
+import FieldLabel from '../../control/FieldLabel';
 
 /* eslint-disable jsx-a11y/label-has-for */
 const Label = ({ className, field, ...props }) => {
   const label = <label className={classNames('label', className)} {...props} />;
 
   if (field) {
-    return <div className="field-label">{label}</div>;
+    return <FieldLabel>{label}</FieldLabel>;
   }
 
   return label;
@@ -19,7 +20,7 @@ Label.propTypes = {
 
 Label.defaultProps = {
   className: null,
-  field: false, // Used inside horizontal forms
+  field: false, // Wraps label in a FieldLabel for use inside horizontal fields
 };
 
 export default Label;

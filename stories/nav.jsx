@@ -24,7 +24,7 @@ storiesOf('Nav', module)
               <a><Icon icon="twitter" /></a>
             </Nav.Item>
           </Nav.Center>
-          <Nav.Toggle onClick={toggle} />
+          <Nav.Toggle onClick={toggle} active={value} />
           <Nav.Right menu active={value}>
             <Nav.Item>
               <a>Home</a>
@@ -76,7 +76,7 @@ storiesOf('Nav', module)
                 <a>About</a>
               </Nav.Item>
             </Nav.Left>
-            <Nav.Toggle onClick={toggle} />
+            <Nav.Toggle onClick={toggle} active={value} />
             <Nav.Right menu active={value}>
               <Nav.Item hiddenTablet tab active>
                 <a>Home</a>

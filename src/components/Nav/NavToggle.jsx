@@ -2,10 +2,11 @@ import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
 /**
-* The hamurger menu on mobile
+* The hamurger menu.
+* Only visibile on mobile.
 */
-const NavToggle = ({ className, ...props }) => (
-  <span className={classNames('nav-toggle', className)} {...props}>
+const NavToggle = ({ active, className, ...props }) => (
+  <span className={classNames('nav-toggle', className, { 'is-active': active })} {...props}>
     <span />
     <span />
     <span />
@@ -13,10 +14,12 @@ const NavToggle = ({ className, ...props }) => (
 );
 
 NavToggle.propTypes = {
+  active: PropTypes.bool, // Set to true when the hamburger menu is visible
   className: PropTypes.string,
 };
 
 NavToggle.defaultProps = {
+  active: false,
   className: null,
 };
 

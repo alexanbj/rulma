@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import blacklist from 'blacklist';
 
 import Control from '../../control';
-import classNames, { sizePropType, colorPropType } from '../../modifiers';
+import modifiers, { sizePropType, colorPropType } from '../../modifiers';
 
 const Button = (
   {
@@ -18,9 +18,8 @@ const Button = (
   },
 ) => {
   // eslint-disable-next-line prefer-const
-  let [classes, restProps] = classNames(props, 'button', {
+  let [classes, restProps] = modifiers(props, 'button', {
     'is-active': active,
-    'is-expanded': expanded,
     'is-inverted': inverted,
     'is-loading': loading,
     'is-outlined': outlined,
@@ -40,7 +39,7 @@ const Button = (
 
   if (control) {
     return (
-      <Control>
+      <Control expanded={expanded}>
         {button}
       </Control>
     );
@@ -54,7 +53,7 @@ Button.propTypes = {
   className: PropTypes.string,
   color: colorPropType,
   control: PropTypes.bool, // Wraps the button in a <Control />
-  expanded: PropTypes.bool, // Within addons and groups
+  expanded: PropTypes.bool, // When within addons and groups
   fullWidth: PropTypes.bool,
   disabled: PropTypes.bool,
   // eslint-disable-next-line react/require-default-props

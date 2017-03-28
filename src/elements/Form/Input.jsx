@@ -1,12 +1,11 @@
 import React, { PropTypes } from 'react';
 
 import Control from '../../control';
-import classNames, { colorPropType, sizePropType } from '../../modifiers';
+import modifiers, { colorPropType, sizePropType } from '../../modifiers';
 
 const Input = ({ control, expanded, fullWidth, inline, ...props }) => {
-  const [classes, restProps] = classNames(props, 'input', {
+  const [classes, restProps] = modifiers(props, 'input', {
     'is-fullwidth': fullWidth,
-    'is-expanded': !control && expanded,
     'is-inline': inline,
   });
 
@@ -24,10 +23,11 @@ const Input = ({ control, expanded, fullWidth, inline, ...props }) => {
 };
 
 Input.propTypes = {
+  className: PropTypes.string,
   color: colorPropType,
   control: PropTypes.bool, // Wraps the Input in a <Control />
   disabled: PropTypes.bool,
-  expanded: PropTypes.bool, // Applies within Addons and Groups
+  expanded: PropTypes.bool, // When within Addons and Groups
   fullWidth: PropTypes.bool,
   inline: PropTypes.bool,
   placeholder: PropTypes.string,
@@ -36,6 +36,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  className: null,
   color: null,
   control: false,
   disabled: false,

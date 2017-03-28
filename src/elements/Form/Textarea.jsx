@@ -1,15 +1,15 @@
 import React, { PropTypes } from 'react';
-import classNames from 'classnames';
 
+import modifiers, { sizePropType, colorPropType } from '../../modifiers';
 import Control from '../../control';
 
-const Textarea = ({ control, className, fullWidth, inline, ...props }) => {
-  const classes = classNames('textarea', className, {
+const Textarea = ({ control, fullWidth, inline, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'textarea', {
     'is-fullwidth': fullWidth,
     'is-inline': inline,
   });
 
-  const textarea = <textarea className={classes} {...props} />;
+  const textarea = <textarea className={classes} {...restProps} />;
 
   if (control) {
     return (
@@ -23,19 +23,23 @@ const Textarea = ({ control, className, fullWidth, inline, ...props }) => {
 };
 
 Textarea.propTypes = {
+  color: colorPropType,
   control: PropTypes.bool, // Wraps the Textarea in a <Control />
   className: PropTypes.string,
   fullWidth: PropTypes.bool,
   inline: PropTypes.bool,
   placeholder: PropTypes.string,
+  size: sizePropType,
 };
 
 Textarea.defaultProps = {
+  color: null,
   control: false,
   className: null,
   fullWidth: false,
   inline: false,
   placeholder: null,
+  size: null,
 };
 
 export default Textarea;

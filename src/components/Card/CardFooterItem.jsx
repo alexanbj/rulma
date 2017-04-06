@@ -4,7 +4,7 @@ import modifiers from '../../modifiers';
 
 const CardFooterItem = ({ tag: Tag, ...props }) => {
   const [classes, restProps] = modifiers(props, 'card-footer-item');
-  return <Tag className={classes} {...props} />;
+  return <Tag className={classes} {...restProps} />;
 };
 
 CardFooterItem.propTypes = {

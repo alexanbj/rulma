@@ -57,14 +57,14 @@ storiesOf('Card', module)
         <small>11:09 PM - 1 Jan 2016</small>
       </Card.Content>
       <Card.Footer>
-        <Card.Footer.Item>
-          <a>Save</a>
+        <Card.Footer.Item tag="a">
+          Save
         </Card.Footer.Item>
-        <Card.Footer.Item>
-          <a>Edit</a>
+        <Card.Footer.Item tag="a">
+          Edit
         </Card.Footer.Item>
-        <Card.Footer.Item>
-          <a>Delete</a>
+        <Card.Footer.Item tag="a">
+          Delete
         </Card.Footer.Item>
       </Card.Footer>
     </Card>,

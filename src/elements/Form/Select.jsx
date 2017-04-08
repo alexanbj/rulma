@@ -26,6 +26,8 @@ const Select = ({ expanded, fullWidth, noControl, ...props }) => {
 };
 
 Select.propTypes = {
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
   expanded: PropTypes.bool, // When within addons and groups
   fullWidth: PropTypes.bool, // When not within addons and groups
   noControl: PropTypes.bool, // Don't wrap the select with a control container
@@ -33,6 +35,8 @@ Select.propTypes = {
 };
 
 Select.defaultProps = {
+  className: null,
+  disabled: false,
   expanded: false,
   fullWidth: false,
   noControl: false,

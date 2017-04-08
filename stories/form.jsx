@@ -17,7 +17,7 @@ storiesOf('Form', module)
     <div>
       <Field>
         <Label>Name</Label>
-        <Input placeholder="Text input" icon={<Icon size="small" icon="save" />} />
+        <Input placeholder="Text input" />
       </Field>
       <Field>
         <Label>Username</Label>

@@ -32,6 +32,7 @@ Input.propTypes = {
   loading: PropTypes.bool, // Show a loading indicator. Requires a control container
   noControl: PropTypes.bool, // Don't wrap the input with a control container
   placeholder: PropTypes.string,
+  readOnly: PropTypes.bool,
   size: sizePropType,
   type: PropTypes.string.isRequired,
 };
@@ -46,6 +47,7 @@ Input.defaultProps = {
   loading: false,
   noControl: false,
   placeholder: null,
+  readOnly: false,
   size: null,
   type: 'text',
 };

@@ -25,23 +25,26 @@ const Textarea = ({ fullWidth, inline, loading, noControl, ...props }) => {
 Textarea.propTypes = {
   color: colorPropType,
   className: PropTypes.string,
+  disabled: PropTypes.bool,
   fullWidth: PropTypes.bool, // Defined in Bulma's CSS. But does it do anything for textareas?
   inline: PropTypes.bool,
   loading: PropTypes.bool, // Show a loading indicator. Requires a control container
   noControl: PropTypes.bool, // Don't wrap the textarea with a control container
   placeholder: PropTypes.string,
+  readOnly: PropTypes.bool,
   size: sizePropType,
 };
 
 Textarea.defaultProps = {
   color: null,
-  control: false,
   className: null,
+  disabled: false,
   fullWidth: false,
   inline: false,
   loading: false,
   noControl: false,
   placeholder: null,
+  readOnly: false,
   size: null,
 };
 

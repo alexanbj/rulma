@@ -2412,6 +2412,7 @@ exports[`Storyshots Form Addons 1`] = `
           className="input"
           disabled={false}
           placeholder="Find repository"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2437,6 +2438,7 @@ exports[`Storyshots Form Addons 1`] = `
           className="input"
           disabled={false}
           placeholder="Find repository"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2462,6 +2464,7 @@ exports[`Storyshots Form Addons 1`] = `
           className="input"
           disabled={false}
           placeholder="Find repository"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2496,6 +2499,7 @@ exports[`Storyshots Form Colors 1`] = `
           className="input is-primary"
           disabled={false}
           placeholder="Primary input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2510,6 +2514,7 @@ exports[`Storyshots Form Colors 1`] = `
           className="input is-info"
           disabled={false}
           placeholder="Info input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2524,6 +2529,7 @@ exports[`Storyshots Form Colors 1`] = `
           className="input is-success"
           disabled={false}
           placeholder="Success input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2538,6 +2544,7 @@ exports[`Storyshots Form Colors 1`] = `
           className="input is-warning"
           disabled={false}
           placeholder="Warning input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2552,6 +2559,7 @@ exports[`Storyshots Form Colors 1`] = `
           className="input is-danger"
           disabled={false}
           placeholder="Danger input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2575,6 +2583,7 @@ exports[`Storyshots Form Disabled 1`] = `
           className="input"
           disabled={true}
           placeholder="Disabled input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2587,9 +2596,9 @@ exports[`Storyshots Form Disabled 1`] = `
       >
         <textarea
           className="textarea"
-          control={false}
           disabled={true}
           placeholder="Disabled textarea"
+          readOnly={false}
         />
       </div>
     </div>
@@ -2691,7 +2700,9 @@ exports[`Storyshots Form Expanded addons 1`] = `
         <span
           className="select"
         >
-          <select>
+          <select
+            disabled={false}
+          >
             <option>
               $
             </option>
@@ -2711,6 +2722,7 @@ exports[`Storyshots Form Expanded addons 1`] = `
           className="input"
           disabled={false}
           placeholder="Amount of money"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2735,7 +2747,9 @@ exports[`Storyshots Form Expanded addons 1`] = `
         <span
           className="select is-fullwidth"
         >
-          <select>
+          <select
+            disabled={false}
+          >
             <option
               value="Norway"
             >
@@ -2789,16 +2803,8 @@ exports[`Storyshots Form Form 1`] = `
         <input
           className="input"
           disabled={false}
-          icon={
-            <Icon
-              className={null}
-              fw={false}
-              icon="save"
-              size="small"
-              spin={false}
-            />
-          }
           placeholder="Text input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -2819,6 +2825,7 @@ exports[`Storyshots Form Form 1`] = `
           defaultValue="rulma"
           disabled={false}
           placeholder="Text input"
+          readOnly={false}
           type="text"
         />
         <span
@@ -2851,6 +2858,7 @@ exports[`Storyshots Form Form 1`] = `
           defaultValue="hello@"
           disabled={false}
           placeholder="Email input"
+          readOnly={false}
           type="email"
         />
         <span
@@ -2881,7 +2889,9 @@ exports[`Storyshots Form Form 1`] = `
         <span
           className="select"
         >
-          <select>
+          <select
+            disabled={false}
+          >
             <option>
               Select dropdown
             </option>
@@ -2905,8 +2915,9 @@ exports[`Storyshots Form Form 1`] = `
       >
         <textarea
           className="textarea"
-          control={false}
+          disabled={false}
           placeholder="Textarea"
+          readOnly={false}
         />
       </div>
     </div>
@@ -3008,6 +3019,7 @@ exports[`Storyshots Form Form group 1`] = `
         className="input"
         disabled={false}
         placeholder="Find repository"
+        readOnly={false}
         type="text"
       />
     </div>
@@ -3052,6 +3064,7 @@ exports[`Storyshots Form Horizontal form 1`] = `
               className="input"
               disabled={false}
               placeholder="Name"
+              readOnly={false}
               type="text"
             />
           </div>
@@ -3066,6 +3079,7 @@ exports[`Storyshots Form Horizontal form 1`] = `
               className="input"
               disabled={false}
               placeholder="Email"
+              readOnly={false}
               type="text"
             />
           </div>
@@ -3098,7 +3112,9 @@ exports[`Storyshots Form Horizontal form 1`] = `
           <span
             className="select is-fullwidth"
           >
-            <select>
+            <select
+              disabled={false}
+            >
               <option>
                 Business development
               </option>
@@ -3187,6 +3203,7 @@ exports[`Storyshots Form Horizontal form 1`] = `
               className="input is-danger"
               disabled={false}
               placeholder="e.g. Partnership opportunity"
+              readOnly={false}
               type="text"
             />
           </div>
@@ -3221,8 +3238,9 @@ exports[`Storyshots Form Horizontal form 1`] = `
           >
             <textarea
               className="textarea"
-              control={false}
+              disabled={false}
               placeholder="How can we help you?"
+              readOnly={false}
             />
           </div>
         </div>
@@ -3273,6 +3291,7 @@ exports[`Storyshots Form Icons 1`] = `
           className="input"
           disabled={false}
           placeholder="Email"
+          readOnly={false}
           type="email"
         />
         <span
@@ -3294,6 +3313,7 @@ exports[`Storyshots Form Icons 1`] = `
           className="input"
           disabled={false}
           placeholder="Password"
+          readOnly={false}
           type="password"
         />
         <span
@@ -3339,6 +3359,7 @@ exports[`Storyshots Form Icons right 1`] = `
           className="input is-small"
           disabled={false}
           placeholder="Email"
+          readOnly={false}
           type="email"
         />
         <span
@@ -3360,6 +3381,7 @@ exports[`Storyshots Form Icons right 1`] = `
           className="input"
           disabled={false}
           placeholder="Email"
+          readOnly={false}
           type="email"
         />
         <span
@@ -3381,6 +3403,7 @@ exports[`Storyshots Form Icons right 1`] = `
           className="input is-medium"
           disabled={false}
           placeholder="Email"
+          readOnly={false}
           type="email"
         />
         <span
@@ -3402,6 +3425,7 @@ exports[`Storyshots Form Icons right 1`] = `
           className="input is-large"
           disabled={false}
           placeholder="Email"
+          readOnly={false}
           type="email"
         />
         <span
@@ -3432,6 +3456,7 @@ exports[`Storyshots Form Loading 1`] = `
           className="input"
           disabled={false}
           placeholder="Loading input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -3444,8 +3469,9 @@ exports[`Storyshots Form Loading 1`] = `
       >
         <textarea
           className="textarea"
-          control={false}
+          disabled={false}
           placeholder="Loading textarea"
+          readOnly={false}
         />
       </div>
     </div>
@@ -3468,6 +3494,7 @@ exports[`Storyshots Form Sizes 1`] = `
           className="input is-small"
           disabled={false}
           placeholder="Small input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -3482,6 +3509,7 @@ exports[`Storyshots Form Sizes 1`] = `
           className="input"
           disabled={false}
           placeholder="Default input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -3496,6 +3524,7 @@ exports[`Storyshots Form Sizes 1`] = `
           className="input is-medium"
           disabled={false}
           placeholder="Medium input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -3510,6 +3539,7 @@ exports[`Storyshots Form Sizes 1`] = `
           className="input is-large"
           disabled={false}
           placeholder="Large input"
+          readOnly={false}
           type="text"
         />
       </div>
@@ -3523,7 +3553,9 @@ exports[`Storyshots Form Sizes 1`] = `
         <span
           className="select is-small"
         >
-          <select>
+          <select
+            disabled={false}
+          >
             <option>
               Select dropdown
             </option>
@@ -3543,7 +3575,9 @@ exports[`Storyshots Form Sizes 1`] = `
         <span
           className="select"
         >
-          <select>
+          <select
+            disabled={false}
+          >
             <option>
               Select dropdown
             </option>
@@ -3563,7 +3597,9 @@ exports[`Storyshots Form Sizes 1`] = `
         <span
           className="select is-medium"
         >
-          <select>
+          <select
+            disabled={false}
+          >
             <option>
               Select dropdown
             </option>
@@ -3583,7 +3619,9 @@ exports[`Storyshots Form Sizes 1`] = `
         <span
           className="select is-large"
         >
-          <select>
+          <select
+            disabled={false}
+          >
             <option>
               Select dropdown
             </option>
@@ -3665,6 +3703,7 @@ exports[`Storyshots Form Vertical label alignment 1`] = `
               className="input is-small"
               disabled={false}
               placeholder="Small sized input"
+              readOnly={false}
               type="text"
             />
           </div>
@@ -3696,6 +3735,7 @@ exports[`Storyshots Form Vertical label alignment 1`] = `
               className="input"
               disabled={false}
               placeholder="Normal sized input"
+              readOnly={false}
               type="text"
             />
           </div>
@@ -3727,6 +3767,7 @@ exports[`Storyshots Form Vertical label alignment 1`] = `
               className="input is-medium"
               disabled={false}
               placeholder="Medium sized input"
+              readOnly={false}
               type="text"
             />
           </div>
@@ -3758,6 +3799,7 @@ exports[`Storyshots Form Vertical label alignment 1`] = `
               className="input is-large"
               disabled={false}
               placeholder="Large sized input"
+              readOnly={false}
               type="text"
             />
           </div>
@@ -4903,8 +4945,9 @@ exports[`Storyshots Media Form 1`] = `
         >
           <textarea
             className="textarea"
-            control={false}
+            disabled={false}
             placeholder="Add comment"
+            readOnly={false}
           />
         </div>
       </div>
@@ -5186,8 +5229,9 @@ exports[`Storyshots Media Nesting 1`] = `
           >
             <textarea
               className="textarea"
-              control={false}
+              disabled={false}
               placeholder="Add comment"
+              readOnly={false}
             />
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Toggler extends React.Component {
   constructor() {
@@ -19,5 +20,5 @@ export default class Toggler extends React.Component {
 }
 
 Toggler.propTypes = {
-  children: React.PropTypes.func.isRequired,
+  children: PropTypes.func.isRequired,
 };

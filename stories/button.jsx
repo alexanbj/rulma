@@ -66,7 +66,7 @@ storiesOf('Button', module)
   )
   .add('Fullwidth', () =>
     <div>
-      {buttons({ fullWidth: true }, 'Fullwidth').map(b => <Field>{b}</Field>)}
+      {buttons({ fullWidth: true }, 'Fullwidth').map((b, index) => <Field key={index}>{b}</Field>)}
     </div>,
   )
   .add('Disabled', () =>

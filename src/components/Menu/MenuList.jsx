@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 export default class MenuList extends React.Component {
@@ -30,9 +31,9 @@ MenuList.defaultProps = {
 };
 
 MenuList.contextTypes = {
-  isNestedMenuList: React.PropTypes.bool,
+  isNestedMenuList: PropTypes.bool,
 };
 
 MenuList.childContextTypes = {
-  isNestedMenuList: React.PropTypes.bool,
+  isNestedMenuList: PropTypes.bool,
 };

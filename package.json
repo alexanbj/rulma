@@ -22,7 +22,7 @@
     "storybook:build": "build-storybook -c .storybook -o _gh-pages",
     "storybook:clean": "rimraf _gh-pages",
     "storybook:publish": "git-directory-deploy --directory _gh-pages --branch gh-pages",
-    "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.jsx\"",
+    "format": "prettier-eslint --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint . --ignore-path .gitignore --ext .js,.jsx"
   },
   "keywords": [

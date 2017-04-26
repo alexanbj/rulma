@@ -5,19 +5,17 @@ import blacklist from 'blacklist';
 import Control from '../../control';
 import modifiers, { sizePropType, colorPropType } from '../../modifiers';
 
-const Button = (
-  {
-    active,
-    control,
-    expanded,
-    fullWidth,
-    inverted,
-    loading,
-    outlined,
-    tag,
-    ...props
-  },
-) => {
+const Button = ({
+  active,
+  control,
+  expanded,
+  fullWidth,
+  inverted,
+  loading,
+  outlined,
+  tag,
+  ...props
+}) => {
   // eslint-disable-next-line prefer-const
   let [classes, restProps] = modifiers(props, 'button', {
     'is-active': active,

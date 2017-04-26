@@ -5,21 +5,19 @@ import FieldBody from './FieldBody';
 import FieldLabel from './FieldLabel';
 import modifiers from '../modifiers';
 
-const Field = (
-  {
-    addons,
-    addonsCentered,
-    addonsFullWidth,
-    addonsRight,
-    grouped,
-    groupedCentered,
-    groupedRight,
-    horizontal,
-    narrow,
-    tag: Tag,
-    ...props
-  },
-) => {
+const Field = ({
+  addons,
+  addonsCentered,
+  addonsFullWidth,
+  addonsRight,
+  grouped,
+  groupedCentered,
+  groupedRight,
+  horizontal,
+  narrow,
+  tag: Tag,
+  ...props
+}) => {
   const [classes, restProps] = modifiers(props, 'field', {
     'has-addons': addons,
     'has-addons-centered': addonsCentered,

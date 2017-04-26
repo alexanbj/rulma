@@ -7,16 +7,7 @@ import modifiers from '../modifiers';
 * Should only contain a <Button />, <Input />, <Select /> or <Textarea />
 * <Help /> should NOT go here, but in the <Field /> that wraps a <Control />
 */
-const Control = (
-  {
-    expanded,
-    icon,
-    iconRight,
-    loading,
-    tag: Tag,
-    ...props
-  },
-) => {
+const Control = ({ expanded, icon, iconRight, loading, tag: Tag, ...props }) => {
   const [classes, restProps] = modifiers(props, 'control', {
     'is-expanded': expanded,
     'has-icon': icon,

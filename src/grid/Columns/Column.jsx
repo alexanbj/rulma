@@ -12,31 +12,29 @@ const sizes = new Map([
   ['1/4', 'one-quarter'],
 ]);
 
-const Column = (
-  {
-    size,
-    mobile,
-    tablet,
-    desktop,
-    widescreen,
-    offset,
-    mobileOffset,
-    tabletOffset,
-    desktopOffset,
-    widescreenOffset,
-    narrow,
-    mobileNarrow,
-    tabletNarrow,
-    desktopNarrow,
-    widescreenNarrow,
-    full,
-    mobileFull,
-    tabletFull,
-    desktopFull,
-    widescreenFull,
-    ...props
-  },
-) => {
+const Column = ({
+  size,
+  mobile,
+  tablet,
+  desktop,
+  widescreen,
+  offset,
+  mobileOffset,
+  tabletOffset,
+  desktopOffset,
+  widescreenOffset,
+  narrow,
+  mobileNarrow,
+  tabletNarrow,
+  desktopNarrow,
+  widescreenNarrow,
+  full,
+  mobileFull,
+  tabletFull,
+  desktopFull,
+  widescreenFull,
+  ...props
+}) => {
   const [classes, restProps] = classNames(props, 'column', {
     [`is-${sizes.get(size) || size}`]: size,
 

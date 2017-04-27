@@ -3475,6 +3475,28 @@ exports[`Storyshots Form Loading 1`] = `
         />
       </div>
     </div>
+    <div
+      className="field"
+    >
+      <div
+        className="control"
+      >
+        <span
+          className="select is-loading"
+        >
+          <select
+            disabled={false}
+          >
+            <option>
+              Select dropdown
+            </option>
+            <option>
+              with options
+            </option>
+          </select>
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 `;

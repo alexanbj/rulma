@@ -155,6 +155,11 @@ storiesOf('Form', module)
       <Field>
         <Textarea loading placeholder="Loading textarea" />
       </Field>
+      <Field>
+        <Select loading>
+          {options}
+        </Select>
+      </Field>
     </div>,
   )
   .add('Disabled', () =>

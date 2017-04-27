@@ -13,14 +13,16 @@ const Table = ({ bordered, narrow, striped, ...props }) => {
 };
 
 Table.propTypes = {
-  bordered: PropTypes.bool,
+  bordered: PropTypes.bool, // Add borders to the cells
+  className: PropTypes.string,
   ...modifierPropTypes,
-  striped: PropTypes.bool,
-  narrow: PropTypes.bool,
+  striped: PropTypes.bool, // Add stripes to the table
+  narrow: PropTypes.bool, // Make the cells narrower
 };
 
 Table.defaultProps = {
   bordered: false,
+  className: null,
   striped: false,
   narrow: false,
 };

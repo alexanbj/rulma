@@ -33,7 +33,7 @@ import Notification from './elements/Notification';
 import Pagination from './components/Pagination';
 import Progress from './elements/Progress';
 import Radio from './elements/Form/Radio';
-import Table from './elements/Table';
+import Table, { Tr } from './elements/Table';
 import Tabs from './components/Tabs';
 import Tag from './elements/Tag';
 import Textarea from './elements/Form/Textarea';
@@ -85,6 +85,7 @@ export {
   Tag,
   Tabs,
   Table,
+  Tr,
   Textarea,
   Tile,
   Title,

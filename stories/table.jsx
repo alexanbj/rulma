@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Container, Table } from '../src/';
+import { Container, Table, Tr } from '../src/';
 
 const tableContent = [
   <thead key="head">
@@ -18,12 +18,12 @@ const tableContent = [
       <td>Næss</td>
       <td>@lin</td>
     </tr>
-    <tr>
+    <Tr selected>
       <th scope="row">2</th>
       <td>Christer</td>
       <td>Kjellesvig</td>
       <td>@ckj</td>
-    </tr>
+    </Tr>
     <tr>
       <th scope="row">3</th>
       <td colSpan="2">Mister boss man</td>

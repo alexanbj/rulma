@@ -52,7 +52,7 @@ storiesOf('Form', module)
         <Textarea placeholder="Textarea" />
       </Field>
       <Field>
-        <Checkbox id="remember">Remember me</Checkbox>
+        <Checkbox id="remember">I agree to the <a href="#">terms and conditions</a></Checkbox>
       </Field>
       <Field>
         <Control>

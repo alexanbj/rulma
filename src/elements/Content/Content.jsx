@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classNames, { modifierPropTypes } from '../../modifiers';
+import classNames, { modifierPropTypes, sizePropType } from '../../modifiers';
 
 /**
  * A single component to handle WYSIWYG generated content, where only HTML tags are available.
@@ -15,6 +15,11 @@ const Content = (props) => {
 
 Content.propTypes = {
   ...modifierPropTypes,
+  size: sizePropType, // Change the font size
+};
+
+Content.defaultProps = {
+  size: null,
 };
 
 export default Content;

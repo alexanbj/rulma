@@ -5939,24 +5939,36 @@ exports[`Storyshots Nav Nav 1`] = `
     >
       Blog
     </a>
-    <span
+    <div
       className="nav-item"
     >
-      <a
-        className="button is-outlined is-info"
-        disabled={false}
-        href="https://twitter.com"
+      <div
+        className="field is-grouped"
       >
-        Tweet
-      </a>
-      <button
-        className="button is-primary"
-        disabled={false}
-        type="button"
-      >
-        Download
-      </button>
-    </span>
+        <div
+          className="control"
+        >
+          <a
+            className="button is-outlined is-info"
+            disabled={false}
+            href="https://twitter.com"
+          >
+            Tweet
+          </a>
+        </div>
+        <div
+          className="control"
+        >
+          <button
+            className="button is-primary"
+            disabled={false}
+            type="button"
+          >
+            Download
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 
-import { Container, Button, Icon, Nav } from '../src/';
+import { Container, Button, Group, Icon, Nav } from '../src/';
 import Toggler from './Toggler';
 
 storiesOf('Nav', module)
@@ -36,16 +36,19 @@ storiesOf('Nav', module)
               <a>Blog</a>
             </Nav.Item>
             <Nav.Item>
-              <span>
-                <Button
-                  color="info"
-                  outlined
-                  href="https://twitter.com"
-                >
-                  Tweet
-                </Button>
-                <Button color="primary">Download</Button>
-              </span>
+              <div>
+                <Group>
+                  <Button
+                    control
+                    color="info"
+                    outlined
+                    href="https://twitter.com"
+                  >
+                    Tweet
+                  </Button>
+                  <Button control color="primary">Download</Button>
+                </Group>
+              </div>
             </Nav.Item>
           </Nav.Right>
         </Nav>

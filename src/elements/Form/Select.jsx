@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import modifiers, { sizePropType } from '../../modifiers';
+import modifiers, { sizePropType, colorPropType } from '../../modifiers';
 import Control from '../../control';
 
 const Select = ({ expanded, fullWidth, noControl, ...props }) => {
@@ -28,6 +28,7 @@ const Select = ({ expanded, fullWidth, noControl, ...props }) => {
 
 Select.propTypes = {
   className: PropTypes.string,
+  color: colorPropType,
   disabled: PropTypes.bool,
   expanded: PropTypes.bool, // When within addons and groups
   fullWidth: PropTypes.bool, // When not within addons and groups
@@ -37,6 +38,7 @@ Select.propTypes = {
 
 Select.defaultProps = {
   className: null,
+  color: null,
   disabled: false,
   expanded: false,
   fullWidth: false,

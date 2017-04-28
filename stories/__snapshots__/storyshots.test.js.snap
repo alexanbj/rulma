@@ -2609,7 +2609,8 @@ exports[`Storyshots Form Disabled 1`] = `
         className="control"
       >
         <label
-          className="checkbox is-disabled"
+          className="checkbox"
+          disabled={true}
           htmlFor={null}
         >
           <input
@@ -2629,7 +2630,8 @@ exports[`Storyshots Form Disabled 1`] = `
         className="control"
       >
         <label
-          className="radio is-disabled"
+          className="radio"
+          disabled={true}
           htmlFor={null}
         >
           <input
@@ -2642,7 +2644,8 @@ exports[`Storyshots Form Disabled 1`] = `
           Yes
         </label>
         <label
-          className="radio is-disabled"
+          className="radio"
+          disabled={true}
           htmlFor={null}
         >
           <input
@@ -2929,6 +2932,7 @@ exports[`Storyshots Form Form 1`] = `
       >
         <label
           className="checkbox"
+          disabled={false}
           htmlFor="remember"
         >
           <input
@@ -2954,6 +2958,7 @@ exports[`Storyshots Form Form 1`] = `
       >
         <label
           className="radio"
+          disabled={false}
           htmlFor="radio1"
         >
           <input
@@ -2967,6 +2972,7 @@ exports[`Storyshots Form Form 1`] = `
         </label>
         <label
           className="radio"
+          disabled={false}
           htmlFor="radio2"
         >
           <input
@@ -3157,6 +3163,7 @@ exports[`Storyshots Form Horizontal form 1`] = `
           >
             <label
               className="radio"
+              disabled={false}
               htmlFor={null}
             >
               <input
@@ -3169,6 +3176,7 @@ exports[`Storyshots Form Horizontal form 1`] = `
             </label>
             <label
               className="radio"
+              disabled={false}
               htmlFor={null}
             >
               <input
@@ -3691,6 +3699,7 @@ exports[`Storyshots Form Vertical label alignment 1`] = `
           >
             <label
               className="checkbox"
+              disabled={false}
               htmlFor={null}
             >
               <input
@@ -5004,6 +5013,7 @@ exports[`Storyshots Media Form 1`] = `
           >
             <label
               className="checkbox"
+              disabled={false}
               htmlFor={null}
             >
               <input
@@ -6072,11 +6082,13 @@ exports[`Storyshots Pagination Centered 1`] = `
   >
     <a
       className="pagination-previous"
+      disabled={false}
     >
       Previous
     </a>
     <a
       className="pagination-next"
+      disabled={false}
     >
       Next page
     </a>
@@ -6086,6 +6098,7 @@ exports[`Storyshots Pagination Centered 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           1
         </a>
@@ -6100,6 +6113,7 @@ exports[`Storyshots Pagination Centered 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           45
         </a>
@@ -6107,6 +6121,7 @@ exports[`Storyshots Pagination Centered 1`] = `
       <li>
         <a
           className="pagination-link is-current"
+          disabled={false}
         >
           46
         </a>
@@ -6114,6 +6129,7 @@ exports[`Storyshots Pagination Centered 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           47
         </a>
@@ -6128,6 +6144,7 @@ exports[`Storyshots Pagination Centered 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           84
         </a>
@@ -6146,11 +6163,13 @@ exports[`Storyshots Pagination Disabled 1`] = `
   >
     <a
       className="pagination-previous"
+      disabled={false}
     >
       Previous
     </a>
     <a
       className="pagination-next"
+      disabled={false}
     >
       Next page
     </a>
@@ -6160,6 +6179,7 @@ exports[`Storyshots Pagination Disabled 1`] = `
       <li>
         <a
           className="pagination-link is-current"
+          disabled={false}
         >
           1
         </a>
@@ -6167,13 +6187,15 @@ exports[`Storyshots Pagination Disabled 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           2
         </a>
       </li>
       <li>
         <a
-          className="pagination-link is-disabled"
+          className="pagination-link"
+          disabled={true}
         >
           3
         </a>
@@ -6192,11 +6214,13 @@ exports[`Storyshots Pagination Pagination 1`] = `
   >
     <a
       className="pagination-previous"
+      disabled={false}
     >
       Previous
     </a>
     <a
       className="pagination-next"
+      disabled={false}
     >
       Next page
     </a>
@@ -6206,6 +6230,7 @@ exports[`Storyshots Pagination Pagination 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           1
         </a>
@@ -6220,6 +6245,7 @@ exports[`Storyshots Pagination Pagination 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           45
         </a>
@@ -6227,6 +6253,7 @@ exports[`Storyshots Pagination Pagination 1`] = `
       <li>
         <a
           className="pagination-link is-current"
+          disabled={false}
         >
           46
         </a>
@@ -6234,6 +6261,7 @@ exports[`Storyshots Pagination Pagination 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           47
         </a>
@@ -6248,6 +6276,7 @@ exports[`Storyshots Pagination Pagination 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           84
         </a>
@@ -6266,11 +6295,13 @@ exports[`Storyshots Pagination Right 1`] = `
   >
     <a
       className="pagination-previous"
+      disabled={false}
     >
       Previous
     </a>
     <a
       className="pagination-next"
+      disabled={false}
     >
       Next page
     </a>
@@ -6280,6 +6311,7 @@ exports[`Storyshots Pagination Right 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           1
         </a>
@@ -6294,6 +6326,7 @@ exports[`Storyshots Pagination Right 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           45
         </a>
@@ -6301,6 +6334,7 @@ exports[`Storyshots Pagination Right 1`] = `
       <li>
         <a
           className="pagination-link is-current"
+          disabled={false}
         >
           46
         </a>
@@ -6308,6 +6342,7 @@ exports[`Storyshots Pagination Right 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           47
         </a>
@@ -6322,6 +6357,7 @@ exports[`Storyshots Pagination Right 1`] = `
       <li>
         <a
           className="pagination-link"
+          disabled={false}
         >
           84
         </a>
@@ -6344,11 +6380,13 @@ exports[`Storyshots Pagination Sizes 1`] = `
       >
         <a
           className="pagination-previous"
+          disabled={false}
         >
           Previous
         </a>
         <a
           className="pagination-next"
+          disabled={false}
         >
           Next page
         </a>
@@ -6358,6 +6396,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               1
             </a>
@@ -6372,6 +6411,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               45
             </a>
@@ -6379,6 +6419,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link is-current"
+              disabled={false}
             >
               46
             </a>
@@ -6386,6 +6427,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               47
             </a>
@@ -6400,6 +6442,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               84
             </a>
@@ -6415,11 +6458,13 @@ exports[`Storyshots Pagination Sizes 1`] = `
       >
         <a
           className="pagination-previous"
+          disabled={false}
         >
           Previous
         </a>
         <a
           className="pagination-next"
+          disabled={false}
         >
           Next page
         </a>
@@ -6429,6 +6474,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               1
             </a>
@@ -6443,6 +6489,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               45
             </a>
@@ -6450,6 +6497,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link is-current"
+              disabled={false}
             >
               46
             </a>
@@ -6457,6 +6505,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               47
             </a>
@@ -6471,6 +6520,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               84
             </a>
@@ -6486,11 +6536,13 @@ exports[`Storyshots Pagination Sizes 1`] = `
       >
         <a
           className="pagination-previous"
+          disabled={false}
         >
           Previous
         </a>
         <a
           className="pagination-next"
+          disabled={false}
         >
           Next page
         </a>
@@ -6500,6 +6552,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               1
             </a>
@@ -6514,6 +6567,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               45
             </a>
@@ -6521,6 +6575,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link is-current"
+              disabled={false}
             >
               46
             </a>
@@ -6528,6 +6583,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               47
             </a>
@@ -6542,6 +6598,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               84
             </a>
@@ -6557,11 +6614,13 @@ exports[`Storyshots Pagination Sizes 1`] = `
       >
         <a
           className="pagination-previous"
+          disabled={false}
         >
           Previous
         </a>
         <a
           className="pagination-next"
+          disabled={false}
         >
           Next page
         </a>
@@ -6571,6 +6630,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               1
             </a>
@@ -6585,6 +6645,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               45
             </a>
@@ -6592,6 +6653,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link is-current"
+              disabled={false}
             >
               46
             </a>
@@ -6599,6 +6661,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               47
             </a>
@@ -6613,6 +6676,7 @@ exports[`Storyshots Pagination Sizes 1`] = `
           <li>
             <a
               className="pagination-link"
+              disabled={false}
             >
               84
             </a>

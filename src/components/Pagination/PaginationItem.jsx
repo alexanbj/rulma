@@ -16,12 +16,11 @@ const PaginationItem = ({ active, children, className, disabled, ellipsis, ...pr
   const child = React.Children.only(children);
   const classes = classNames('pagination-link', className, child.props.className, {
     'is-current': active,
-    'is-disabled': disabled,
   });
 
   return (
     <li>
-      {React.cloneElement(child, { className: classes, ...props })}
+      {React.cloneElement(child, { className: classes, disabled, ...props })}
     </li>
   );
 };

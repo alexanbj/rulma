@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const Radio = ({ children, className, disabled, id, ...props }) => (
-  <label className={classNames('radio', { 'is-disabled': disabled })} htmlFor={id}>
+  <label className={classNames('radio')} disabled={disabled} htmlFor={id}>
     <input className={className} disabled={disabled} id={id} type="radio" {...props} />
     {children}
   </label>

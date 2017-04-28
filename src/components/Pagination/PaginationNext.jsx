@@ -4,11 +4,9 @@ import classNames from 'classnames';
 
 const PaginationNext = ({ className, children, disabled, ...props }) => {
   const child = React.Children.only(children);
-  const classes = classNames('pagination-next', className, child.props.className, {
-    'is-disabled': disabled,
-  });
+  const classes = classNames('pagination-next', className, child.props.className);
 
-  return React.cloneElement(child, { className: classes, ...props });
+  return React.cloneElement(child, { className: classes, disabled, ...props });
 };
 
 PaginationNext.propTypes = {

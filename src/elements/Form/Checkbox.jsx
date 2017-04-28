@@ -6,7 +6,7 @@ import Control from '../../control';
 
 const Checkbox = ({ children, className, disabled, id, noControl, ...props }) => {
   const checkbox = (
-    <label className={classNames('checkbox', { 'is-disabled': disabled })} htmlFor={id}>
+    <label className={classNames('checkbox')} disabled={disabled} htmlFor={id}>
       <input className={className} disabled={disabled} id={id} type="checkbox" {...props} />
       {children}
     </label>

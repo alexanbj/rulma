@@ -2821,7 +2821,7 @@ exports[`Storyshots Form Form 1`] = `
         Username
       </label>
       <div
-        className="control has-icon has-icon-right"
+        className="control has-icons-left has-icons-right"
       >
         <input
           className="input is-success"
@@ -2832,7 +2832,14 @@ exports[`Storyshots Form Form 1`] = `
           type="text"
         />
         <span
-          className="icon is-small"
+          className="icon is-left is-small"
+        >
+          <i
+            className="fa fa-user"
+          />
+        </span>
+        <span
+          className="icon is-right is-small"
         >
           <i
             className="fa fa-check"
@@ -2854,7 +2861,7 @@ exports[`Storyshots Form Form 1`] = `
         Email
       </label>
       <div
-        className="control has-icon has-icon-right"
+        className="control has-icons-left has-icons-right"
       >
         <input
           className="input is-danger"
@@ -2865,7 +2872,14 @@ exports[`Storyshots Form Form 1`] = `
           type="email"
         />
         <span
-          className="icon is-small"
+          className="icon is-left is-small"
+        >
+          <i
+            className="fa fa-envelope"
+          />
+        </span>
+        <span
+          className="icon is-right is-small"
         >
           <i
             className="fa fa-warning"
@@ -3298,7 +3312,7 @@ exports[`Storyshots Form Icons 1`] = `
       className="field"
     >
       <div
-        className="control has-icon"
+        className="control has-icons-left"
       >
         <input
           className="input"
@@ -3308,7 +3322,7 @@ exports[`Storyshots Form Icons 1`] = `
           type="email"
         />
         <span
-          className="icon is-small"
+          className="icon is-left is-small"
         >
           <i
             className="fa fa-envelope"
@@ -3320,7 +3334,7 @@ exports[`Storyshots Form Icons 1`] = `
       className="field"
     >
       <div
-        className="control has-icon"
+        className="control has-icons-left"
       >
         <input
           className="input"
@@ -3330,7 +3344,7 @@ exports[`Storyshots Form Icons 1`] = `
           type="password"
         />
         <span
-          className="icon is-small"
+          className="icon is-left is-small"
         >
           <i
             className="fa fa-lock"
@@ -3366,7 +3380,7 @@ exports[`Storyshots Form Icons right 1`] = `
       className="field"
     >
       <div
-        className="control has-icon has-icon-right"
+        className="control has-icons-right"
       >
         <input
           className="input is-small"
@@ -3376,7 +3390,7 @@ exports[`Storyshots Form Icons right 1`] = `
           type="email"
         />
         <span
-          className="icon is-small"
+          className="icon is-right is-small"
         >
           <i
             className="fa fa-check"
@@ -3388,7 +3402,7 @@ exports[`Storyshots Form Icons right 1`] = `
       className="field"
     >
       <div
-        className="control has-icon has-icon-right"
+        className="control has-icons-right"
       >
         <input
           className="input"
@@ -3398,7 +3412,7 @@ exports[`Storyshots Form Icons right 1`] = `
           type="email"
         />
         <span
-          className="icon"
+          className="icon is-right"
         >
           <i
             className="fa fa-check"
@@ -3410,7 +3424,7 @@ exports[`Storyshots Form Icons right 1`] = `
       className="field"
     >
       <div
-        className="control has-icon has-icon-right"
+        className="control has-icons-right"
       >
         <input
           className="input is-medium"
@@ -3420,7 +3434,7 @@ exports[`Storyshots Form Icons right 1`] = `
           type="email"
         />
         <span
-          className="icon is-medium"
+          className="icon is-right is-medium"
         >
           <i
             className="fa fa-check"
@@ -3432,7 +3446,7 @@ exports[`Storyshots Form Icons right 1`] = `
       className="field"
     >
       <div
-        className="control has-icon has-icon-right"
+        className="control has-icons-right"
       >
         <input
           className="input is-large"
@@ -3442,7 +3456,7 @@ exports[`Storyshots Form Icons right 1`] = `
           type="email"
         />
         <span
-          className="icon is-large"
+          className="icon is-right is-large"
         >
           <i
             className="fa fa-check"

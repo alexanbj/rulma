@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Addons, Button, Control, Container, Field, Form, Help, Icon, Input, Label, Radio, Group, Checkbox, Select, Textarea } from '../src/';
+import { Addons, Button, Control, Container, Field, Form, Help, Input, Label, Radio, Group, Checkbox, Select, Textarea } from '../src/';
 
 const options = [
   <option key="1">Select dropdown</option>,
@@ -21,24 +21,27 @@ storiesOf('Form', module)
       </Field>
       <Field>
         <Label>Username</Label>
-        <Control icon iconRight>
-          <Input noControl color="success" placeholder="Text input" defaultValue="rulma" />
-          <Icon icon="check" size="small" />
-        </Control>
+        <Input
+          iconLeft="user"
+          iconRight="check"
+          iconSize="small"
+          color="success"
+          placeholder="Text input"
+          defaultValue="rulma"
+        />
         <Help color="success">The username is available</Help>
       </Field>
       <Field>
         <Label>Email</Label>
-        <Control icon iconRight>
-          <Input
-            noControl
-            color="danger"
-            placeholder="Email input"
-            defaultValue="hello@"
-            type="email"
-          />
-          <Icon icon="warning" size="small" />
-        </Control>
+        <Input
+          color="danger"
+          iconLeft="envelope"
+          iconRight="warning"
+          iconSize="small"
+          placeholder="Email input"
+          defaultValue="hello@"
+          type="email"
+        />
         <Help color="danger">The email is invalid</Help>
       </Field>
       <Field>
@@ -188,16 +191,10 @@ storiesOf('Form', module)
   .add('Icons', () =>
     <div>
       <Field>
-        <Control icon>
-          <Input noControl placeholder="Email" type="email" />
-          <Icon icon="envelope" size="small" />
-        </Control>
+        <Input iconLeft="envelope" iconSize="small" placeholder="Email" type="email" />
       </Field>
       <Field>
-        <Control icon>
-          <Input noControl placeholder="Password" type="password" />
-          <Icon icon="lock" size="small" />
-        </Control>
+        <Input iconLeft="lock" iconSize="small" placeholder="Password" type="password" />
       </Field>
       <Field>
         <Button control color="success">Login</Button>
@@ -207,28 +204,16 @@ storiesOf('Form', module)
   .add('Icons right', () =>
     <div>
       <Field>
-        <Control icon iconRight>
-          <Input noControl placeholder="Email" type="email" size="small" />
-          <Icon icon="check" size="small" />
-        </Control>
+        <Input iconRight="check" iconSize="small" placeholder="Email" type="email" size="small" />
       </Field>
       <Field>
-        <Control icon iconRight>
-          <Input noControl placeholder="Email" type="email" />
-          <Icon icon="check" />
-        </Control>
+        <Input iconRight="check" placeholder="Email" type="email" />
       </Field>
       <Field>
-        <Control icon iconRight>
-          <Input noControl placeholder="Email" type="email" size="medium" />
-          <Icon icon="check" size="medium" />
-        </Control>
+        <Input iconRight="check" iconSize="medium" placeholder="Email" type="email" size="medium" />
       </Field>
       <Field>
-        <Control icon iconRight>
-          <Input noControl placeholder="Email" type="email" size="large" />
-          <Icon icon="check" size="large" />
-        </Control>
+        <Input iconRight="check" iconSize="large" placeholder="Email" type="email" size="large" />
       </Field>
     </div>,
   )

@@ -70,7 +70,7 @@
     "git-directory-deploy": "^1.5.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^19.0.2",
-    "prettier-eslint": "^6.1.1",
+    "prettier-eslint": "^6.1.2",
     "prettier-eslint-cli": "^3.4.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

@@ -7690,7 +7690,7 @@ exports[`Storyshots Tiles Tiles 1`] = `
           className="tile is-parent is-vertical"
         >
           <div
-            className="tile is-child notification is-primary"
+            className="tile is-child is-primary notification"
           >
             <h3
               className="title is-3"
@@ -7704,7 +7704,7 @@ exports[`Storyshots Tiles Tiles 1`] = `
             </h5>
           </div>
           <div
-            className="tile is-child notification is-warning"
+            className="tile is-child is-warning notification"
           >
             <h3
               className="title is-3"
@@ -7722,7 +7722,7 @@ exports[`Storyshots Tiles Tiles 1`] = `
           className="tile is-parent"
         >
           <div
-            className="tile is-child notification is-info"
+            className="tile is-child is-info notification"
           >
             <h3
               className="title is-3"
@@ -7736,7 +7736,7 @@ exports[`Storyshots Tiles Tiles 1`] = `
         className="tile is-parent"
       >
         <div
-          className="tile is-child notification is-danger"
+          className="tile is-child is-danger notification"
         >
           <h3
             className="title is-3"
@@ -7755,7 +7755,7 @@ exports[`Storyshots Tiles Tiles 1`] = `
       className="tile is-parent"
     >
       <div
-        className="tile is-child notification is-success"
+        className="tile is-child is-success notification"
       >
         <h3
           className="title is-3"

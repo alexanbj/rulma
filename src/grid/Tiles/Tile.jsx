@@ -3,32 +3,19 @@ import PropTypes from 'prop-types';
 
 import modifiers, { modifierPropTypes } from '../../modifiers';
 
-const Tile = ({ ancestor, child, children, parent, size, vertical, ...props }) => {
-  const [classes, restProps] = modifiers(
-    props,
-    'tile',
-    {
-      'is-ancestor': ancestor,
-      'is-child': child,
-      'is-parent': parent,
-      'is-vertical': vertical,
-      [`is-${size}`]: size,
-    },
-    child ? React.Children.only(children).props.className : null,
-  );
-
-  /**
-  * We want child tiles to evenly fill their parent tiles, so we apply classes
-  * directly to the children element here to get the wanted effect.
-  */
-  if (child) {
-    return React.cloneElement(React.Children.only(children), { className: classes, ...restProps });
-  }
+const Tile = ({ ancestor, child, children, parent, size, tag: Tag, vertical, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'tile', {
+    'is-ancestor': ancestor,
+    'is-child': child,
+    'is-parent': parent,
+    'is-vertical': vertical,
+    [`is-${size}`]: size,
+  });
 
   return (
-    <div className={classes} {...restProps}>
+    <Tag className={classes} {...restProps}>
       {children}
-    </div>
+    </Tag>
   );
 };
 
@@ -63,6 +50,7 @@ Tile.propTypes = {
     11,
     12,
   ]),
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   vertical: PropTypes.bool,
 };
 
@@ -71,6 +59,7 @@ Tile.defaultProps = {
   child: false,
   parent: false,
   size: null,
+  tag: 'div',
   vertical: false,
 };
 

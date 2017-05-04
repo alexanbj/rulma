@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import ModalTitle from './ModalTitle';
 
 import { Delete } from '../../';
 
-const ModalHeader = ({ className, children, onClose, closeButtonAriaLabel, ...props }) => (
+const ModalHeader = ({ className, children, onClose, title, closeButtonAriaLabel, ...props }) => (
   <header className={classNames('modal-card-head', className)} {...props}>
-    {children}
+    {title ? <ModalTitle>{title}</ModalTitle> : children}
     {onClose && <Delete onClick={onClose} aria-label={closeButtonAriaLabel} />}
   </header>
 );
@@ -16,6 +17,7 @@ ModalHeader.propTypes = {
   className: PropTypes.string,
   closeButtonAriaLabel: PropTypes.string.isRequired,
   onClose: PropTypes.func, // Display a close button in the header
+  title: PropTypes.node, // The title/heading of the modal
 };
 
 ModalHeader.defaultProps = {
@@ -23,6 +25,7 @@ ModalHeader.defaultProps = {
   className: null,
   closeButtonAriaLabel: 'Close',
   onClose: null,
+  title: null,
 };
 
 export default ModalHeader;

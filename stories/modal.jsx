@@ -44,9 +44,7 @@ storiesOf('Modal', module)
           <Button onClick={toggle}>Launch modal</Button>
           {value &&
             <Modal onClose={toggle} classic>
-              <Modal.Header onClose={toggle}>
-                <Modal.Title>Modal title</Modal.Title>
-              </Modal.Header>
+              <Modal.Header onClose={toggle} title="Modal title" />
               <Modal.Body>
                 One fine body...
               </Modal.Body>

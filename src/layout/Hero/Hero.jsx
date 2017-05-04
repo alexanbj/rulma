@@ -7,10 +7,10 @@ import HeroHeader from './HeroHeader';
 import HeroBody from './HeroBody';
 import HeroFooter from './HeroFooter';
 
-const Hero = ({ bold, fullheight, tag: Tag, ...props }) => {
+const Hero = ({ bold, fullHeight, tag: Tag, ...props }) => {
   const [classes, restProps] = modifiers(props, 'hero', {
     'is-bold': bold,
-    'is-fullheight': fullheight,
+    'is-fullheight': fullHeight,
   });
 
   return <Tag className={classes} {...restProps} />;
@@ -19,7 +19,7 @@ const Hero = ({ bold, fullheight, tag: Tag, ...props }) => {
 Hero.propTypes = {
   bold: PropTypes.bool,
   color: colorPropType,
-  fullheight: PropTypes.bool,
+  fullHeight: PropTypes.bool,
   size: sizePropType,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
@@ -27,7 +27,7 @@ Hero.propTypes = {
 Hero.defaultProps = {
   bold: false,
   color: null,
-  fullheight: false,
+  fullHeight: false,
   size: null,
   tag: 'section',
 };

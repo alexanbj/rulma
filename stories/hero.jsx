@@ -154,7 +154,7 @@ storiesOf('Hero', module)
     </div>,
   )
   .add('Fullheight', () =>
-    <Hero fullheight>
+    <Hero fullHeight>
       <Hero.Body>
         <Container>
           <Title>Hero title</Title>

@@ -1,6 +1,6 @@
 {
   "name": "rulma",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "React components for Bulma",
   "main": "lib/index",
   "module": "es/index",

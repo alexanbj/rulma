@@ -78,7 +78,7 @@
     "storyshots": "^3.2.2"
   },
   "peerDependencies": {
-    "react": "^15.5.3",
-    "react-dom": "^15.5.3"
+    "react": "^15",
+    "react-dom": "^15"
   }
 }

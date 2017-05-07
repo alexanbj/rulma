@@ -1,6 +1,7 @@
 # Rulma
 
 [![build status](https://img.shields.io/travis/alexanbj/rulma/master.svg?style=flat-square)](https://travis-ci.org/alexanbj/rulma)
+[![version](https://img.shields.io/npm/v/rulma.svg?style=flat-square)](https://www.npmjs.org/package/rulma)
 
 > React components for [Bulma](https://github.com/jgthms/bulma).
 

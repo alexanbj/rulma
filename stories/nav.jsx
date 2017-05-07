@@ -10,45 +10,41 @@ storiesOf('Nav', module)
       {(toggle, value) => (
         <Nav>
           <Nav.Left>
-            <Nav.Item brand>
-              <a>
-                <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" />
-              </a>
+            <Nav.Item brand href="#">
+              <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" />
             </Nav.Item>
           </Nav.Left>
           <Nav.Center>
-            <Nav.Item>
-              <a><Icon icon="github" /></a>
+            <Nav.Item href="#">
+              <Icon icon="github" />
             </Nav.Item>
-            <Nav.Item>
-              <a><Icon icon="twitter" /></a>
+            <Nav.Item href="#">
+              <Icon icon="twitter" />
             </Nav.Item>
           </Nav.Center>
           <Nav.Toggle onClick={toggle} active={value} />
           <Nav.Right menu active={value}>
-            <Nav.Item>
-              <a>Home</a>
+            <Nav.Item href="#">
+              Home
+            </Nav.Item>
+            <Nav.Item href="#">
+              Documentation
+            </Nav.Item>
+            <Nav.Item href="#">
+              Blog
             </Nav.Item>
             <Nav.Item>
-              <a>Documentation</a>
-            </Nav.Item>
-            <Nav.Item>
-              <a>Blog</a>
-            </Nav.Item>
-            <Nav.Item>
-              <div>
-                <Group>
-                  <Button
-                    control
-                    color="info"
-                    outlined
-                    href="https://twitter.com"
-                  >
-                    Tweet
-                  </Button>
-                  <Button control color="primary">Download</Button>
-                </Group>
-              </div>
+              <Group>
+                <Button
+                  control
+                  color="info"
+                  outlined
+                  href="https://twitter.com"
+                >
+                  Tweet
+                </Button>
+                <Button control color="primary">Download</Button>
+              </Group>
             </Nav.Item>
           </Nav.Right>
         </Nav>
@@ -61,43 +57,41 @@ storiesOf('Nav', module)
         <Nav shadow>
           <Container>
             <Nav.Left>
-              <Nav.Item brand>
-                <a>
-                  <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" />
-                </a>
+              <Nav.Item brand href="#">
+                <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" />
               </Nav.Item>
-              <Nav.Item hiddenMobile tab active>
-                <a>Home</a>
+              <Nav.Item hiddenMobile tab active href="#">
+                Home
               </Nav.Item>
-              <Nav.Item hiddenMobile tab>
-                <a>Features</a>
+              <Nav.Item hiddenMobile tab href="#">
+                Features
               </Nav.Item>
-              <Nav.Item hiddenMobile tab>
-                <a>Pricing</a>
+              <Nav.Item hiddenMobile tab href="#">
+                Pricing
               </Nav.Item>
-              <Nav.Item hiddenMobile tab>
-                <a>About</a>
+              <Nav.Item hiddenMobile tab href="#">
+                About
               </Nav.Item>
             </Nav.Left>
             <Nav.Toggle onClick={toggle} active={value} />
             <Nav.Right menu active={value}>
-              <Nav.Item hiddenTablet tab active>
-                <a>Home</a>
+              <Nav.Item hiddenTablet tab active href="#">
+                Home
               </Nav.Item>
-              <Nav.Item hiddenTablet tab>
-                <a>Features</a>
+              <Nav.Item hiddenTablet tab href="#">
+                Features
               </Nav.Item>
-              <Nav.Item hiddenTablet tab>
-                <a>Pricing</a>
+              <Nav.Item hiddenTablet tab href="#">
+                Pricing
               </Nav.Item>
-              <Nav.Item hiddenTablet tab>
-                <a>About</a>
+              <Nav.Item hiddenTablet tab href="#">
+                About
               </Nav.Item>
-              <Nav.Item tab>
-                <a>Profile</a>
+              <Nav.Item tab href="#">
+                Profile
               </Nav.Item>
-              <Nav.Item tab>
-                <a>Log out</a>
+              <Nav.Item tab href="#">
+                Log out
               </Nav.Item>
             </Nav.Right>
           </Container>

@@ -4305,44 +4305,59 @@ exports[`Storyshots Hero With Nav and Tabs 1`] = `
         <div
           className="nav-left"
         >
-          <a
+          <div
             className="nav-item is-brand"
+            href={null}
           >
-            <img
-              alt="Logo"
-              src="http://bulma.io/images/bulma-type-white.png"
-            />
-          </a>
+            <a>
+              <img
+                alt="Logo"
+                src="http://bulma.io/images/bulma-type-white.png"
+              />
+            </a>
+          </div>
         </div>
         <div
           className="nav-right"
         >
-          <a
+          <div
             className="nav-item"
+            href={null}
           >
-            Home
-          </a>
-          <a
+            <a>
+              Home
+            </a>
+          </div>
+          <div
             className="nav-item"
+            href={null}
           >
-            Examples
-          </a>
-          <a
+            <a>
+              Examples
+            </a>
+          </div>
+          <div
             className="nav-item"
+            href={null}
           >
-            Documentation
-          </a>
-          <span
+            <a>
+              Documentation
+            </a>
+          </div>
+          <div
             className="nav-item"
+            href={null}
           >
-            <button
-              className="button is-inverted is-info"
-              disabled={false}
-              type="button"
-            >
-              Download
-            </button>
-          </span>
+            <span>
+              <button
+                className="button is-inverted is-info"
+                disabled={false}
+                type="button"
+              >
+                Download
+              </button>
+            </span>
+          </div>
         </div>
       </div>
     </nav>
@@ -5849,6 +5864,7 @@ exports[`Storyshots Nav Modifiers 1`] = `
     >
       <a
         className="nav-item is-brand"
+        href="#"
       >
         <img
           alt="Bulma logo"
@@ -5857,21 +5873,25 @@ exports[`Storyshots Nav Modifiers 1`] = `
       </a>
       <a
         className="nav-item is-active is-tab is-hidden-mobile"
+        href="#"
       >
         Home
       </a>
       <a
         className="nav-item is-tab is-hidden-mobile"
+        href="#"
       >
         Features
       </a>
       <a
         className="nav-item is-tab is-hidden-mobile"
+        href="#"
       >
         Pricing
       </a>
       <a
         className="nav-item is-tab is-hidden-mobile"
+        href="#"
       >
         About
       </a>
@@ -5889,31 +5909,37 @@ exports[`Storyshots Nav Modifiers 1`] = `
     >
       <a
         className="nav-item is-active is-tab is-hidden-tablet"
+        href="#"
       >
         Home
       </a>
       <a
         className="nav-item is-tab is-hidden-tablet"
+        href="#"
       >
         Features
       </a>
       <a
         className="nav-item is-tab is-hidden-tablet"
+        href="#"
       >
         Pricing
       </a>
       <a
         className="nav-item is-tab is-hidden-tablet"
+        href="#"
       >
         About
       </a>
       <a
         className="nav-item is-tab"
+        href="#"
       >
         Profile
       </a>
       <a
         className="nav-item is-tab"
+        href="#"
       >
         Log out
       </a>
@@ -5931,6 +5957,7 @@ exports[`Storyshots Nav Nav 1`] = `
   >
     <a
       className="nav-item is-brand"
+      href="#"
     >
       <img
         alt="Bulma logo"
@@ -5943,6 +5970,7 @@ exports[`Storyshots Nav Nav 1`] = `
   >
     <a
       className="nav-item"
+      href="#"
     >
       <span
         className="icon"
@@ -5954,6 +5982,7 @@ exports[`Storyshots Nav Nav 1`] = `
     </a>
     <a
       className="nav-item"
+      href="#"
     >
       <span
         className="icon"
@@ -5977,21 +6006,25 @@ exports[`Storyshots Nav Nav 1`] = `
   >
     <a
       className="nav-item"
+      href="#"
     >
       Home
     </a>
     <a
       className="nav-item"
+      href="#"
     >
       Documentation
     </a>
     <a
       className="nav-item"
+      href="#"
     >
       Blog
     </a>
     <div
       className="nav-item"
+      href={null}
     >
       <div
         className="field is-grouped"

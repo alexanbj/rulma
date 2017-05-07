@@ -6702,6 +6702,152 @@ exports[`Storyshots Pagination Sizes 1`] = `
 </div>
 `;
 
+exports[`Storyshots Panel Panel 1`] = `
+<div
+  className="container"
+>
+  <nav
+    className="panel"
+  >
+    <div
+      className="panel-heading"
+    >
+      Repositories
+    </div>
+    <div
+      className="panel-block"
+      href={null}
+    >
+      <div
+        className="control has-icons-left"
+      >
+        <input
+          className="input is-small"
+          disabled={false}
+          placeholder="Search"
+          readOnly={false}
+          type="text"
+        />
+        <span
+          className="icon is-left is-small"
+        >
+          <i
+            className="fa fa-search"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      className="panel-tabs"
+    >
+      <a
+        className="is-active"
+        href={null}
+      >
+        All
+      </a>
+      <a
+        className=""
+        href={null}
+      >
+        Public
+      </a>
+      <a
+        className=""
+        href={null}
+      >
+        Private
+      </a>
+      <a
+        className=""
+        href={null}
+      >
+        Sources
+      </a>
+      <a
+        className=""
+        href={null}
+      >
+        Forks
+      </a>
+    </div>
+    <a
+      className="panel-block is-active"
+      href="#"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fa fa-book"
+        />
+      </span>
+      rulma
+    </a>
+    <a
+      className="panel-block"
+      href="#"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fa fa-book"
+        />
+      </span>
+      bulma
+    </a>
+    <a
+      className="panel-block"
+      href="#"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fa fa-code-fork"
+        />
+      </span>
+      React
+    </a>
+    <a
+      className="panel-block"
+      href="#"
+    >
+      <span
+        className="panel-icon"
+      >
+        <i
+          className="fa fa-code-fork"
+        />
+      </span>
+      Redux
+    </a>
+    <label
+      className="panel-block"
+      href={null}
+    >
+      <input
+        type="checkbox"
+      />
+      Remember me
+    </label>
+    <div
+      className="panel-block"
+      href={null}
+    >
+      <button
+        className="button is-outlined is-fullwidth is-primary"
+        disabled={false}
+        type="button"
+      >
+        Reset all filters
+      </button>
+    </div>
+  </nav>
+</div>
+`;
+
 exports[`Storyshots Progress Colors 1`] = `
 <div
   className="container"

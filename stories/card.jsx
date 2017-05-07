@@ -42,10 +42,7 @@ storiesOf('Card', module)
   )
   .add('Header and footer', () =>
     <Card>
-      <Card.Header>
-        <Card.Title>
-          Component
-        </Card.Title>
+      <Card.Header tag="header" title="Component">
         <Card.Header.Icon>
           <a><Icon icon="angle-down" /></a>
         </Card.Header.Icon>
@@ -56,7 +53,7 @@ storiesOf('Card', module)
         <br />
         <small>11:09 PM - 1 Jan 2016</small>
       </Card.Content>
-      <Card.Footer>
+      <Card.Footer tag="footer">
         <Card.Footer.Item tag="a">
           Save
         </Card.Footer.Item>

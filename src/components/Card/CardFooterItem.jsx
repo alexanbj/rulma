@@ -9,10 +9,12 @@ const CardFooterItem = ({ tag: Tag, ...props }) => {
 };
 
 CardFooterItem.propTypes = {
+  className: PropTypes.string,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 CardFooterItem.defaultProps = {
+  className: null,
   tag: 'div',
 };
 

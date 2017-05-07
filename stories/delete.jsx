@@ -9,17 +9,17 @@ storiesOf('Delete', module)
     </Container>
   ))
   .add('Delete', () =>
-    <Delete />,
+    <Delete aria-label="Delete" />,
   )
   .add('Tags', () =>
     <Tag>
       Hello world
-      <Delete />
+      <Delete aria-label="Remove" />
     </Tag>,
   )
   .add('Notifications', () =>
     <Notification>
-      <Delete />
+      <Delete aria-label="Close" />
       Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet,
       consectetur adipiscing elit
     </Notification>,
@@ -28,7 +28,7 @@ storiesOf('Delete', module)
     <Message>
       <Message.Header>
         Info
-        <Delete />
+        <Delete aria-label="Close" />
       </Message.Header>
       <Message.Body>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis

@@ -13,7 +13,6 @@ Delete.propTypes = {
 };
 
 Delete.defaultProps = {
-  'aria-label': 'Lukk',
   size: null,
 };
 

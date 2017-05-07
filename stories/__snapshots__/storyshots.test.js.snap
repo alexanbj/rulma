@@ -2288,7 +2288,7 @@ exports[`Storyshots Delete Delete 1`] = `
   className="container"
 >
   <button
-    aria-label="Lukk"
+    aria-label="Delete"
     className="delete"
   />
 </div>
@@ -2306,7 +2306,7 @@ exports[`Storyshots Delete Messages 1`] = `
     >
       Info
       <button
-        aria-label="Lukk"
+        aria-label="Close"
         className="delete"
       />
     </div>
@@ -2327,7 +2327,7 @@ exports[`Storyshots Delete Notifications 1`] = `
     className="notification"
   >
     <button
-      aria-label="Lukk"
+      aria-label="Close"
       className="delete"
     />
     Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -2344,7 +2344,7 @@ exports[`Storyshots Delete Tags 1`] = `
   >
     Hello world
     <button
-      aria-label="Lukk"
+      aria-label="Remove"
       className="delete"
     />
   </span>
@@ -5115,7 +5115,7 @@ exports[`Storyshots Media Media 1`] = `
       className="media-right"
     >
       <button
-        aria-label="Lukk"
+        aria-label="Delete"
         className="delete"
       />
     </div>
@@ -5605,7 +5605,7 @@ exports[`Storyshots Message Header 1`] = `
       >
         Hello World
         <button
-          aria-label="Lukk"
+          aria-label="Close"
           className="delete"
         />
       </div>
@@ -5635,7 +5635,7 @@ exports[`Storyshots Message Header 1`] = `
       >
         Hello World
         <button
-          aria-label="Lukk"
+          aria-label="Close"
           className="delete"
         />
       </div>
@@ -5665,7 +5665,7 @@ exports[`Storyshots Message Header 1`] = `
       >
         Hello World
         <button
-          aria-label="Lukk"
+          aria-label="Close"
           className="delete"
         />
       </div>
@@ -5695,7 +5695,7 @@ exports[`Storyshots Message Header 1`] = `
       >
         Hello World
         <button
-          aria-label="Lukk"
+          aria-label="Close"
           className="delete"
         />
       </div>
@@ -5725,7 +5725,7 @@ exports[`Storyshots Message Header 1`] = `
       >
         Hello World
         <button
-          aria-label="Lukk"
+          aria-label="Close"
           className="delete"
         />
       </div>
@@ -5755,7 +5755,7 @@ exports[`Storyshots Message Header 1`] = `
       >
         Hello World
         <button
-          aria-label="Lukk"
+          aria-label="Close"
           className="delete"
         />
       </div>
@@ -5785,7 +5785,7 @@ exports[`Storyshots Message Header 1`] = `
       >
         Hello World
         <button
-          aria-label="Lukk"
+          aria-label="Close"
           className="delete"
         />
       </div>
@@ -6033,7 +6033,7 @@ exports[`Storyshots Notification Notification 1`] = `
       className="notification"
     >
       <button
-        aria-label="Lukk"
+        aria-label="Close"
         className="delete"
       />
       Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -6042,7 +6042,7 @@ exports[`Storyshots Notification Notification 1`] = `
       className="notification is-primary"
     >
       <button
-        aria-label="Lukk"
+        aria-label="Close"
         className="delete"
       />
       Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -6051,7 +6051,7 @@ exports[`Storyshots Notification Notification 1`] = `
       className="notification is-info"
     >
       <button
-        aria-label="Lukk"
+        aria-label="Close"
         className="delete"
       />
       Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -6060,7 +6060,7 @@ exports[`Storyshots Notification Notification 1`] = `
       className="notification is-success"
     >
       <button
-        aria-label="Lukk"
+        aria-label="Close"
         className="delete"
       />
       Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -6069,7 +6069,7 @@ exports[`Storyshots Notification Notification 1`] = `
       className="notification is-warning"
     >
       <button
-        aria-label="Lukk"
+        aria-label="Close"
         className="delete"
       />
       Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -6078,7 +6078,7 @@ exports[`Storyshots Notification Notification 1`] = `
       className="notification is-danger"
     >
       <button
-        aria-label="Lukk"
+        aria-label="Close"
         className="delete"
       />
       Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -7630,7 +7630,7 @@ exports[`Storyshots Tag Delete button 1`] = `
     >
       Hello
       <button
-        aria-label="Lukk"
+        aria-label="Remove"
         className="delete is-small"
       />
     </span>
@@ -7639,7 +7639,7 @@ exports[`Storyshots Tag Delete button 1`] = `
     >
       World
       <button
-        aria-label="Lukk"
+        aria-label="Remove"
         className="delete is-small"
       />
     </span>
@@ -7648,7 +7648,7 @@ exports[`Storyshots Tag Delete button 1`] = `
     >
       !!!!
       <button
-        aria-label="Lukk"
+        aria-label="Remove"
         className="delete"
       />
     </span>

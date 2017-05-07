@@ -5,7 +5,7 @@ import { Container, Delete, Notification } from '../src/';
 function notification(color) {
   return (
     <Notification color={color}>
-      <Delete />
+      <Delete aria-label="Close" />
       Lorem ipsum dolor sit amet, consectetur
       adipiscing elit lorem ipsum dolor sit amet,
       consectetur adipiscing elit

@@ -38,15 +38,15 @@ storiesOf('Tag', module)
     <div>
       <Tag>
         Hello
-        <Delete size="small" />
+        <Delete size="small" aria-label="Remove" />
       </Tag>
       <Tag size="medium" color="info">
         World
-        <Delete size="small" />
+        <Delete size="small" aria-label="Remove" />
       </Tag>
       <Tag size="large" color="warning">
         !!!!
-        <Delete />
+        <Delete aria-label="Remove" />
       </Tag>
     </div>,
   );

@@ -21,7 +21,7 @@ function message(color, bodyOnly = false) {
       {!bodyOnly &&
       <Message.Header>
         Hello World
-        <Delete />
+        <Delete aria-label="Close" />
       </Message.Header>
       }
       {msg}

@@ -40,7 +40,7 @@ storiesOf('Media', module)
         </Level>
       </Media.Content>
       <Media.Right>
-        <Delete />
+        <Delete aria-label="Delete" />
       </Media.Right>
     </Media>,
   )

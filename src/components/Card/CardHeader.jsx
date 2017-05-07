@@ -9,9 +9,7 @@ const CardHeader = ({ children, className, title, ...props }) => {
   const classes = classNames('card-header', className);
   return (
     <header className={classes} {...props}>
-      {title
-        ? [<CardTitle key="title">{title}</CardTitle>, children]
-        : children}
+      {title ? [<CardTitle key="title">{title}</CardTitle>, children] : children}
     </header>
   );
 };

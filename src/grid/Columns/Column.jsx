@@ -33,6 +33,7 @@ const Column = ({
   tabletFull,
   desktopFull,
   widescreenFull,
+  tag: Tag,
   ...props
 }) => {
   const [classes, restProps] = classNames(props, 'column', {
@@ -62,7 +63,7 @@ const Column = ({
     'is-full-widescreen': widescreenFull,
   });
 
-  return <div className={classes} {...restProps} />;
+  return <Tag className={classes} {...restProps} />;
 };
 
 const sizeProp = PropTypes.oneOf([
@@ -121,6 +122,8 @@ Column.propTypes = {
   tabletFull: PropTypes.bool,
   desktopFull: PropTypes.bool,
   widescreenFull: PropTypes.bool,
+
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Column.defaultProps = {
@@ -147,6 +150,8 @@ Column.defaultProps = {
   tabletFull: false,
   desktopFull: false,
   widescreenFull: false,
+
+  tag: 'div',
 };
 
 export default Column;

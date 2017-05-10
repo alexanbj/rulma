@@ -2,26 +2,26 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import { Block, Container, Pagination } from '../src/';
 
-const prev = <Pagination.Prev><a>Previous</a></Pagination.Prev>;
-const next = <Pagination.Next><a>Next page</a></Pagination.Next>;
+const prev = <Pagination.Prev>Previous</Pagination.Prev>;
+const next = <Pagination.Next>Next page</Pagination.Next>;
 
 const pages = [
   <Pagination.Item key="1">
-    <a>1</a>
+    1
   </Pagination.Item>,
   <Pagination.Item ellipsis key="e1" />,
   <Pagination.Item key="45">
-    <a>45</a>
+    45
   </Pagination.Item>,
   <Pagination.Item active key="46">
-    <a>46</a>
+    46
   </Pagination.Item>,
   <Pagination.Item key="47">
-    <a>47</a>
+    47
   </Pagination.Item>,
   <Pagination.Item ellipsis key="e2" />,
   <Pagination.Item key="84">
-    <a>84</a>
+    84
   </Pagination.Item>,
 ];
 
@@ -31,35 +31,35 @@ storiesOf('Pagination', module)
       {story()}
     </Container>
   ))
-  .add('Pagination', () =>
+  .add('Pagination', () => (
     <Pagination prev={prev} next={next}>
       {pages}
-    </Pagination>,
-  )
-  .add('Disabled', () =>
+    </Pagination>
+  ))
+  .add('Disabled', () => (
     <Pagination prev={prev} next={next}>
       <Pagination.Item active>
-        <a>1</a>
+        1
       </Pagination.Item>
       <Pagination.Item>
-        <a>2</a>
+        2
       </Pagination.Item>
       <Pagination.Item disabled>
-        <a>3</a>
+        3
       </Pagination.Item>
-    </Pagination>,
-  )
-  .add('Centered', () =>
+    </Pagination>
+  ))
+  .add('Centered', () => (
     <Pagination centered prev={prev} next={next}>
       {pages}
-    </Pagination>,
-  )
-  .add('Right', () =>
+    </Pagination>
+  ))
+  .add('Right', () => (
     <Pagination right prev={prev} next={next}>
       {pages}
-    </Pagination>,
-  )
-  .add('Sizes', () =>
+    </Pagination>
+  ))
+  .add('Sizes', () => (
     <div>
       <Block>
         <Pagination right prev={prev} next={next} size="small">
@@ -81,5 +81,5 @@ storiesOf('Pagination', module)
           {pages}
         </Pagination>
       </Block>
-    </div>,
-  );
+    </div>
+  ));

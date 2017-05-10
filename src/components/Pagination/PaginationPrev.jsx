@@ -2,22 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const PaginationPrev = ({ className, children, disabled, ...props }) => {
-  const child = React.Children.only(children);
-  const classes = classNames('pagination-previous', className, child.props.className);
+const PaginationPrev = ({ as: ElementType, className, ...props }) => {
+  const classes = classNames('pagination-previous', className);
 
-  return React.cloneElement(child, { className: classes, disabled, ...props });
+  return <ElementType className={classes} {...props} />;
 };
 
 PaginationPrev.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  children: PropTypes.element.isRequired,
   disabled: PropTypes.bool,
+  href: PropTypes.string,
 };
 
 PaginationPrev.defaultProps = {
+  as: 'a',
   className: null,
   disabled: false,
+  href: null,
 };
 
 export default PaginationPrev;

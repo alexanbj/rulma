@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 import classNames from '../../modifiers';
 
-const CardContent = ({ tag: Tag, ...props }) => {
+const CardContent = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = classNames(props, 'card-content');
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 CardContent.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 CardContent.defaultProps = {
+  as: 'div',
   className: null,
-  tag: 'div',
 };
 
 export default CardContent;

@@ -6,20 +6,20 @@ import modifiers, { sizePropType } from '../../modifiers';
 /**
 * A simple container to divide the page into sections
 */
-const Section = ({ tag: Tag, ...props }) => {
+const Section = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = modifiers(props, 'section');
 
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 Section.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   size: sizePropType,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Section.defaultProps = {
+  as: 'section',
   size: null,
-  tag: 'section',
 };
 
 export default Section;

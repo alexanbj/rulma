@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const PanelBlock = ({ active, children, className, icon, tag, ...props }) => {
+const PanelBlock = ({ as, active, children, className, icon, ...props }) => {
   const classes = classNames('panel-block', className, {
     'is-active': active,
   });
@@ -13,32 +13,32 @@ const PanelBlock = ({ active, children, className, icon, tag, ...props }) => {
     </span>)
     : null;
 
-  const Tag = tag || (props.href ? 'a' : 'div');
+  const ElementType = as || (props.href ? 'a' : 'div');
 
   return (
-    <Tag className={classes} {...props}>
+    <ElementType className={classes} {...props}>
       {Icon}
       {children}
-    </Tag>
+    </ElementType>
   );
 };
 
 PanelBlock.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   active: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
   icon: PropTypes.string, // Add an icon before the PanelBlock content, adjusts to the active prop
   href: PropTypes.string, // Renders the PanelBlock as an anchor if provided
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 PanelBlock.defaultProps = {
+  as: null,
   active: false,
   children: PropTypes.string,
   className: null,
   icon: null,
   href: null,
-  tag: null,
 };
 
 export default PanelBlock;

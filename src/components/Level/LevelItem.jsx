@@ -3,20 +3,22 @@ import PropTypes from 'prop-types';
 
 import modifiers from '../../modifiers';
 
-const LevelItem = ({ narrow, tag: Tag, ...props }) => {
-  const [classes, restProps] = modifiers(props, 'level-item', { 'is-narrow': narrow });
+const LevelItem = ({ as: ElementType, narrow, ...props }) => {
+  const [classes, restProps] = modifiers(props, 'level-item', {
+    'is-narrow': narrow,
+  });
 
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 LevelItem.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   narrow: PropTypes.bool,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 LevelItem.defaultProps = {
+  as: 'div',
   narrow: false,
-  tag: 'div',
 };
 
 export default LevelItem;

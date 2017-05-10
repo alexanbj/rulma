@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 import classNames from '../../modifiers';
 
-const Heading = ({ tag: Tag, ...props }) => {
+const Heading = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = classNames(props, 'heading');
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 Heading.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Heading.defaultProps = {
+  as: 'p',
   className: null,
-  tag: 'p',
 };
 
 export default Heading;

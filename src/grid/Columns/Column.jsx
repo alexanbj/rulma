@@ -13,6 +13,7 @@ const sizes = new Map([
 ]);
 
 const Column = ({
+  as: ElementType,
   size,
   mobile,
   tablet,
@@ -33,7 +34,6 @@ const Column = ({
   tabletFull,
   desktopFull,
   widescreenFull,
-  tag: Tag,
   ...props
 }) => {
   const [classes, restProps] = classNames(props, 'column', {
@@ -63,7 +63,7 @@ const Column = ({
     'is-full-widescreen': widescreenFull,
   });
 
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 const sizeProp = PropTypes.oneOf([
@@ -99,6 +99,8 @@ const sizeProp = PropTypes.oneOf([
 ]);
 
 Column.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+
   size: sizeProp,
   mobile: sizeProp,
   tablet: sizeProp,
@@ -122,11 +124,11 @@ Column.propTypes = {
   tabletFull: PropTypes.bool,
   desktopFull: PropTypes.bool,
   widescreenFull: PropTypes.bool,
-
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Column.defaultProps = {
+  as: 'div',
+
   size: null,
   mobile: null,
   tablet: null,
@@ -150,8 +152,6 @@ Column.defaultProps = {
   tabletFull: false,
   desktopFull: false,
   widescreenFull: false,
-
-  tag: 'div',
 };
 
 export default Column;

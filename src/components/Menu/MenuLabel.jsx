@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const MenuLabel = ({ className, tag: Tag, ...props }) => (
-  <Tag className={classNames('menu-label', className)} {...props} />
+const MenuLabel = ({ as: ElementType, className, ...props }) => (
+  <ElementType className={classNames('menu-label', className)} {...props} />
 );
 
 MenuLabel.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 MenuLabel.defaultProps = {
+  as: 'p',
   className: null,
-  tag: 'p',
 };
 
 export default MenuLabel;

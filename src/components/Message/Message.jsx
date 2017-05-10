@@ -6,21 +6,21 @@ import modifiers, { colorPropType, modifierPropTypes } from '../../modifiers';
 import MessageHeader from './MessageHeader';
 import MessageBody from './MessageBody';
 
-const Message = ({ tag: Tag, ...props }) => {
+const Message = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = modifiers(props, 'message');
 
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 Message.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   color: colorPropType,
   ...modifierPropTypes,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Message.defaultProps = {
+  as: 'div',
   color: null,
-  tag: 'div',
 };
 
 Message.Header = MessageHeader;

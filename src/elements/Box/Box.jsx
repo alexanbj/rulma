@@ -7,19 +7,19 @@ import modifiers, { modifierPropTypes } from '../../modifiers';
 *
 * The <Box /> component is simply a container with a shadow, a border, a radius, and some padding.
 */
-const Box = ({ tag: Tag, ...props }) => {
+const Box = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = modifiers(props, 'box');
 
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 Box.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   ...modifierPropTypes,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Box.defaultProps = {
-  tag: 'div',
+  as: 'div',
 };
 
 export default Box;

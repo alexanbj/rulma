@@ -6,19 +6,19 @@ import MenuLabel from './MenuLabel';
 import MenuList from './MenuList';
 import MenuItem from './MenuItem';
 
-const Menu = ({ tag: Tag, className, ...props }) => {
+const Menu = ({ as: ElementType, className, ...props }) => {
   const classes = classNames('menu', className);
-  return <Tag className={classes} {...props} />;
+  return <ElementType className={classes} {...props} />;
 };
 
 Menu.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Menu.defaultProps = {
+  as: 'div',
   className: null,
-  tag: 'div',
 };
 
 Menu.Label = MenuLabel;

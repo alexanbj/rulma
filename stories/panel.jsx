@@ -8,8 +8,8 @@ storiesOf('Panel', module)
       {story()}
     </Container>
   ))
-  .add('Panel', () =>
-    <Panel heading="Repositories" tag="nav">
+  .add('Panel', () => (
+    <Panel heading="Repositories" as="nav">
       <Panel.Block>
         <Input size="small" iconLeft="search" iconSize="small" placeholder="Search" />
       </Panel.Block>
@@ -32,12 +32,12 @@ storiesOf('Panel', module)
       <Panel.Block href="#" icon="code-fork">
         Redux
       </Panel.Block>
-      <Panel.Block tag="label">
+      <Panel.Block as="label">
         <input type="checkbox" />
         Remember me
       </Panel.Block>
       <Panel.Block>
         <Button fullWidth outlined color="primary">Reset all filters</Button>
       </Panel.Block>
-    </Panel>,
-  );
+    </Panel>
+  ));

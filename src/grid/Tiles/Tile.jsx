@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import modifiers, { modifierPropTypes } from '../../modifiers';
 
-const Tile = ({ ancestor, child, children, parent, size, tag: Tag, vertical, ...props }) => {
+const Tile = ({ as: ElementType, ancestor, child, children, parent, size, vertical, ...props }) => {
   const [classes, restProps] = modifiers(props, 'tile', {
     'is-ancestor': ancestor,
     'is-child': child,
@@ -13,13 +13,14 @@ const Tile = ({ ancestor, child, children, parent, size, tag: Tag, vertical, ...
   });
 
   return (
-    <Tag className={classes} {...restProps}>
+    <ElementType className={classes} {...restProps}>
       {children}
-    </Tag>
+    </ElementType>
   );
 };
 
 Tile.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   ancestor: PropTypes.bool,
   child: PropTypes.bool,
   ...modifierPropTypes,
@@ -50,16 +51,15 @@ Tile.propTypes = {
     11,
     12,
   ]),
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   vertical: PropTypes.bool,
 };
 
 Tile.defaultProps = {
+  as: 'div',
   ancestor: false,
   child: false,
   parent: false,
   size: null,
-  tag: 'div',
   vertical: false,
 };
 

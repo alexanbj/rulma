@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 import classNames from '../../modifiers';
 
-const CardTitle = ({ tag: Tag, ...props }) => {
+const CardTitle = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = classNames(props, 'card-header-title');
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 CardTitle.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 CardTitle.defaultProps = {
+  as: 'p',
   className: null,
-  tag: 'p',
 };
 
 export default CardTitle;

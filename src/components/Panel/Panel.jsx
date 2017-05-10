@@ -7,25 +7,25 @@ import PanelHeading from './PanelHeading';
 import PanelTabs from './PanelTabs';
 import PanelTab from './PanelTab';
 
-const Panel = ({ children, className, heading, tag: Tag, ...props }) => (
-  <Tag className={classNames('panel', className)} {...props}>
+const Panel = ({ as: ElementType, children, className, heading, ...props }) => (
+  <ElementType className={classNames('panel', className)} {...props}>
     {heading && <PanelHeading>{heading}</PanelHeading>}
     {children}
-  </Tag>
+  </ElementType>
 );
 
 Panel.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   children: PropTypes.node,
   heading: PropTypes.node,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Panel.defaultProps = {
+  as: 'div',
   children: null,
   className: null,
   heading: null,
-  tag: 'div',
 };
 
 Panel.Block = PanelBlock;

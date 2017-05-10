@@ -7,7 +7,7 @@ import modifiers from '../modifiers';
 * Should only contain a <Button />, <Input />, <Select /> or <Textarea />
 * <Help /> should NOT go here, but in the <Field /> that wraps a <Control />
 */
-const Control = ({ expanded, iconLeft, iconRight, loading, tag: Tag, ...props }) => {
+const Control = ({ as: ElementType, expanded, iconLeft, iconRight, loading, ...props }) => {
   const [classes, restProps] = modifiers(props, 'control', {
     'is-expanded': expanded,
     'has-icons-left': iconLeft,
@@ -15,25 +15,25 @@ const Control = ({ expanded, iconLeft, iconRight, loading, tag: Tag, ...props })
     'is-loading': loading,
   });
 
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 Control.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   expanded: PropTypes.bool,
   iconLeft: PropTypes.bool,
   iconRight: PropTypes.bool,
   loading: PropTypes.bool,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Control.defaultProps = {
+  as: 'div',
   className: null,
   expanded: false,
   iconLeft: false,
   iconRight: false,
   loading: false,
-  tag: 'div',
 };
 
 export default Control;

@@ -1,6 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Card, Columns, Column, Content, Container, Media, Icon, ImageContainer, Subtitle, Title } from '../src/';
+import {
+  Card,
+  Columns,
+  Column,
+  Content,
+  Container,
+  Media,
+  Icon,
+  ImageContainer,
+  Subtitle,
+  Title,
+} from '../src/';
 
 storiesOf('Card', module)
   .addDecorator(story => (
@@ -8,7 +19,7 @@ storiesOf('Card', module)
       {story()}
     </Container>
   ))
-  .add('Card', () =>
+  .add('Card', () => (
     <Columns>
       <Column size="1/3" offset="1/3">
         <Card>
@@ -38,11 +49,11 @@ storiesOf('Card', module)
           </Card.Content>
         </Card>
       </Column>
-    </Columns>,
-  )
-  .add('Header and footer', () =>
+    </Columns>
+  ))
+  .add('Header and footer', () => (
     <Card>
-      <Card.Header tag="header" title="Component">
+      <Card.Header as="header" title="Component">
         <Card.Header.Icon>
           <a><Icon icon="angle-down" /></a>
         </Card.Header.Icon>
@@ -53,16 +64,16 @@ storiesOf('Card', module)
         <br />
         <small>11:09 PM - 1 Jan 2016</small>
       </Card.Content>
-      <Card.Footer tag="footer">
-        <Card.Footer.Item tag="a">
+      <Card.Footer as="footer">
+        <Card.Footer.Item as="a">
           Save
         </Card.Footer.Item>
-        <Card.Footer.Item tag="a">
+        <Card.Footer.Item as="a">
           Edit
         </Card.Footer.Item>
-        <Card.Footer.Item tag="a">
+        <Card.Footer.Item as="a">
           Delete
         </Card.Footer.Item>
       </Card.Footer>
-    </Card>,
-  );
+    </Card>
+  ));

@@ -4,19 +4,19 @@ import classNames from 'classnames';
 
 import CardFooterItem from './CardFooterItem';
 
-const CardFooter = ({ className, tag: Tag, ...props }) => {
+const CardFooter = ({ as: ElementType, className, ...props }) => {
   const classes = classNames('card-footer', className);
-  return <Tag className={classes} {...props} />;
+  return <ElementType className={classes} {...props} />;
 };
 
 CardFooter.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 CardFooter.defaultProps = {
+  as: 'div',
   className: null,
-  tag: 'div',
 };
 
 CardFooter.Item = CardFooterItem;

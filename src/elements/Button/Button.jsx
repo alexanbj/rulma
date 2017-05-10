@@ -6,6 +6,7 @@ import Control from '../../control';
 import modifiers, { sizePropType, colorPropType } from '../../modifiers';
 
 const Button = ({
+  as,
   active,
   control,
   expanded,
@@ -13,7 +14,6 @@ const Button = ({
   inverted,
   loading,
   outlined,
-  tag,
   ...props
 }) => {
   // eslint-disable-next-line prefer-const
@@ -25,16 +25,16 @@ const Button = ({
     'is-fullwidth': fullWidth,
   });
 
-  const Tag = Object.prototype.hasOwnProperty.call(restProps, 'href') && tag === 'button'
+  const ElementType = Object.prototype.hasOwnProperty.call(restProps, 'href') && as === 'button'
     ? 'a'
-    : tag;
+    : as;
 
   // The bold assumption that everything that isn't a button should have the type prop removed
-  if (Tag !== 'button') {
+  if (ElementType !== 'button') {
     restProps = blacklist(restProps, 'type');
   }
 
-  const button = <Tag className={classes} {...restProps} />;
+  const button = <ElementType className={classes} {...restProps} />;
 
   if (control) {
     return (
@@ -48,6 +48,7 @@ const Button = ({
 };
 
 Button.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   active: PropTypes.bool,
   className: PropTypes.string,
   color: colorPropType,
@@ -61,11 +62,11 @@ Button.propTypes = {
   loading: PropTypes.bool,
   outlined: PropTypes.bool,
   size: sizePropType,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   type: PropTypes.oneOf(['button', 'submit', 'reset', 'menu']).isRequired,
 };
 
 Button.defaultProps = {
+  as: 'button',
   active: false,
   className: null,
   color: null,
@@ -77,7 +78,6 @@ Button.defaultProps = {
   loading: false,
   outlined: false,
   size: null,
-  tag: 'button',
   type: 'button',
 };
 

@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 import classNames from '../../modifiers';
 
-const MediaLeft = ({ tag: Tag, ...props }) => {
+const MediaLeft = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = classNames(props, 'media-left');
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 MediaLeft.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 MediaLeft.defaultProps = {
+  as: 'div',
   className: null,
-  tag: 'div',
 };
 
 export default MediaLeft;

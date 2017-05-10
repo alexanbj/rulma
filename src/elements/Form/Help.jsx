@@ -3,22 +3,22 @@ import PropTypes from 'prop-types';
 
 import modifiers, { colorPropType } from '../../modifiers';
 
-const Help = ({ tag: Tag, ...props }) => {
+const Help = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = modifiers(props, 'help');
 
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 Help.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   color: colorPropType,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Help.defaultProps = {
+  as: 'div',
   className: null,
   color: null,
-  tag: 'div',
 };
 
 export default Help;

@@ -8,35 +8,35 @@ storiesOf('Tiles', module)
       {story()}
     </Container>
   ))
-  .add('Tiles', () =>
+  .add('Tiles', () => (
     <Tile ancestor>
       <Tile vertical size="8">
         <Tile>
           <Tile parent vertical>
-            <Tile child tag={Notification} color="primary">
+            <Tile child as={Notification} color="primary">
               <Title>Vertical...</Title>
               <Subtitle>Top tile</Subtitle>
             </Tile>
-            <Tile child tag={Notification} color="warning">
+            <Tile child as={Notification} color="warning">
               <Title>...tiles</Title>
               <Subtitle>Bottom tile</Subtitle>
             </Tile>
           </Tile>
           <Tile parent>
-            <Tile child tag={Notification} color="info">
+            <Tile child as={Notification} color="info">
               <Title>Middle tile</Title>
             </Tile>
           </Tile>
         </Tile>
         <Tile parent>
-          <Tile child tag={Notification} color="danger">
+          <Tile child as={Notification} color="danger">
             <Title>Wide tile</Title>
             <Subtitle>Aligned with the right tile</Subtitle>
           </Tile>
         </Tile>
       </Tile>
       <Tile parent>
-        <Tile child tag={Notification} color="success">
+        <Tile child as={Notification} color="success">
           <Title>Tall tile</Title>
           <Subtitle>With even more content</Subtitle>
           <Content>
@@ -62,5 +62,5 @@ storiesOf('Tiles', module)
           </Content>
         </Tile>
       </Tile>
-    </Tile>,
-  );
+    </Tile>
+  ));

@@ -9,20 +9,20 @@ import classNames, { modifierPropTypes, sizePropType } from '../../modifiers';
  * When you can't use the components you want, or when you just want to directly use HTML tags,
  * use content as container. It can handle almost any HTML.
  */
-const Content = ({ tag: Tag, ...props }) => {
+const Content = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = classNames(props, 'content');
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 Content.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   ...modifierPropTypes,
   size: sizePropType, // Change the font size
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Content.defaultProps = {
+  as: 'div',
   size: null,
-  tag: 'div',
 };
 
 export default Content;

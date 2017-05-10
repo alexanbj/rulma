@@ -5,7 +5,16 @@ import modifiers, { modifierPropTypes, sizePropType } from '../../modifiers';
 
 import Tab from './Tab';
 
-const Tabs = ({ boxed, centered, children, fullWidth, right, tag: Tag, toggle, ...props }) => {
+const Tabs = ({
+  as: ElementType,
+  boxed,
+  centered,
+  children,
+  fullWidth,
+  right,
+  toggle,
+  ...props
+}) => {
   const [classes, restProps] = modifiers(props, 'tabs', {
     'is-centered': centered,
     'is-right': right,
@@ -15,13 +24,14 @@ const Tabs = ({ boxed, centered, children, fullWidth, right, tag: Tag, toggle, .
   });
 
   return (
-    <Tag className={classes} {...restProps}>
+    <ElementType className={classes} {...restProps}>
       <ul>{children}</ul>
-    </Tag>
+    </ElementType>
   );
 };
 
 Tabs.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   boxed: PropTypes.bool,
   centered: PropTypes.bool,
   children: PropTypes.node,
@@ -29,18 +39,17 @@ Tabs.propTypes = {
   ...modifierPropTypes,
   right: PropTypes.bool,
   size: sizePropType,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   toggle: PropTypes.bool,
 };
 
 Tabs.defaultProps = {
+  as: 'div',
   boxed: false,
   centered: false,
   children: null,
   fullWidth: false,
   right: false,
   size: null,
-  tag: 'div',
   toggle: false,
 };
 

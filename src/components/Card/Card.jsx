@@ -8,19 +8,19 @@ import CardHeader from './CardHeader';
 import CardFooter from './CardFooter';
 import CardContent from './CardContent';
 
-const Card = ({ className, tag: Tag, ...props }) => {
+const Card = ({ as: ElementType, className, ...props }) => {
   const classes = classNames('card', className);
-  return <Tag className={classes} {...props} />;
+  return <ElementType className={classes} {...props} />;
 };
 
 Card.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Card.defaultProps = {
+  as: 'div',
   className: null,
-  tag: 'div',
 };
 
 // Add the sub components to the top level export for ease of use

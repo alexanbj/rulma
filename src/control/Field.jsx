@@ -6,6 +6,7 @@ import FieldLabel from './FieldLabel';
 import modifiers from '../modifiers';
 
 const Field = ({
+  as: ElementType,
   addons,
   addonsCentered,
   addonsFullWidth,
@@ -15,7 +16,6 @@ const Field = ({
   groupedRight,
   horizontal,
   narrow,
-  tag: Tag,
   ...props
 }) => {
   const [classes, restProps] = modifiers(props, 'field', {
@@ -30,10 +30,11 @@ const Field = ({
     'is-narrow': narrow,
   });
 
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 Field.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   addons: PropTypes.bool,
   addonsCentered: PropTypes.bool,
   addonsFullWidth: PropTypes.bool,
@@ -44,10 +45,10 @@ Field.propTypes = {
   groupedRight: PropTypes.bool,
   horizontal: PropTypes.bool,
   narrow: PropTypes.bool,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 Field.defaultProps = {
+  as: 'div',
   addons: false,
   addonsCentered: false,
   addonsFullWidth: false,
@@ -58,7 +59,6 @@ Field.defaultProps = {
   groupedRight: false,
   horizontal: false,
   narrow: false,
-  tag: 'div',
 };
 
 Field.Body = FieldBody;

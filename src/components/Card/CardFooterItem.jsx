@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 import modifiers from '../../modifiers';
 
-const CardFooterItem = ({ tag: Tag, ...props }) => {
+const CardFooterItem = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = modifiers(props, 'card-footer-item');
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 CardFooterItem.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 CardFooterItem.defaultProps = {
+  as: 'div',
   className: null,
-  tag: 'div',
 };
 
 export default CardFooterItem;

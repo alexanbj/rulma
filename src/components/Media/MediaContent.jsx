@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 import modifiers from '../../modifiers';
 
-const MediaContent = ({ tag: Tag, ...props }) => {
+const MediaContent = ({ as: ElementType, ...props }) => {
   const [classes, restProps] = modifiers(props, 'media-content');
-  return <Tag className={classes} {...restProps} />;
+  return <ElementType className={classes} {...restProps} />;
 };
 
 MediaContent.propTypes = {
+  as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 
 MediaContent.defaultProps = {
+  as: 'div',
   className: null,
-  tag: 'div',
 };
 
 export default MediaContent;

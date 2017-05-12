@@ -4,7 +4,18 @@ import classNames from 'classnames';
 
 import { sizePropType } from '../../modifiers';
 
-const Icon = ({ className, fw, icon, left, right, spin, size, ...rest }) => {
+const Icon = ({
+  'aria-hidden': ariaHidden,
+  'aria-label': ariaLabel,
+  className,
+  fw,
+  icon,
+  left,
+  right,
+  spin,
+  size,
+  ...rest
+}) => {
   const iconClasses = classNames(`fa fa-${icon}`, {
     'fa-fw': fw,
     'fa-spin': spin,
@@ -18,12 +29,18 @@ const Icon = ({ className, fw, icon, left, right, spin, size, ...rest }) => {
 
   return (
     <span className={containerClasses} {...rest}>
-      <i className={iconClasses} />
+      <i
+        aria-hidden={ariaLabel ? false : ariaHidden}
+        aria-label={ariaLabel}
+        className={iconClasses}
+      />
     </span>
   );
 };
 
 Icon.propTypes = {
+  'aria-hidden': PropTypes.bool,
+  'aria-label': PropTypes.string,
   className: PropTypes.string,
   fw: PropTypes.bool,
   icon: PropTypes.string,
@@ -34,6 +51,8 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
+  'aria-hidden': true,
+  'aria-label': null,
   className: null,
   fw: false,
   icon: null,

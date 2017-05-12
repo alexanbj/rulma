@@ -101,6 +101,8 @@ exports[`Storyshots Button Button addons 1`] = `
           className="icon is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-align-left"
           />
         </span>
@@ -121,6 +123,8 @@ exports[`Storyshots Button Button addons 1`] = `
           className="icon is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-align-center"
           />
         </span>
@@ -141,6 +145,8 @@ exports[`Storyshots Button Button addons 1`] = `
           className="icon is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-align-right"
           />
         </span>
@@ -219,6 +225,8 @@ exports[`Storyshots Button Button group with addons 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-bold"
             />
           </span>
@@ -239,6 +247,8 @@ exports[`Storyshots Button Button group with addons 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-italic"
             />
           </span>
@@ -259,6 +269,8 @@ exports[`Storyshots Button Button group with addons 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-underline"
             />
           </span>
@@ -283,6 +295,8 @@ exports[`Storyshots Button Button group with addons 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-align-left"
             />
           </span>
@@ -303,6 +317,8 @@ exports[`Storyshots Button Button group with addons 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-align-center"
             />
           </span>
@@ -323,6 +339,8 @@ exports[`Storyshots Button Button group with addons 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-align-right"
             />
           </span>
@@ -643,6 +661,8 @@ exports[`Storyshots Button Fullwidth addons 1`] = `
           className="icon is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-align-left"
           />
         </span>
@@ -663,6 +683,8 @@ exports[`Storyshots Button Fullwidth addons 1`] = `
           className="icon is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-align-center"
           />
         </span>
@@ -683,6 +705,8 @@ exports[`Storyshots Button Fullwidth addons 1`] = `
           className="icon is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-align-right"
           />
         </span>
@@ -712,6 +736,8 @@ exports[`Storyshots Button Icons only 1`] = `
           className="icon is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-header"
           />
         </span>
@@ -732,6 +758,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -749,6 +777,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -770,6 +800,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -787,6 +819,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -804,6 +838,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon is-medium"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -825,6 +861,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon is-small"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -842,6 +880,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -859,6 +899,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon is-medium"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -876,6 +918,8 @@ exports[`Storyshots Button Icons only 1`] = `
             className="icon is-large"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-header"
             />
           </span>
@@ -1298,6 +1342,8 @@ exports[`Storyshots Card Header and footer 1`] = `
           className="icon"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-angle-down"
           />
         </span>
@@ -2387,6 +2433,8 @@ exports[`Storyshots Footer Footer 1`] = `
             className="icon"
           >
             <i
+              aria-hidden={true}
+              aria-label={null}
               className="fa fa-github"
             />
           </span>
@@ -2835,6 +2883,8 @@ exports[`Storyshots Form Form 1`] = `
           className="icon is-left is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-user"
           />
         </span>
@@ -2842,6 +2892,8 @@ exports[`Storyshots Form Form 1`] = `
           className="icon is-right is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-check"
           />
         </span>
@@ -2875,6 +2927,8 @@ exports[`Storyshots Form Form 1`] = `
           className="icon is-left is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-envelope"
           />
         </span>
@@ -2882,6 +2936,8 @@ exports[`Storyshots Form Form 1`] = `
           className="icon is-right is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-warning"
           />
         </span>
@@ -3325,6 +3381,8 @@ exports[`Storyshots Form Icons 1`] = `
           className="icon is-left is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-envelope"
           />
         </span>
@@ -3347,6 +3405,8 @@ exports[`Storyshots Form Icons 1`] = `
           className="icon is-left is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-lock"
           />
         </span>
@@ -3393,6 +3453,8 @@ exports[`Storyshots Form Icons right 1`] = `
           className="icon is-right is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-check"
           />
         </span>
@@ -3415,6 +3477,8 @@ exports[`Storyshots Form Icons right 1`] = `
           className="icon is-right"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-check"
           />
         </span>
@@ -3437,6 +3501,8 @@ exports[`Storyshots Form Icons right 1`] = `
           className="icon is-right is-medium"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-check"
           />
         </span>
@@ -3459,6 +3525,8 @@ exports[`Storyshots Form Icons right 1`] = `
           className="icon is-right is-large"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-check"
           />
         </span>
@@ -4446,6 +4514,8 @@ exports[`Storyshots Icon Sizes 1`] = `
         className="icon is-small"
       >
         <i
+          aria-hidden={true}
+          aria-label={null}
           className="fa fa-github"
         />
       </span>
@@ -4456,6 +4526,8 @@ exports[`Storyshots Icon Sizes 1`] = `
         className="icon"
       >
         <i
+          aria-hidden={true}
+          aria-label={null}
           className="fa fa-github"
         />
       </span>
@@ -4466,6 +4538,8 @@ exports[`Storyshots Icon Sizes 1`] = `
         className="icon is-medium"
       >
         <i
+          aria-hidden={true}
+          aria-label={null}
           className="fa fa-github"
         />
       </span>
@@ -4476,6 +4550,8 @@ exports[`Storyshots Icon Sizes 1`] = `
         className="icon is-large"
       >
         <i
+          aria-hidden={true}
+          aria-label={null}
           className="fa fa-github"
         />
       </span>
@@ -5989,6 +6065,8 @@ exports[`Storyshots Nav Nav 1`] = `
         className="icon"
       >
         <i
+          aria-hidden={true}
+          aria-label={null}
           className="fa fa-github"
         />
       </span>
@@ -6001,6 +6079,8 @@ exports[`Storyshots Nav Nav 1`] = `
         className="icon"
       >
         <i
+          aria-hidden={true}
+          aria-label={null}
           className="fa fa-twitter"
         />
       </span>
@@ -6832,6 +6912,8 @@ exports[`Storyshots Panel Panel 1`] = `
           className="icon is-left is-small"
         >
           <i
+            aria-hidden={true}
+            aria-label={null}
             className="fa fa-search"
           />
         </span>

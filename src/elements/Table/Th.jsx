@@ -5,7 +5,7 @@ import classNames, { modifierPropTypes } from '../../modifiers';
 const Th = (props) => {
   const [classes, restProps] = classNames(props);
 
-  return <td className={classes} {...restProps} />;
+  return <th className={classes} {...restProps} />;
 };
 
 Th.propTypes = {

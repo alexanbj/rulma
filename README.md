@@ -30,7 +30,7 @@ import 'bulma/css/bulma.css';
 
 If not using webpack, you can simply include it in directly in the html `<head>` section from some CDN of your choosing:
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
 ```
 
 #### Font Awesome

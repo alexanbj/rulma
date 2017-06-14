@@ -142,12 +142,12 @@ storiesOf('Form', module)
         <Input loading placeholder="Loading input" />
       </Field>
       <Field>
-        <Textarea loading placeholder="Loading textarea" />
-      </Field>
-      <Field>
         <Select loading>
           {options}
         </Select>
+      </Field>
+      <Field>
+        <Textarea loading placeholder="Loading textarea" />
       </Field>
     </div>,
   )
@@ -181,6 +181,12 @@ storiesOf('Form', module)
       </Field>
       <Field>
         <Input iconLeft="lock" iconSize="small" placeholder="Password" type="password" />
+      </Field>
+      <Field>
+        <Select iconLeft="user" iconSize="small">
+          <option>Admin</option>
+          <option>User</option>
+        </Select>
       </Field>
       <Field>
         <Button control color="success">Login</Button>

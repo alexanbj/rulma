@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Table, Tr } from '../src/';
 
 const tableContent = [
@@ -33,43 +33,33 @@ const tableContent = [
 ];
 
 storiesOf('Table', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
-  .add(
-    'Default', () => (
-      <Table>
-        {tableContent}
-      </Table>
-    ),
+    </Container>,
   )
-  .add(
-    'Striped', () => (
-      <Table striped>
-        {tableContent}
-      </Table>
-    ),
+  .add('Default', () =>
+    <Table>
+      {tableContent}
+    </Table>,
   )
-  .add(
-    'Bordered', () => (
-      <Table bordered>
-        {tableContent}
-      </Table>
-    ),
+  .add('Striped', () =>
+    <Table striped>
+      {tableContent}
+    </Table>,
   )
-  .add(
-    'Narrow', () => (
-      <Table narrow>
-        {tableContent}
-      </Table>
-    ),
+  .add('Bordered', () =>
+    <Table bordered>
+      {tableContent}
+    </Table>,
   )
-  .add(
-    'Combined', () => (
-      <Table striped bordered narrow>
-        {tableContent}
-      </Table>
-    ),
+  .add('Narrow', () =>
+    <Table narrow>
+      {tableContent}
+    </Table>,
+  )
+  .add('Combined', () =>
+    <Table striped bordered narrow>
+      {tableContent}
+    </Table>,
   );

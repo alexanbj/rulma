@@ -1,13 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Block, Button, Container, Heading, Level, Subtitle, Title } from '../src/';
 
 storiesOf('Level', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Level', () =>
     <Level>
       <Level.Left>

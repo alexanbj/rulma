@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 
 import { Box, Button, Content, ImageContainer, Media, Modal } from '../src/';
 import Toggler from './Toggler';
@@ -7,7 +7,7 @@ import Toggler from './Toggler';
 storiesOf('Modal', module)
   .add('Modal', () =>
     <Toggler>
-      {(toggle, value) => (
+      {(toggle, value) =>
         <div>
           <Button onClick={toggle}>Launch modal</Button>
           {value &&
@@ -16,7 +16,10 @@ storiesOf('Modal', module)
                 <Media>
                   <Media.Left>
                     <ImageContainer dimension="64x64">
-                      <img src="http://bulma.io/images/placeholders/128x128.png" alt="placeholder" />
+                      <img
+                        src="http://bulma.io/images/placeholders/128x128.png"
+                        alt="placeholder"
+                      />
                     </ImageContainer>
                   </Media.Left>
                   <Media.Content>
@@ -31,15 +34,13 @@ storiesOf('Modal', module)
                   </Media.Content>
                 </Media>
               </Box>
-            </Modal>
-          }
-        </div>
-      )}
+            </Modal>}
+        </div>}
     </Toggler>,
   )
   .add('Classic', () =>
     <Toggler>
-      {(toggle, value) => (
+      {(toggle, value) =>
         <div>
           <Button onClick={toggle}>Launch modal</Button>
           {value &&
@@ -52,9 +53,7 @@ storiesOf('Modal', module)
                 <Button color="success">Save changes</Button>
                 <Button onClick={toggle}>Close</Button>
               </Modal.Footer>
-            </Modal>
-          }
-        </div>
-      )}
+            </Modal>}
+        </div>}
     </Toggler>,
   );

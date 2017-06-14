@@ -1,13 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Block, Container, Title, Subtitle } from '../src/';
 
 storiesOf('Title', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container textCentered>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Title', () =>
     <div>
       <Title>Title</Title>

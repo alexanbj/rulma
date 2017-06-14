@@ -1,13 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Icon } from '../src/';
 
 storiesOf('Icon', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container textCentered>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Sizes', () =>
     <ul>
       <li>

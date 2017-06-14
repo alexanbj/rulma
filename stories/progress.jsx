@@ -1,13 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Progress } from '../src/';
 
 storiesOf('Progress', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Colors', () =>
     <div>
       <Progress value="15" max="100">15%</Progress>

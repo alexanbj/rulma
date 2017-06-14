@@ -1,14 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Button, Container, Input, Panel } from '../src/';
 
 storiesOf('Panel', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
-  .add('Panel', () => (
+    </Container>,
+  )
+  .add('Panel', () =>
     <Panel heading="Repositories" as="nav">
       <Panel.Block>
         <Input size="small" iconLeft="search" iconSize="small" placeholder="Search" />
@@ -39,5 +39,5 @@ storiesOf('Panel', module)
       <Panel.Block>
         <Button fullWidth outlined color="primary">Reset all filters</Button>
       </Panel.Block>
-    </Panel>
-  ));
+    </Panel>,
+  );

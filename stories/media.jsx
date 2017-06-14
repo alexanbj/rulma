@@ -1,13 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Button, Container, Delete, Field, Form, Level, ImageContainer, Media } from '../src/';
 
 storiesOf('Media', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Media', () =>
     <Media>
       <Media.Left>

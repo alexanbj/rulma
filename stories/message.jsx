@@ -1,13 +1,17 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Delete, Message } from '../src/';
 
 const msg = (
   <Message.Body>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
-    Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis
-    venenatis</a> efficitur.
+    Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum{' '}
+    <a>
+      felis
+      venenatis
+    </a>{' '}
+    efficitur.
     Aenean ac <em>eleifend lacus</em>, in mollis lectus.
     Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna
     a neque.
@@ -19,22 +23,21 @@ function message(color, bodyOnly = false) {
   return (
     <Message color={color}>
       {!bodyOnly &&
-      <Message.Header>
-        Hello World
-        <Delete aria-label="Close" />
-      </Message.Header>
-      }
+        <Message.Header>
+          Hello World
+          <Delete aria-label="Close" />
+        </Message.Header>}
       {msg}
     </Message>
   );
 }
 
 storiesOf('Message', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Header', () =>
     <div>
       {message()}

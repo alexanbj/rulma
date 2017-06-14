@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import {
   Card,
   Columns,
@@ -14,12 +14,12 @@ import {
 } from '../src/';
 
 storiesOf('Card', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
-  .add('Card', () => (
+    </Container>,
+  )
+  .add('Card', () =>
     <Columns>
       <Column size="1/3" offset="1/3">
         <Card>
@@ -49,9 +49,9 @@ storiesOf('Card', module)
           </Card.Content>
         </Card>
       </Column>
-    </Columns>
-  ))
-  .add('Header and footer', () => (
+    </Columns>,
+  )
+  .add('Header and footer', () =>
     <Card>
       <Card.Header as="header" title="Component">
         <Card.Header.Icon>
@@ -75,5 +75,5 @@ storiesOf('Card', module)
           Delete
         </Card.Footer.Item>
       </Card.Footer>
-    </Card>
-  ));
+    </Card>,
+  );

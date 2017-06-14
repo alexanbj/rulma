@@ -1,13 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, ImageContainer, Table } from '../src/';
 
 storiesOf('ImageContainer', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Fixed square images', () =>
     <Table bordered>
       <tbody>

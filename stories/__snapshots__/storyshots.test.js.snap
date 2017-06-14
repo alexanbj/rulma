@@ -2411,13 +2411,15 @@ exports[`Storyshots Footer Footer 1`] = `
         <strong>
           rulma
         </strong>
-        , a React component library for 
+        , a React component library for
+         
         <a
           href="https://github.com/jgthms/bulma"
         >
           Bulma
         </a>
-        . The source code is licensed 
+        . The source code is licensed
+         
         <a
           href="http://opensource.org/licenses/mit-license.php"
         >
@@ -5555,11 +5557,13 @@ exports[`Storyshots Message Body only 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5576,11 +5580,13 @@ exports[`Storyshots Message Body only 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5597,11 +5603,13 @@ exports[`Storyshots Message Body only 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5618,11 +5626,13 @@ exports[`Storyshots Message Body only 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5639,11 +5649,13 @@ exports[`Storyshots Message Body only 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5660,11 +5672,13 @@ exports[`Storyshots Message Body only 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5681,11 +5695,13 @@ exports[`Storyshots Message Body only 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5720,11 +5736,13 @@ exports[`Storyshots Message Header 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5750,11 +5768,13 @@ exports[`Storyshots Message Header 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5780,11 +5800,13 @@ exports[`Storyshots Message Header 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5810,11 +5832,13 @@ exports[`Storyshots Message Header 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5840,11 +5864,13 @@ exports[`Storyshots Message Header 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5870,11 +5896,13 @@ exports[`Storyshots Message Header 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>
@@ -5900,11 +5928,13 @@ exports[`Storyshots Message Header 1`] = `
         <strong>
           Pellentesque risus mi
         </strong>
-        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum 
+        , tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+         
         <a>
           felis venenatis
         </a>
-         efficitur. Aenean ac 
+         
+        efficitur. Aenean ac 
         <em>
           eleifend lacus
         </em>

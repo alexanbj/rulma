@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Addons, Container, Button, Field, Group, Icon, Notification } from '../src/';
 
 function buttons(props, text) {
@@ -13,11 +13,11 @@ function buttons(props, text) {
 }
 
 storiesOf('Button', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container textCentered>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Colors', () =>
     <div>
       <Group centered>

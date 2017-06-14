@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 
 import { Container, Button, Group, Icon, Nav } from '../src/';
 import Toggler from './Toggler';
@@ -7,7 +7,7 @@ import Toggler from './Toggler';
 storiesOf('Nav', module)
   .add('Nav', () =>
     <Toggler>
-      {(toggle, value) => (
+      {(toggle, value) =>
         <Nav>
           <Nav.Left>
             <Nav.Item brand href="#">
@@ -35,25 +35,19 @@ storiesOf('Nav', module)
             </Nav.Item>
             <Nav.Item>
               <Group>
-                <Button
-                  control
-                  color="info"
-                  outlined
-                  href="https://twitter.com"
-                >
+                <Button control color="info" outlined href="https://twitter.com">
                   Tweet
                 </Button>
                 <Button control color="primary">Download</Button>
               </Group>
             </Nav.Item>
           </Nav.Right>
-        </Nav>
-      )}
+        </Nav>}
     </Toggler>,
   )
   .add('Modifiers', () =>
     <Toggler>
-      {(toggle, value) => (
+      {(toggle, value) =>
         <Nav shadow>
           <Container>
             <Nav.Left>
@@ -95,7 +89,6 @@ storiesOf('Nav', module)
               </Nav.Item>
             </Nav.Right>
           </Container>
-        </Nav>
-      )}
+        </Nav>}
     </Toggler>,
   );

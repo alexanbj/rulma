@@ -1,14 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Content, Notification, Tile, Title, Subtitle } from '../src/';
 
 storiesOf('Tiles', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
-  .add('Tiles', () => (
+    </Container>,
+  )
+  .add('Tiles', () =>
     <Tile ancestor>
       <Tile vertical size="8">
         <Tile>
@@ -62,5 +62,5 @@ storiesOf('Tiles', module)
           </Content>
         </Tile>
       </Tile>
-    </Tile>
-  ));
+    </Tile>,
+  );

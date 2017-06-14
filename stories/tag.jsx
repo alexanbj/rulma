@@ -1,16 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Delete, Tag } from '../src/';
 
 storiesOf('Tag', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
-  .add('Tag', () =>
-    <Tag>Tag label</Tag>,
+    </Container>,
   )
+  .add('Tag', () => <Tag>Tag label</Tag>)
   .add('Colors', () =>
     <div>
       <Tag color="black">Black</Tag>

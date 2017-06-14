@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Block, Container, Pagination } from '../src/';
 
 const prev = <Pagination.Prev>Previous</Pagination.Prev>;
@@ -26,17 +26,17 @@ const pages = [
 ];
 
 storiesOf('Pagination', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
-  .add('Pagination', () => (
+    </Container>,
+  )
+  .add('Pagination', () =>
     <Pagination prev={prev} next={next}>
       {pages}
-    </Pagination>
-  ))
-  .add('Disabled', () => (
+    </Pagination>,
+  )
+  .add('Disabled', () =>
     <Pagination prev={prev} next={next}>
       <Pagination.Item active>
         1
@@ -47,19 +47,19 @@ storiesOf('Pagination', module)
       <Pagination.Item disabled>
         3
       </Pagination.Item>
-    </Pagination>
-  ))
-  .add('Centered', () => (
+    </Pagination>,
+  )
+  .add('Centered', () =>
     <Pagination centered prev={prev} next={next}>
       {pages}
-    </Pagination>
-  ))
-  .add('Right', () => (
+    </Pagination>,
+  )
+  .add('Right', () =>
     <Pagination right prev={prev} next={next}>
       {pages}
-    </Pagination>
-  ))
-  .add('Sizes', () => (
+    </Pagination>,
+  )
+  .add('Sizes', () =>
     <div>
       <Block>
         <Pagination right prev={prev} next={next} size="small">
@@ -81,5 +81,5 @@ storiesOf('Pagination', module)
           {pages}
         </Pagination>
       </Block>
-    </div>
-  ));
+    </div>,
+  );

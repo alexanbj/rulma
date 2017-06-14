@@ -1,14 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Menu } from '../src/';
 
 storiesOf('Menu', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
-  .add('Menu', () => (
+    </Container>,
+  )
+  .add('Menu', () =>
     <Menu>
       <Menu.Label>General</Menu.Label>
       <Menu.List>
@@ -40,5 +40,5 @@ storiesOf('Menu', module)
         <Menu.Item>Transfers</Menu.Item>
         <Menu.Item>Balance</Menu.Item>
       </Menu.List>
-    </Menu>
-  ));
+    </Menu>,
+  );

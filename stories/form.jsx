@@ -1,18 +1,30 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import { Addons, Button, Control, Container, Field, Form, Help, Input, Label, Radio, Group, Checkbox, Select, Textarea } from '../src/';
+import { storiesOf } from '@storybook/react';
+import {
+  Addons,
+  Button,
+  Control,
+  Container,
+  Field,
+  Form,
+  Help,
+  Input,
+  Label,
+  Radio,
+  Group,
+  Checkbox,
+  Select,
+  Textarea,
+} from '../src/';
 
-const options = [
-  <option key="1">Select dropdown</option>,
-  <option key="2">with options</option>,
-];
+const options = [<option key="1">Select dropdown</option>, <option key="2">with options</option>];
 
 storiesOf('Form', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Form', () =>
     <div>
       <Field>
@@ -72,61 +84,35 @@ storiesOf('Form', module)
   .add('Colors', () =>
     <Form>
       <Field>
-        <Input
-          color="primary"
-          placeholder="Primary input"
-        />
+        <Input color="primary" placeholder="Primary input" />
       </Field>
       <Field>
-        <Input
-          color="info"
-          placeholder="Info input"
-        />
+        <Input color="info" placeholder="Info input" />
       </Field>
       <Field>
-        <Input
-          color="success"
-          placeholder="Success input"
-        />
+        <Input color="success" placeholder="Success input" />
       </Field>
       <Field>
-        <Input
-          color="warning"
-          placeholder="Warning input"
-        />
+        <Input color="warning" placeholder="Warning input" />
       </Field>
       <Field>
-        <Input
-          color="danger"
-          placeholder="Danger input"
-        />
+        <Input color="danger" placeholder="Danger input" />
       </Field>
     </Form>,
   )
   .add('Sizes', () =>
     <Form>
       <Field>
-        <Input
-          placeholder="Small input"
-          size="small"
-        />
+        <Input placeholder="Small input" size="small" />
       </Field>
       <Field>
-        <Input
-          placeholder="Default input"
-        />
+        <Input placeholder="Default input" />
       </Field>
       <Field>
-        <Input
-          placeholder="Medium input"
-          size="medium"
-        />
+        <Input placeholder="Medium input" size="medium" />
       </Field>
       <Field>
-        <Input
-          placeholder="Large input"
-          size="large"
-        />
+        <Input placeholder="Large input" size="large" />
       </Field>
       <Field>
         <Select size="small">

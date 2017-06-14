@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Button, Container, Hero, Nav, Tabs, Title, Subtitle } from '../src/';
 
 storiesOf('Hero', module)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Tabs } from '../src/';
 
 const tabs = [
@@ -18,11 +18,11 @@ const tabs = [
 ];
 
 storiesOf('Tabs', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Tabs', () =>
     <Tabs>
       {tabs}

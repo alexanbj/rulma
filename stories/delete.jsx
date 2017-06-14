@@ -1,16 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Delete, Message, Notification, Tag } from '../src/';
 
 storiesOf('Delete', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
-  .add('Delete', () =>
-    <Delete aria-label="Delete" />,
+    </Container>,
   )
+  .add('Delete', () => <Delete aria-label="Delete" />)
   .add('Tags', () =>
     <Tag>
       Hello world

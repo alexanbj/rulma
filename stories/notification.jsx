@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { Container, Delete, Notification } from '../src/';
 
 function notification(color) {
@@ -14,11 +14,11 @@ function notification(color) {
 }
 
 storiesOf('Notification', module)
-  .addDecorator(story => (
+  .addDecorator(story =>
     <Container>
       {story()}
-    </Container>
-  ))
+    </Container>,
+  )
   .add('Notification', () =>
     <div>
       {notification()}

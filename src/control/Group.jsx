@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 import Field from './Field';
 
-const Group = ({ centered, right, ...props }) => (
-  <Field grouped groupedCentered={centered} groupedRight={right} {...props} />
-);
+const Group = ({ centered, right, ...props }) =>
+  <Field grouped groupedCentered={centered} groupedRight={right} {...props} />;
 
 Group.propTypes = {
   centered: PropTypes.bool,

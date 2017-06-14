@@ -1,6 +1,17 @@
 {
   "rules": {
-    "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
-    "jsx-a11y/href-no-hash": 0
+    "import/no-extraneous-dependencies": [
+      2,
+      {
+        "devDependencies": true
+      }
+    ],
+    "jsx-a11y/href-no-hash": 0,
+    "react/jsx-wrap-multilines": [
+      2,
+      {
+        "arrow": false
+      }
+    ]
   }
 }

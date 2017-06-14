@@ -7,12 +7,11 @@ import PanelHeading from './PanelHeading';
 import PanelTabs from './PanelTabs';
 import PanelTab from './PanelTab';
 
-const Panel = ({ as: ElementType, children, className, heading, ...props }) => (
-  <ElementType className={classNames('panel', className)} {...props}>
+const Panel = ({ as: ElementType, children, className, heading, ...props }) =>
+  (<ElementType className={classNames('panel', className)} {...props}>
     {heading && <PanelHeading>{heading}</PanelHeading>}
     {children}
-  </ElementType>
-);
+  </ElementType>);
 
 Panel.propTypes = {
   as: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),

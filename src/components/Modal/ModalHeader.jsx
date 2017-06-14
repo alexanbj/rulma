@@ -5,12 +5,11 @@ import ModalTitle from './ModalTitle';
 
 import { Delete } from '../../';
 
-const ModalHeader = ({ className, children, onClose, title, closeButtonAriaLabel, ...props }) => (
-  <header className={classNames('modal-card-head', className)} {...props}>
+const ModalHeader = ({ className, children, onClose, title, closeButtonAriaLabel, ...props }) =>
+  (<header className={classNames('modal-card-head', className)} {...props}>
     {title ? <ModalTitle>{title}</ModalTitle> : children}
     {onClose && <Delete onClick={onClose} aria-label={closeButtonAriaLabel} />}
-  </header>
-);
+  </header>);
 
 ModalHeader.propTypes = {
   children: PropTypes.node,

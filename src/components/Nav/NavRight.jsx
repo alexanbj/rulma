@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const NavRight = ({ active, className, menu, ...props }) => (
-  <div
+const NavRight = ({ active, className, menu, ...props }) =>
+  (<div
     className={classNames('nav-right', className, { 'is-active': active, 'nav-menu': menu })}
     {...props}
-  />
-);
+  />);
 
 NavRight.propTypes = {
   // Show the collapsible menu

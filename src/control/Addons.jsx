@@ -3,15 +3,14 @@ import PropTypes from 'prop-types';
 
 import Field from './Field';
 
-const Addons = ({ centered, fullWidth, right, ...props }) => (
-  <Field
+const Addons = ({ centered, fullWidth, right, ...props }) =>
+  (<Field
     addons
     addonsCentered={centered}
     addonsFullWidth={fullWidth}
     addonsRight={right}
     {...props}
-  />
-);
+  />);
 
 Addons.propTypes = {
   centered: PropTypes.bool,

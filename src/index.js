@@ -2,6 +2,7 @@ import Addons from './control/Addons';
 import Box from './elements/Box';
 import Block from './elements/Block';
 import Button from './elements/Button';
+import ButtonStatic from './elements/ButtonStatic';
 import Card from './components/Card';
 import Checkbox from './elements/Form/Checkbox';
 import Column from './grid/Columns/Column';
@@ -49,6 +50,7 @@ export {
   Block,
   Box,
   Button,
+  ButtonStatic,
   Card,
   Checkbox,
   Column,

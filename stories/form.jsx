@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import {
   Addons,
   Button,
+  ButtonStatic,
   Control,
   Container,
   Field,
@@ -222,6 +223,14 @@ storiesOf('Form', module)
       <Addons right>
         <Input placeholder="Find repository" />
         <Button control color="info">Search</Button>
+      </Addons>
+    </div>,
+  )
+  .add('Addons: Static button', () =>
+    <div>
+      <Addons>
+        <Input placeholder="Your email" />
+        <ButtonStatic control>@gmail.com</ButtonStatic>
       </Addons>
     </div>,
   )

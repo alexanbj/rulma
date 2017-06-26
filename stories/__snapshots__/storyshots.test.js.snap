@@ -1235,6 +1235,19 @@ exports[`Storyshots Button Sizes 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button Static 1`] = `
+<div
+  className="container has-text-centered"
+>
+  <span
+    className="is-static button"
+    disabled={false}
+  >
+    Static
+  </span>
+</div>
+`;
+
 exports[`Storyshots Card Card 1`] = `
 <div
   className="container"
@@ -2534,6 +2547,40 @@ exports[`Storyshots Form Addons 1`] = `
 </div>
 `;
 
+exports[`Storyshots Form Addons: Static button 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="field has-addons"
+    >
+      <div
+        className="control"
+      >
+        <input
+          className="input"
+          disabled={false}
+          placeholder="Your email"
+          readOnly={false}
+          type="text"
+        />
+      </div>
+      <div
+        className="control"
+      >
+        <span
+          className="is-static button"
+          disabled={false}
+        >
+          @gmail.com
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Form Colors 1`] = `
 <div
   className="container"
@@ -3418,6 +3465,37 @@ exports[`Storyshots Form Icons 1`] = `
       className="field"
     >
       <div
+        className="control has-icons-left"
+      >
+        <span
+          className="select"
+        >
+          <select
+            disabled={false}
+          >
+            <option>
+              Admin
+            </option>
+            <option>
+              User
+            </option>
+          </select>
+        </span>
+        <span
+          className="icon is-left is-small"
+        >
+          <i
+            aria-hidden={true}
+            aria-label={null}
+            className="fa fa-user"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
         className="control"
       >
         <button
@@ -3562,20 +3640,6 @@ exports[`Storyshots Form Loading 1`] = `
       className="field"
     >
       <div
-        className="control is-loading"
-      >
-        <textarea
-          className="textarea"
-          disabled={false}
-          placeholder="Loading textarea"
-          readOnly={false}
-        />
-      </div>
-    </div>
-    <div
-      className="field"
-    >
-      <div
         className="control"
       >
         <span
@@ -3592,6 +3656,20 @@ exports[`Storyshots Form Loading 1`] = `
             </option>
           </select>
         </span>
+      </div>
+    </div>
+    <div
+      className="field"
+    >
+      <div
+        className="control is-loading"
+      >
+        <textarea
+          className="textarea"
+          disabled={false}
+          placeholder="Loading textarea"
+          readOnly={false}
+        />
       </div>
     </div>
   </div>

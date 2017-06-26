@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Addons, Container, Button, Field, Group, Icon, Notification } from '../src/';
+import { Addons, Container, Button, ButtonStatic, Field, Group, Icon, Notification } from '../src/';
 
 function buttons(props, text) {
   return [
@@ -84,6 +84,7 @@ storiesOf('Button', module)
       {buttons({ loading: true }, 'Loading')}
     </Group>,
   )
+  .add('Static', () => <ButtonStatic>Static</ButtonStatic>)
   .add('Icons only', () =>
     <div>
       <Group>
